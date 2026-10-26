@@ -1,0 +1,40 @@
+---
+title: "Sell a collection only to VIP customers"
+description: "Use a customer-tag allowlist and require sign-in to identify eligible buyers."
+sidebarTitle: "Member exclusives"
+keywords: ["Shopify", "Order Limits", "Sell a collection only to VIP customers"]
+---
+
+Your member-exclusive collection should only be purchasable by customers tagged VIP. Add a customer restriction and require an account sign-in.
+
+## Settings
+
+Open the app home page → **Customer restriction rules** → create a rule.
+
+| Setting | Example value |
+| --- | --- |
+| Rule name | VIP-exclusive collection |
+| Customer tag | VIP, then click Add tag |
+| Tag restriction mode | Customers without these tags cannot purchase |
+| Require a customer account sign-in | Checked |
+| Applicable items | Collections: member-exclusive collection |
+| Timing | Checkout only |
+
+## Steps
+
+1. Add `VIP` to eligible Shopify customer profiles.
+2. Create the rule. Choose **Customers without these tags cannot purchase**.
+3. Select **Active** and save. Return to **Customer restrictions** and turn on **Enable customer restriction rules**.
+
+## Test your configuration
+
+| Test | Expected result for this scenario |
+| --- | --- |
+| Signed-in VIP buys an exclusive product | Passes this eligibility rule |
+| Signed-in customer without VIP buys an exclusive product | Blocked |
+| Guest buys an exclusive product | Sign-in required |
+| Regular customer buys only products outside the collection | Outside this rule’s scope |
+
+<Warning>This restricts purchasing. It does not hide product pages, prices or collections.</Warning>
+
+You can also add a [VIP quantity allowance](/en/scenarios/vip-quantity).

@@ -1,4 +1,3 @@
-> **First-time setup**: Customize this file for your project. Prompt the user to customize this file for their project.
 > For Mintlify product knowledge (components, configuration, writing standards),
 > install the Mintlify skill: `npx skills add https://mintlify.com/docs`
 
@@ -14,12 +13,19 @@
 
 ## Terminology
 
-{/* Add product-specific terms and preferred usage */}
-{/* Example: Use "workspace" not "project", "member" not "user" */}
+- Site names: 订单限制帮助中心 / Order Limits Help Center / 注文制限ヘルプセンター. Do not show the vendor brand.
+- Chinese app display name: 订单限购. Preserve actual UI labels when explaining app settings.
+- Write for Shopify merchants and store operators.
+- Keep product-level, variant-level, individual, combined, and cumulative limits distinct.
 
 ## Style preferences
 
-{/* Add any project-specific style rules below */}
+- Chinese is the primary and default documentation language. Provide complete Japanese and English versions.
+- Keep Chinese pages at the existing root paths, Japanese under `ja/`, and English under `en/`.
+- Keep page structure, scenario values, supported template tokens, and feature boundaries aligned across all three languages.
+- Localize internal links and navigation. Do not link translated pages back to Chinese by default.
+- App UI labels currently come from Chinese source. Translated instructions must include a way to find the actual labels.
+- Use the supplied logo, brand purple `#A07EC8`, and a strict light-only theme.
 
 - Use active voice and second person ("you")
 - Keep sentences concise — one idea per sentence
@@ -29,5 +35,8 @@
 
 ## Content boundaries
 
-{/* Define what should and shouldn't be documented */}
-{/* Example: Don't document internal admin features */}
+- Document verified merchant-facing capabilities from the adjacent `xiangou` source.
+- Prioritize scenario recipes with settings, steps, expected allowed/blocked cases, and limitations.
+- Do not infer capabilities from competitor documentation.
+- Do not invent plans, prices, support contacts, compatibility guarantees, or app UI translations.
+- Keep internal implementation and source-review notes in `.mintlify/`, outside merchant guides.

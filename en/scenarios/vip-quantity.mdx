@@ -1,0 +1,42 @@
+---
+title: "Give VIPs 4 units and other customers 2"
+description: "Create mutually exclusive tag conditions for different quantity allowances."
+sidebarTitle: "Customer allowances"
+keywords: ["Shopify", "Order Limits", "Give VIPs 4 units and other customers 2"]
+---
+
+VIP customers can buy up to 4 units of a new product, while everyone else can buy 2. Two complementary customer-tag rules keep the customer groups separate.
+
+## Settings
+
+Open the app home page → **Customer tag quantity rules** → create a rule.
+
+| Setting | Example value |
+| --- | --- |
+| Rule type for both rules | Use different quantities by customer tag |
+| Scope for both rules | Specific products: the same new product |
+| Calculation for both rules | Limit each applicable item individually |
+| Rule A: tag condition | Customers with any of these tags: VIP |
+| Rule A: maximum | 4 |
+| Rule B: tag condition | Customers without these tags: VIP |
+| Rule B: maximum | 2 |
+
+## Steps
+
+1. Add the `VIP` tag to your test member’s Shopify customer profile.
+2. Create and activate both rules. After entering a tag, click **Add tag**.
+3. Enable quantity rules and cart/checkout validation on the quantity overview page.
+4. Check **All quantity rules** for a general individual rule covering the same product. Move the specific rules above it if necessary.
+
+## Test your configuration
+
+| Test | Expected result for this scenario |
+| --- | --- |
+| Signed-in VIP buys 4 | Allowed |
+| Signed-in VIP buys 5 | Blocked |
+| Signed-in customer without VIP buys 3 | Blocked |
+| Guest buys 3 | Blocked as the VIP tag is not identified |
+
+<Note>Sign in with the appropriate customer account when testing tags. The store must identify the customer to use the VIP allowance.</Note>
+
+See [rule priority](/en/settings/rule-priority) for overlapping rules.

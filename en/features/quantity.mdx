@@ -1,0 +1,48 @@
+---
+title: "How quantity limits are calculated"
+description: "Choose product, variant, individual or combined quantity settings."
+sidebarTitle: "Quantity calculation"
+keywords: ["Shopify", "Order Limits", "How quantity limits are calculated"]
+---
+
+Quantity limits set a minimum, a maximum, or both. Edit a product or variant directly, or create rules for all products, selected products or collections.
+
+## Choose the right entry point
+
+| Entry point | Use it for | Required switch |
+| --- | --- | --- |
+| **Quantity limits by product** | Individual product and variant thresholds | **Enable product quantity limits** |
+| **All quantity rules** | Product ranges and calculation methods | **Enable quantity rules** |
+| **Customer tag quantity rules** | Different customer-group allowances | **Enable quantity rules** |
+| **Cumulative purchase rules** | Restricting repeat purchases | **Enable quantity rules** |
+
+Also enable **Cart and checkout validation** on the quantity overview page.
+
+## Product versus variant
+
+A product-level limit combines its variants. One small and two medium shirts of the same product count as 3 units.
+
+A variant-level limit checks that variant separately. If the medium variant has a maximum of 1, two mediums are blocked even if the product has remaining allowance.
+
+In **Quantity limits by product**, search for a product and edit its status, minimum and maximum. Expand variants to set their own thresholds. Confirm changes have saved, then test the storefront.
+
+## Individual versus combined
+
+| Calculation | With a maximum of 3 |
+| --- | --- |
+| **Limit each applicable item individually** | Product A can have 3 units and product B can also have 3; variants of one product are combined |
+| **Limit the combined cart quantity of applicable items** | A × 1 plus B × 2 uses the shared allowance |
+
+## Minimums and timing
+
+Leave the minimum blank or set it to `0` for no minimum. Fill at least one of the minimum or maximum fields.
+
+Quantity minimums are checked at checkout so customers can add items one at a time. Maximums follow the rule’s selected timing.
+
+<Warning>A minimum is not a purchase multiple. A minimum of 6 also permits 7 units. There is no quantity-step setting in the current rule editor.</Warning>
+
+## When rules overlap
+
+Individual quantity rules use the first matching rule in **All rules**. Product-level limits, variant limits, combined rules and cumulative rules have different combination behavior. Read [rule priority](/en/settings/rule-priority).
+
+Try [a 2-unit product cap](/en/scenarios/limited-release) or [a 3-unit collection cap](/en/scenarios/mix-and-match).

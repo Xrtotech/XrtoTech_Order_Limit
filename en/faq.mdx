@@ -1,0 +1,43 @@
+---
+title: "Frequently asked questions"
+description: "Quick answers about calculations, identity and feature boundaries."
+sidebarTitle: "FAQ"
+keywords: ["Shopify", "Order Limits", "Frequently asked questions"]
+---
+
+When using Order Limit, distinguish single-cart limits, buying eligibility and recorded purchase history. These answers clarify commonly confused settings.
+
+<AccordionGroup>
+<Accordion title="Is a per-order limit a lifetime customer limit?">
+No. Ordinary quantity rules check the current cart. For repeat purchases, use [cumulative rules](/en/features/purchase-history) and add a separate first-order quantity cap.
+</Accordion>
+<Accordion title="Can I require multiples of 6?">
+The current editor has minimum, maximum and calculation settings, but no step or multiple setting. A minimum of 6 allows 7.
+</Accordion>
+<Accordion title="Why can a customer add 1 unit when the minimum is 6?">
+Quantity minimums check at checkout so customers can build the cart incrementally.
+</Accordion>
+<Accordion title="Do different colors count together?">
+Product settings and individual quantity rules combine variants of the same product. Variant settings check separately. Use combined calculation to share an allowance across different products.
+</Accordion>
+<Accordion title="Must customers match every listed tag?">
+No. Any one listed tag is a match. An allowlist lets customers buy when at least one required tag matches.
+</Accordion>
+<Accordion title="Will customer restrictions hide products or prices?">
+No. They check buying eligibility, not product visibility or page access.
+</Accordion>
+<Accordion title="Do weight rules set shipping fees or split packages?">
+No. They only check applicable merchandise weight. Configure packaging, shipping charges and fulfillment separately.
+</Accordion>
+<Accordion title="Do amount thresholds use compare-at prices?">
+No. They use current applicable cart line amounts, with thresholds entered in the shop’s base currency. See [price calculation](/en/features/price).
+</Accordion>
+<Accordion title="Can I reset customer allowances daily or monthly?">
+The current cumulative rule has no time window or scheduled reset. Do not use it to promise daily or monthly allowances.
+</Accordion>
+<Accordion title="Are delivery, payment method or bundle restrictions available?">
+This manual documents the verified quantity, price, weight and customer features. It does not present delivery methods, payment methods, page access or bundle rules as existing app features.
+</Accordion>
+</AccordionGroup>
+
+For configuration issues, follow [troubleshooting](/en/troubleshooting/rules-not-working).

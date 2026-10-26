@@ -1,0 +1,40 @@
+---
+title: "Require a merchandise amount of at least 100"
+description: "Set a minimum using the current amount of applicable cart items."
+sidebarTitle: "Minimum order value"
+keywords: ["Shopify", "Order Limits", "Require a merchandise amount of at least 100"]
+---
+
+Your store requires merchandise worth at least 100 before checkout. Use a price rule and enter the threshold in the shop’s base currency.
+
+## Settings
+
+Open the app home page → **Price rules** → create a price rule.
+
+| Setting | Example value |
+| --- | --- |
+| Rule name | Minimum merchandise amount 100 |
+| Minimum amount | 100 |
+| Maximum amount | Leave blank |
+| Applicable products | All products |
+| Rule type | Cart price limit |
+| Timing | Checkout only |
+
+## Steps
+
+1. Create the rule with the settings above. Enter amounts in the shop’s base currency.
+2. Select **Active** and click **Save and activate**.
+3. Return to **Price limits**, turn on **Enable price rules**, and check for any saving error.
+
+## Test your configuration
+
+| Test | Expected result for this scenario |
+| --- | --- |
+| Current merchandise amount 99 | Blocked |
+| Current merchandise amount 100 | Allowed |
+| Current merchandise amount 120 | Allowed |
+| Compare-at amount 120, current merchandise amount 90 | Blocked |
+
+<Warning>The rule checks applicable merchandise amounts, not the final order total including shipping and taxes. Test your actual discounts and markets.</Warning>
+
+To limit a collection instead, change the scope to **Collections**. See [price limits](/en/features/price).

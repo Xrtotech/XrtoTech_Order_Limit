@@ -1,0 +1,41 @@
+---
+title: "Use different minimum amounts for wholesale and retail"
+description: "Set complementary tag conditions for wholesale and other customers."
+sidebarTitle: "Customer pricing"
+keywords: ["Shopify", "Order Limits", "Use different minimum amounts for wholesale and retail"]
+---
+
+Customers tagged wholesale must reach 500 in merchandise value. Other customers must reach 100. Two price rules apply different thresholds to these separate groups.
+
+## Settings
+
+Open the app home page → **Price rules** → create a price rule.
+
+| Setting | Example value |
+| --- | --- |
+| Rule type | Use different price limits by customer tag |
+| Applicable products | All products |
+| Rule A | Tag wholesale, customers with the tag, minimum 500 |
+| Rule B | Tag wholesale, customers without the tag, minimum 100 |
+| Maximum amount for both | Leave blank |
+| Timing | Checkout only |
+
+## Steps
+
+1. Add `wholesale` to your test wholesale customer’s profile.
+2. Create both rules, add the tag, and choose the corresponding matching condition.
+3. Activate and save both rules, then turn on **Enable price rules**.
+4. Test with a signed-in wholesale customer and a regular customer.
+
+## Test your configuration
+
+| Test | Expected result for this scenario |
+| --- | --- |
+| Wholesale customer: 499 | Blocked |
+| Wholesale customer: 500 | Allowed |
+| Regular customer: 100 | Allowed |
+| Guest: 99 | Blocked under the non-matching group |
+
+<Note>Every matching price rule is checked. Remove or revise an additional all-customer minimum of 500; otherwise regular customers must satisfy it too.</Note>
+
+Read [price calculations and currency conversion](/en/features/price).

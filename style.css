@@ -1,0 +1,23 @@
+/* Light-only brand accents. Layout and responsive navigation remain Mintlify native. */
+:root { color-scheme: light; }
+::selection { background: #eee5f7; color: #38224e; }
+#content-area a:not(.card) { text-underline-offset: 3px; }
+#content-area table th { background: #f8f5fc; }
+
+/* Keep localized site names in sync with Mintlify's active language. */
+img.nav-logo { height: 32px !important; width: auto !important; }
+html:lang(en) img.nav-logo { content: url('/logo/order-limit-en.svg'); }
+html:lang(ja) img.nav-logo { content: url('/logo/order-limit-ja.svg'); }
+
+/* Give every cell breathing room, including native first/last columns. */
+#content-area table :is(th, td) {
+  padding: 14px 20px !important;
+  line-height: 1.75;
+  vertical-align: top;
+}
+#content-area table th { font-weight: 600; }
+
+/* Hide platform attribution and page actions throughout the help center. */
+a[href*="utm_campaign=poweredBy"],
+#page-context-menu,
+#page-context-menu-button { display: none !important; }

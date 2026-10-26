@@ -1,0 +1,45 @@
+---
+title: "How weight limits are calculated"
+description: "Use variant weights multiplied by quantities to set total merchandise thresholds."
+sidebarTitle: "Weight calculation"
+keywords: ["Shopify", "Order Limits", "How weight limits are calculated"]
+---
+
+Weight limits total applicable variant weights multiplied by cart quantities. Rules can apply to all products, selected products or collections, with optional customer-tag conditions.
+
+## Check product weights first
+
+**Weight limits by product** shows products and their variant weights. Create the actual restrictions under **Weight rules**.
+
+Verify each applicable variant’s weight in Shopify product details. Missing, zero or invalid values do not contribute valid weight and can make the calculated total lower than the real total.
+
+## Create a weight rule
+
+1. Open **Weight rules** and create a rule.
+2. Choose a weight unit and enter a minimum or maximum weight, or both.
+3. Select the applicable products.
+4. Choose all customers or a customer-tag condition.
+5. Set the timing and **Active** status, then click **Save and activate**.
+6. Turn on **Enable weight rules** on the **Weight limits** page.
+
+## Calculation example
+
+Total weight is each applicable variant’s unit weight multiplied by quantity, then summed.
+
+| Product | Unit weight | Quantity | Contribution |
+| --- | --- | --- | --- |
+| Coffee A | 500 g | 2 | 1 kg |
+| Coffee B | 1 kg | 3 | 3 kg |
+| Total | | | 4 kg |
+
+Supported units are `g`, `kg`, `oz` and `lb`. Mixed units convert automatically. A weight equal to the threshold satisfies it.
+
+## Product and customer scope
+
+A selected-product or collection rule sums only matching items. A cart without those items is not required to buy them.
+
+Tag conditions can match customers with or without specified tags. Every matching weight rule is checked, so avoid conflicting overlapping ranges.
+
+<Warning>Packaging is not included. The rule does not set shipping charges, split packages or select carriers.</Warning>
+
+Try [a 20 kg merchandise cap](/en/scenarios/shipping-weight).

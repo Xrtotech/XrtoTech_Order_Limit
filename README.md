@@ -1,55 +1,33 @@
-# Mintlify Starter Kit
+# 订单限制帮助中心
 
-Use the starter kit to get your docs deployed and ready to customize.
+基于 Mintlify 的中、日、英三语 Shopify 商家手册（中文默认），采用品牌紫色和固定浅色主题。
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+## 内容结构
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
+- `index.mdx`：中文帮助中心首页，保留现有根路径。
+- `ja/`：23 页日文文档。
+- `en/`：23 页英文文档。
+- `quickstart.mdx`：第一条限购规则。
+- `scenarios/`：10 个经营场景及场景索引。
+- `features/`：数量、价格、重量、客户与历史购买说明。
+- `settings/`：规则组合和顾客提示。
+- `troubleshooting/`：排查步骤与测试清单。
+- `.mintlify/product-brief.md`：内容定位与核对依据。
 
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
-
-## AI-assisted writing
-
-Set up your AI coding tool to work with Mintlify:
+## 本地预览
 
 ```bash
-npx skills add https://mintlify.com/docs
+npm install -g mint
+mint dev --no-open
 ```
 
-This command installs Mintlify's documentation skill for your configured AI tools like Claude Code, Cursor, Windsurf, and others. The skill includes component reference, writing standards, and workflow guidance.
+## 内容校验
 
-See the [AI tools guides](/ai-tools) for tool-specific setup.
-
-## Development
-
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
-
-```
-npm i -g mint
+```bash
+mint validate
+mint broken-links
 ```
 
-Run the following command at the root of your documentation, where your `docs.json` is located:
+文档能力依据相邻 `xiangou` 应用源码核对。示例数值不代表产品默认值。修改功能后同步更新场景测试与边界说明。品牌图片保留在 `images/order-limit-brand.png`，紫色为 `#A07EC8`。
 
-```
-mint dev
-```
-
-View your local preview at `http://localhost:3000`.
-
-## Publishing changes
-
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
-
-## Need help?
-
-### Troubleshooting
-
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
-
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
+文档语言已确认为中文、日文、英文，中文为主。修改中文内容时，同步对应的日文、英文页面并保持站内链接语言一致。发布前需用真实店铺复核操作界面。此仓库的本地编辑不代表已发布上线。

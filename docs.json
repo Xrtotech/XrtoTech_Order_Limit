@@ -1,72 +1,250 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "订单限制帮助中心",
+  "description": "订单限制帮助中心：按场景配置 Shopify 数量、金额、重量与客户购买限制。",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#A07EC8",
+    "light": "#A07EC8",
+    "dark": "#A07EC8"
+  },
+  "appearance": {
+    "default": "light",
+    "strict": true
   },
   "favicon": "/favicon.svg",
+  "logo": "/logo/order-limit.svg",
   "navigation": {
-    "pages": [
+    "languages": [
       {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+        "language": "zh",
+        "default": true,
+        "groups": [
+          {
+            "group": "开始使用",
+            "pages": [
+              "index",
+              "quickstart",
+              "getting-started/how-it-works"
+            ]
+          },
+          {
+            "group": "场景示例",
+            "pages": [
+              "scenarios/index",
+              {
+                "group": "数量与起订",
+                "pages": [
+                  "scenarios/limited-release",
+                  "scenarios/mix-and-match",
+                  "scenarios/wholesale-minimum",
+                  "scenarios/vip-quantity"
+                ]
+              },
+              {
+                "group": "金额与重量",
+                "pages": [
+                  "scenarios/minimum-order-value",
+                  "scenarios/customer-pricing",
+                  "scenarios/shipping-weight"
+                ]
+              },
+              {
+                "group": "客户与复购",
+                "pages": [
+                  "scenarios/members-only",
+                  "scenarios/block-customers",
+                  "scenarios/repeat-purchase"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "功能说明",
+            "pages": [
+              "features/quantity",
+              "features/price",
+              "features/weight",
+              "features/customer",
+              "features/purchase-history"
+            ]
+          },
+          {
+            "group": "设置与排查",
+            "pages": [
+              "settings/rule-priority",
+              "settings/messages",
+              "troubleshooting/rules-not-working",
+              "faq"
+            ]
+          }
+        ],
+        "navbar": {
+          "links": [
+            {
+              "label": "场景示例",
+              "href": "/scenarios/index"
+            },
+            {
+              "label": "常见问题",
+              "href": "/faq"
+            }
+          ]
         }
-      ]
-    }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
+      },
       {
-        "label": "Support",
-        "href": "mailto:support@mintlify.com"
+        "language": "ja",
+        "groups": [
+          {
+            "group": "はじめに",
+            "pages": [
+              "ja/index",
+              "ja/quickstart",
+              "ja/getting-started/how-it-works"
+            ]
+          },
+          {
+            "group": "シナリオ",
+            "pages": [
+              "ja/scenarios/index",
+              {
+                "group": "数量と最低条件",
+                "pages": [
+                  "ja/scenarios/limited-release",
+                  "ja/scenarios/mix-and-match",
+                  "ja/scenarios/wholesale-minimum",
+                  "ja/scenarios/vip-quantity"
+                ]
+              },
+              {
+                "group": "金額と重量",
+                "pages": [
+                  "ja/scenarios/minimum-order-value",
+                  "ja/scenarios/customer-pricing",
+                  "ja/scenarios/shipping-weight"
+                ]
+              },
+              {
+                "group": "顧客と再購入",
+                "pages": [
+                  "ja/scenarios/members-only",
+                  "ja/scenarios/block-customers",
+                  "ja/scenarios/repeat-purchase"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "機能ガイド",
+            "pages": [
+              "ja/features/quantity",
+              "ja/features/price",
+              "ja/features/weight",
+              "ja/features/customer",
+              "ja/features/purchase-history"
+            ]
+          },
+          {
+            "group": "設定と問題の解決",
+            "pages": [
+              "ja/settings/rule-priority",
+              "ja/settings/messages",
+              "ja/troubleshooting/rules-not-working",
+              "ja/faq"
+            ]
+          }
+        ],
+        "navbar": {
+          "links": [
+            {
+              "label": "シナリオ",
+              "href": "/ja/scenarios/index"
+            },
+            {
+              "label": "よくある質問",
+              "href": "/ja/faq"
+            }
+          ]
+        }
+      },
+      {
+        "language": "en",
+        "groups": [
+          {
+            "group": "Getting started",
+            "pages": [
+              "en/index",
+              "en/quickstart",
+              "en/getting-started/how-it-works"
+            ]
+          },
+          {
+            "group": "Scenarios",
+            "pages": [
+              "en/scenarios/index",
+              {
+                "group": "Quantity and minimums",
+                "pages": [
+                  "en/scenarios/limited-release",
+                  "en/scenarios/mix-and-match",
+                  "en/scenarios/wholesale-minimum",
+                  "en/scenarios/vip-quantity"
+                ]
+              },
+              {
+                "group": "Amount and weight",
+                "pages": [
+                  "en/scenarios/minimum-order-value",
+                  "en/scenarios/customer-pricing",
+                  "en/scenarios/shipping-weight"
+                ]
+              },
+              {
+                "group": "Customers and repeat purchases",
+                "pages": [
+                  "en/scenarios/members-only",
+                  "en/scenarios/block-customers",
+                  "en/scenarios/repeat-purchase"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Features",
+            "pages": [
+              "en/features/quantity",
+              "en/features/price",
+              "en/features/weight",
+              "en/features/customer",
+              "en/features/purchase-history"
+            ]
+          },
+          {
+            "group": "Settings and troubleshooting",
+            "pages": [
+              "en/settings/rule-priority",
+              "en/settings/messages",
+              "en/troubleshooting/rules-not-working",
+              "en/faq"
+            ]
+          }
+        ],
+        "navbar": {
+          "links": [
+            {
+              "label": "Scenarios",
+              "href": "/en/scenarios/index"
+            },
+            {
+              "label": "FAQ",
+              "href": "/en/faq"
+            }
+          ]
+        }
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
-    }
-  },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
     ]
   },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+  "contextual": {
+    "options": []
   }
 }

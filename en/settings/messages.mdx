@@ -1,0 +1,61 @@
+---
+title: "Customize customer messages and languages"
+description: "Edit category-specific messages and preserve the supported template tokens."
+sidebarTitle: "Messages and languages"
+keywords: ["Shopify", "Order Limits", "Customize customer messages and languages"]
+---
+
+Order Limit shows a restriction message when a customer fails a rule. Configure messages in each category so customers know how to adjust their cart.
+
+## Edit a message
+
+1. Open the **Quantity limits**, **Price limits**, **Weight limits** or **Customer restrictions** overview.
+2. Under customer messages, click **Configure messages**.
+3. Choose an existing language or use **Add language**.
+4. Edit the relevant minimum, maximum, range or eligibility message.
+5. Click **Save**, then test with that storefront or checkout language.
+
+Each category has its own templates. Product/variant quantity settings and quantity rules share the quantity templates; you do not edit a separate message for every rule.
+
+## Keep dynamic tokens intact
+
+Use only tokens supported by that message category. Preserve the double braces and exact spelling when copying examples.
+
+### Quantity message
+
+```text
+You can buy up to {{maxQuantity}} units of {{itemName}}. Please adjust your cart before checkout.
+```
+
+| Token | Meaning |
+| --- | --- |
+| `{{itemName}}` | Product or applicable item name |
+| `{{productTitle}}` | Product title |
+| `{{minQuantity}}` | Minimum quantity |
+| `{{maxQuantity}}` | Maximum quantity |
+| `{{currentQuantity}}` | Quantity being checked |
+| `{{excessQuantity}}` | Excess quantity |
+
+### Amount message
+
+```text
+Applicable items must total at least {{minAmount}}. The current amount is {{currentAmount}}.
+```
+
+Amount templates support `{{itemName}}`, `{{minAmount}}`, `{{maxAmount}}` and `{{currentAmount}}`.
+
+### Weight message
+
+```text
+Applicable items must not exceed {{maxWeight}}. The current weight is {{currentWeight}}.
+```
+
+Weight templates support `{{minWeight}}`, `{{maxWeight}}` and `{{currentWeight}}`.
+
+## Test the selected language
+
+Messages are selected using storefront/checkout language and available templates, with fallback text when needed. Locale matching details differ between categories, so test each enabled language and market.
+
+<Note>A rule name is only for admin organization. Renaming it does not translate the customer message. Changing the documentation language also does not change your storefront message configuration.</Note>
+
+If a message is wrong, check its category, language, saved state and token spelling.

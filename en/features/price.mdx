@@ -1,0 +1,45 @@
+---
+title: "How price limits are calculated"
+description: "Set amount ranges using applicable merchandise and the shop’s base currency."
+sidebarTitle: "Amount calculation"
+keywords: ["Shopify", "Order Limits", "How price limits are calculated"]
+---
+
+Price limits check the current combined amount of applicable merchandise. Set a minimum, a maximum, or an amount range.
+
+## Create a price rule
+
+1. Open **Price rules** from the app home page and create a rule.
+2. Fill in at least one amount threshold.
+3. Choose all products, specific products or collections.
+4. Select **Cart price limit** or **Use different price limits by customer tag**.
+5. Choose the timing, select **Active**, and click **Save and activate**.
+6. Return to **Price limits** and turn on **Enable price rules**.
+
+## What counts toward the amount?
+
+| Item | Calculation |
+| --- | --- |
+| Applicable merchandise | Sum of current cart line amounts |
+| Products outside the scope | Excluded |
+| Compare-at prices | Excluded |
+| Shipping and taxes | Not added as merchandise amounts |
+| Discounts | Uses the current line amount available during validation; test your actual discount combinations |
+
+For a coffee collection minimum of 100, coffee worth 80 plus a mug worth 50 still fails if the mug is outside the collection.
+
+<Note>A specific-product or collection rule does not require customers to buy from that range when their cart contains no matching items. Equality with a minimum or maximum satisfies that threshold.</Note>
+
+## Markets and currencies
+
+Enter thresholds in the shop’s base currency. At checkout in another market currency, thresholds use Shopify’s checkout conversion rate and the checkout currency’s precision.
+
+For example, a base-currency threshold of 100 converts to 120 at a rate of 1.2. This is an example rate, not a fixed rate.
+
+## Customer groups
+
+Add one or more tags and choose matching or non-matching customers. Any one matching tag counts as a match. Guests whose tags are not identified fall into the non-matching group.
+
+Every matching price rule is checked. The first-match priority used by individual quantity rules does not apply to price rules.
+
+Try [a minimum merchandise amount](/en/scenarios/minimum-order-value) or [separate wholesale and retail thresholds](/en/scenarios/customer-pricing).

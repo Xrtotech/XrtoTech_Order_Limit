@@ -1,0 +1,46 @@
+---
+title: "Cumulative purchase boundaries"
+description: "Understand first purchases, recorded history, product scope and refund behavior."
+sidebarTitle: "Purchase history"
+keywords: ["Shopify", "Order Limits", "Cumulative purchase boundaries"]
+---
+
+Cumulative purchase limits manage repeat purchases of a product. Understand how recorded history combines with the current cart before setting the threshold.
+
+## First purchase versus repeat purchase
+
+A customer with no recorded purchase of a product is not capped by the cumulative threshold on their first purchase. Add a cart quantity rule to control the first order.
+
+Once history exists, each product is checked using recorded quantity plus current cart quantity. Exceeding the threshold blocks the purchase. Variants of one product count together; different products do not share one allowance.
+
+| Cumulative threshold: 3 | Result |
+| --- | --- |
+| No history, first purchase of 5 | The cumulative rule alone does not block; add a single-order cap |
+| History 1, cart 2 | Allowed: total 3 |
+| History 1, cart 3 | Blocked: total 4 |
+| History 3, cart 1 | Blocked |
+
+## Identity and record source
+
+- Customers must sign in to buy products covered by cumulative rules.
+- Newly created orders linked to a customer record non-subscription product quantities.
+- Orders from before the app was installed are not automatically imported.
+- Orders already recorded by the app before a rule was enabled may affect later checks. Activating a rule does not reset history.
+- Records update after order creation processing. Do not assume immediate synchronization between consecutive or concurrent checkouts.
+
+<Warning>Counting is based on order creation, not payment completion. The current implementation does not automatically reduce counts after refunds or cancellations, and has no daily or monthly reset.</Warning>
+
+## Product scope
+
+A cumulative rule supports at most 250 products. For **All products**, the shop’s total product count must also be within 250. Larger stores should choose **Specific products** within this limit.
+
+Collections are not supported. When changing the product selection, check existing purchase records as well.
+
+## Recommended sample setup
+
+1. A cart quantity rule for the sample: individual calculation, maximum `1`.
+2. A cumulative rule for the same sample: threshold `1`.
+
+Follow the [repeat sample purchase test](/en/scenarios/repeat-purchase).
+
+<Note>Identity is based on the customer account the store recognizes. This feature does not promise to identify the same person across different accounts.</Note>

@@ -1,0 +1,41 @@
+---
+title: "Keep merchandise weight within 20 kg"
+description: "Multiply variant weights by quantities to limit the total merchandise weight."
+sidebarTitle: "Weight cap"
+keywords: ["Shopify", "Order Limits", "Keep merchandise weight within 20 kg"]
+---
+
+Your fulfillment process needs merchandise in each order to weigh no more than 20 kg. A weight rule totals product variant weights; it does not include boxes or packing materials.
+
+## Settings
+
+Open the app home page → **Weight rules** → create a weight rule.
+
+| Setting | Example value |
+| --- | --- |
+| Rule name | Maximum merchandise weight 20 kg |
+| Rule weight unit | kg |
+| Minimum weight | Leave blank |
+| Maximum weight | 20 |
+| Applicable products | All products |
+| Applicable customers | All customers |
+| Timing | Checkout only |
+
+## Steps
+
+1. Check variant weights under **Weight limits by product**. Correct missing data in Shopify product details.
+2. Create the rule, select **Active**, and click **Save and activate**.
+3. Return to **Weight limits** and turn on **Enable weight rules**.
+
+## Test your configuration
+
+| Test | Expected result for this scenario |
+| --- | --- |
+| 10 units at 2 kg each | Allowed: 20 kg |
+| 11 units at 2 kg each | Blocked: 22 kg |
+| 2 units at 500 g + 9 units at 2 kg | Allowed: 19 kg |
+| A variant has no valid weight | Correct its data before testing the weight cap |
+
+<Warning>The rule does not split orders, calculate shipping charges or choose a shipping method. Lower the merchandise cap yourself if you need to reserve weight for packaging.</Warning>
+
+For collection and tag-based thresholds, see [weight limits](/en/features/weight).

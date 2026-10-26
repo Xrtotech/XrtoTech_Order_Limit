@@ -1,0 +1,49 @@
+---
+title: "A rule is not working as expected"
+description: "Check activation, product scope, customer identity and overlapping restrictions."
+sidebarTitle: "Troubleshooting"
+keywords: ["Shopify", "Order Limits", "A rule is not working as expected"]
+---
+
+When Order Limit does not behave as expected, fix one product, one customer and one test cart. Change one setting at a time so you can identify the cause.
+
+<Steps>
+<Step title="Check activation">
+Confirm the rule is not **Draft**. Reopen it after saving to check the stored values. Price, weight and customer rules need their own overview switches enabled.
+
+For quantity restrictions, check the appropriate **Enable quantity rules** or **Enable product quantity limits** switch and confirm **Cart and checkout validation** is enabled.
+</Step>
+<Step title="Check products and calculation">
+Verify the actual cart products are selected. Collections use current membership. Check whether the quantity calculation is individual or combined.
+</Step>
+<Step title="Check customer identity">
+Sign in with the correct account for tag tests. Check tags in the Shopify customer profile, confirm **Add tag** was used, and verify matching versus non-matching conditions.
+</Step>
+<Step title="Test at the right stage">
+Checkout-only rules do not check cart interactions. Quantity minimums also check at checkout. Successful add-to-cart alone does not prove the rule is failing.
+</Step>
+<Step title="Isolate other rules">
+Check list order, variant limits, combined rules and cumulative rules. Temporarily set unrelated rules to drafts, test, then restore them one at a time.
+</Step>
+</Steps>
+
+## Troubleshoot by symptom
+
+| Symptom | Check first |
+| --- | --- |
+| VIP allowance is too low | Sign-in, tags, earlier general rules, variant and combined caps |
+| Items below the quantity minimum can be added | Enter checkout to test the minimum |
+| Amount seems sufficient but checkout is blocked | Applicable current line amounts, exclusions, discounts, market conversion |
+| Calculated weight is too low | Every variant’s valid weight and unit |
+| A large first purchase bypasses the cumulative threshold | Add a single-order quantity rule |
+| Refunded purchases still count | Counts do not automatically decrease on refunds |
+| A product outside a collection is blocked | General rules or remaining in-scope cart items |
+| A theme does not show a cart message | Verify actual checkout enforcement, then review cart presentation |
+
+## If saving fails
+
+Read the page’s error. Too many collections, tags or message content may prevent saving. Reduce unnecessary configuration and try again; do not rely only on the switch’s appearance.
+
+For support, prepare the rule name, products, sign-in state, tags, cart quantities/amounts/weights, reproduction steps and actual message. Remove customer contact details and other personal information before sharing.
+
+See [rule priority](/en/settings/rule-priority).

@@ -1,0 +1,41 @@
+---
+title: "Require at least 6 units of each wholesale product"
+description: "Check each selected product against a minimum quantity at checkout."
+sidebarTitle: "Wholesale minimum"
+keywords: ["Shopify", "Order Limits", "Require at least 6 units of each wholesale product"]
+---
+
+You sell wholesale mugs and trays. Each product a customer chooses must have at least 6 units. An individual rule prevents one product from contributing to another product’s minimum.
+
+## Settings
+
+Open the app home page → **All quantity rules** → create a rule.
+
+| Setting | Example value |
+| --- | --- |
+| Rule name | Wholesale: minimum 6 per product |
+| Rule type | Cart quantity limit |
+| Minimum quantity | 6 |
+| Maximum quantity | Leave blank |
+| Calculation | Limit each applicable item individually |
+| Scope | Specific products: wholesale mugs and trays |
+| Timing | Checkout only |
+
+## Steps
+
+1. Create a quantity rule using the settings above. Select your actual products or collection.
+2. Set the status to **Active** and click **Save and activate**.
+3. Return to **Quantity limits**. Turn on **Enable quantity rules** and confirm **Cart and checkout validation** is enabled.
+
+## Test your configuration
+
+| Test | Expected result for this scenario |
+| --- | --- |
+| 5 mugs at checkout | Blocked |
+| 6 mugs | Allowed |
+| 3 mugs + 3 trays | Blocked: neither product reaches 6 |
+| 6 mugs, no trays | Allowed: buying trays is not required |
+
+<Warning>A minimum of 6 also allows 7. It does not require multiples such as 6, 12 and 18. The current editor has no purchase-step setting.</Warning>
+
+To let different products contribute to the same minimum, choose the combined calculation. See [quantity limits](/en/features/quantity).

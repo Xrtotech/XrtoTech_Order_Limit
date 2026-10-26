@@ -1,0 +1,33 @@
+---
+title: "運営シナリオから設定する"
+description: "設定内容、手順、期待されるテスト結果を使ってルールを作成します。"
+sidebarTitle: "シナリオ一覧"
+keywords: ["Shopify", "注文制限", "運営シナリオから設定する"]
+---
+
+Order Limit を小売の数量制限、卸売の最低数量、会員限定販売、再購入管理に使う例を紹介します。商品と数値をストアに合わせて変更し、ストアフロントで結果を確認してください。
+
+## 数量と最低購入条件
+
+<Columns cols={2}>
+<Card title="商品ごとに最大 2 点" href="/ja/scenarios/limited-release">同じ商品のバリエーションを合計します。</Card>
+<Card title="コレクション合計で最大 3 点" href="/ja/scenarios/mix-and-match">複数商品で共通の数量枠を使います。</Card>
+<Card title="卸売商品ごとに最低 6 点" href="/ja/scenarios/wholesale-minimum">チェックアウトで商品ごとに確認します。</Card>
+<Card title="VIP と一般顧客で上限を変更" href="/ja/scenarios/vip-quantity">タグの有無で対象グループを分けます。</Card>
+</Columns>
+
+## 金額と重量
+
+<Columns cols={2}>
+<Card title="商品金額を最低 100 にする" href="/ja/scenarios/minimum-order-value">対象商品の現在の金額で判定します。</Card>
+<Card title="卸売と小売で最低金額を変更" href="/ja/scenarios/customer-pricing">卸売は 500、その他の顧客は 100 にします。</Card>
+<Card title="商品重量を最大 20 kg にする" href="/ja/scenarios/shipping-weight">バリエーション重量に数量を掛けて合計します。</Card>
+</Columns>
+
+## 購入資格と再購入
+
+<Columns cols={2}>
+<Card title="VIP 限定コレクション" href="/ja/scenarios/members-only">タグとログインを購入条件にします。</Card>
+<Card title="特定顧客の購入を制限" href="/ja/scenarios/block-customers">対象グループによるセール商品の購入を制限します。</Card>
+<Card title="サンプルの再購入を制限" href="/ja/scenarios/repeat-purchase">初回の数量上限と購入記録を組み合わせます。</Card>
+</Columns>

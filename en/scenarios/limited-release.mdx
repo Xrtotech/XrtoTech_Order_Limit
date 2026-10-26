@@ -1,0 +1,41 @@
+---
+title: "Limit a new product to 2 units per order"
+description: "Combine variants of one product when enforcing a single-order quantity cap."
+sidebarTitle: "Limited release"
+keywords: ["Shopify", "Order Limits", "Limit a new product to 2 units per order"]
+---
+
+You are launching a limited-edition cup and want each order to contain at most 2 units. An individual quantity rule totals all variants of that product.
+
+## Settings
+
+Open the app home page → **All quantity rules** → create a rule.
+
+| Setting | Example value |
+| --- | --- |
+| Rule name | Limited cup: maximum 2 |
+| Rule type | Cart quantity limit |
+| Minimum quantity | Leave blank |
+| Maximum quantity | 2 |
+| Calculation | Limit each applicable item individually |
+| Scope | Specific products: limited cup |
+| Timing | Cart interactions and checkout |
+
+## Steps
+
+1. Create a quantity rule using the settings above. Select your actual products or collection.
+2. Set the status to **Active** and click **Save and activate**.
+3. Return to **Quantity limits**. Turn on **Enable quantity rules** and confirm **Cart and checkout validation** is enabled.
+
+## Test your configuration
+
+| Test | Expected result for this scenario |
+| --- | --- |
+| 2 cups | Allowed |
+| 3 cups | Blocked |
+| 1 red cup + 2 blue cups, variants of the same product | Blocked: product total is 3 |
+| 2 cups + 3 coasters outside the scope | Allowed by this rule |
+
+<Note>This rule checks each cart. It does not share a 2-unit allowance across multiple orders by the same customer.</Note>
+
+For repeat purchases, see [sample purchase limits](/en/scenarios/repeat-purchase).

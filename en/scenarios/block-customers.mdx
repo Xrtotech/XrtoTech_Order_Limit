@@ -1,0 +1,40 @@
+---
+title: "Block tagged customers from promotional products"
+description: "Prevent selected customer groups from buying a product collection."
+sidebarTitle: "Block customers"
+keywords: ["Shopify", "Order Limits", "Block tagged customers from promotional products"]
+---
+
+Customers tagged reseller should not buy your retail promotion collection. A customer restriction blocks customers who match that tag.
+
+## Settings
+
+Open the app home page → **Customer restriction rules** → create a rule.
+
+| Setting | Example value |
+| --- | --- |
+| Rule name | Resellers cannot buy retail promotions |
+| Customer tag | reseller |
+| Tag restriction mode | Customers with these tags cannot purchase |
+| Require a customer account sign-in | Checked |
+| Applicable items | Collections: retail promotions |
+| Timing | Checkout only |
+
+## Steps
+
+1. Confirm the target customer profiles have the `reseller` tag.
+2. Create the rule and click **Add tag** after entering the tag.
+3. Activate and save the rule, then turn on **Enable customer restriction rules**.
+
+## Test your configuration
+
+| Test | Expected result for this scenario |
+| --- | --- |
+| Signed-in reseller buys a promotion product | Blocked |
+| Signed-in customer without reseller buys a promotion product | Allowed by this rule |
+| Guest buys a promotion product | Must sign in first |
+| Reseller buys only items outside the collection | Outside this rule’s scope |
+
+<Note>Requiring sign-in also affects regular customers buying this collection. Tags depend on an identified customer; they do not deduplicate a person across different accounts.</Note>
+
+For the opposite tag condition, see [member exclusives](/en/scenarios/members-only).

@@ -1,0 +1,40 @@
+---
+title: "How overlapping rules are applied"
+description: "Understand quantity priority, product-limit merging and independent rule checks."
+sidebarTitle: "Rule priority"
+keywords: ["Shopify", "Order Limits", "How overlapping rules are applied"]
+---
+
+Order Limit combines different rule types in different ways. Quantity restrictions do not always use the strictest value from every matching rule.
+
+## Individual quantity rules use list order
+
+When several individual quantity rules match one product, the first active matching rule in **All rules** takes priority. Use the up and down controls to change the order.
+
+For example, a VIP rule allows 4 and a general rule allows 2. If the general rule is first, a matching VIP also uses 2.
+
+<Tip>Create complementary customer conditions: one rule for customers with VIP and one for customers without VIP. Also check for an earlier general rule.</Tip>
+
+## Product settings merge with the selected individual rule
+
+If a product-level setting and an individual quantity rule both apply, the configured values merge to the more permissive range: the lower minimum and the higher maximum.
+
+| Product setting | Selected individual rule | Effective product result |
+| --- | --- | --- |
+| Maximum 3 | Maximum 4 | Maximum 4 |
+| Minimum 6 | Minimum 2 | Minimum 2 |
+| Minimum 2, maximum 3 | Minimum 1, maximum 4 | Range 1 to 4 |
+
+Variant-level limits still check separately. A blue variant capped at 2 cannot exceed 2 even if the product’s effective maximum is 4.
+
+## Combined and cumulative checks are independent
+
+Combined cart quantity and cumulative rules still run. Moving them below an individual rule does not override them.
+
+A VIP individual cap of 4 does not bypass a collection combined cap of 3. Four units in that collection are still blocked.
+
+## Price, weight and eligibility
+
+All matching price, weight and customer restrictions are checked. Individual quantity list priority does not apply to these categories. The cart must satisfy every applicable check.
+
+If results differ from your expectations, follow [troubleshooting](/en/troubleshooting/rules-not-working). Temporarily save unrelated rules as drafts while testing.

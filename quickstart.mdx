@@ -1,47 +1,48 @@
 ---
-title: "Quickstart"
-description: "Begin with a guide on the fastest path to a successful outcome"
+title: "创建第一条限购规则"
+description: "设置指定产品每单最多购买 2 件，并验证规则是否生效。"
+keywords: ["Shopify", "订单限购", "创建第一条限购规则"]
+sidebarTitle: "快速上手"
 ---
 
-Describe how someone begins using your product. What is the first thing they need to do? Are there any prerequisites?
+第一次使用订单限购时，先用一个测试产品创建数量规则。这个例子限制同一产品在一次购物车中合计最多购买 2 件。
 
-A quickstart should take someone from zero to using your product. They'll get a quick win and a sense of what they can accomplish.
+## 开始前
 
-## Prerequisites
-
-Before you begin, you must have:
-
-- Requirement one (for example, Node.js 18+, a free account, an API key)
-- Requirement two (for example, a compatible device, a compatible browser, a compatible operating system)
-
-## Get started
+你需要能够进入 Shopify 后台并打开应用。准备一个可在前台购买的测试产品；如果产品有多个变体，请同时准备两个变体用于验证。
 
 <Steps>
-  <Step title="Install">
-    Describe how to install your product or sign up.
-
-    ```bash
-    npm install your-package
-    ```
+  <Step title="打开数量规则">
+    在 Shopify 后台打开 **应用** → **订单限购**。在首页点击 **所有数量规则**，进入创建规则页面。
   </Step>
-  <Step title="Configure">
-    Describe any setup or configuration needed before first use.
+  <Step title="填写规则">
+    将规则名称设为“测试产品每单限购 2 件”。选择 **购物车数量限制**，最大购买数量填 `2`，最小购买数量留空。数量计算方式选择 **分别限制每个适用商品**。
 
-    ```bash
-    your-cli init
-    ```
+    在 **适用对象** 选择 **指定产品**，然后选中你的测试产品。
   </Step>
-  <Step title="Run it">
-    Show the first thing a user does to see it working.
+  <Step title="保存并启用">
+    将 **显示时机** 设为 **购物车互动时和结账时**。在 **规则状态** 选择 **已启用**，点击 **保存并启用**。
 
-    ```bash
-    your-cli start
-    ```
+    回到 **数量限制** 首页，打开 **开启数量规则**。确认 **购物车与结账校验** 为 **已启用**；如果尚未启用，点击 **启用校验**。
+  </Step>
+  <Step title="到前台测试">
+    加购 2 件后进入结账，确认这条规则不拦截。再把数量改成 3 件，确认出现限制提示。
+
+    如果有多个变体，再测试同一产品的变体 A 买 1 件、变体 B 买 2 件。合计 3 件也应被限制。
   </Step>
 </Steps>
 
-<Tip>
-  Give people a way to get help. This could be a link to a support page, a chat with a customer support agent, or a forum for your product.
+## 检查结果
 
-  Example: Need help? Reach out to us at [support@yourcompany.com](mailto:support@yourcompany.com).
-</Tip>
+| 测试购物车 | 这条规则的预期结果 |
+| --- | --- |
+| 测试产品 1 件 | 通过 |
+| 测试产品 2 件 | 通过 |
+| 测试产品 3 件 | 拦截 |
+| 其他产品 3 件，未包含测试产品 | 不受这条规则限制 |
+
+这里的“通过”只表示满足本条规则。购物车仍需满足其他已启用规则。
+
+<Tip>先用 **草稿** 保存尚未准备好的规则。草稿不会参与限制。完成前台测试后，再将正式商品纳入规则。</Tip>
+
+下一步：[选择更多场景](/scenarios/index)，或[修改顾客看到的提示](/settings/messages)。

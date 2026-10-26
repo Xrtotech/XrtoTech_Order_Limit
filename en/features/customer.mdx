@@ -1,0 +1,40 @@
+---
+title: "Customer eligibility and sign-in"
+description: "Choose between tag blocklists, tag allowlists and account requirements."
+sidebarTitle: "Eligibility and sign-in"
+keywords: ["Shopify", "Order Limits", "Customer eligibility and sign-in"]
+---
+
+Customer restrictions control who can buy applicable products. Unlike customer-tag quantity rules, these rules determine eligibility rather than the allowed number of units.
+
+## Choose the tag direction
+
+| Setting | Effect |
+| --- | --- |
+| **Customers with these tags cannot purchase** | Blocklist: a match with any listed tag restricts the customer |
+| **Customers without these tags cannot purchase** | Allowlist: the customer needs at least one listed tag |
+
+For VIP-only sales, add `VIP` and choose the second option. Multiple tags use “any”, not “all”. Listing `VIP` and `Wholesale` does not require both.
+
+## Require sign-in
+
+Enable **Require a customer account sign-in** to make guests sign in before purchasing applicable products. This helps identify tags instead of relying on an unidentified visitor.
+
+For sign-in only, leave the tag list empty and enable the account requirement.
+
+<Note>All buyers of the applicable products must sign in when this requirement is enabled, even customers who are not blocked by tags.</Note>
+
+## Create a customer rule
+
+1. Open **Customer restriction rules** from the home page and create a rule.
+2. Enter tags and click **Add tag**, or skip tags for sign-in only.
+3. Select the correct tag mode and account requirement.
+4. Select all products, specific products or collections under applicable items.
+5. Choose the timing, select **Active**, and click **Save and activate**.
+6. Turn on **Enable customer restriction rules** on the customer overview page.
+
+## Purchasing is different from browsing
+
+These rules do not automatically hide product pages, prices or collections. They check buying eligibility and are not page-access control.
+
+Try [member exclusives](/en/scenarios/members-only) or [blocking tagged customers](/en/scenarios/block-customers).

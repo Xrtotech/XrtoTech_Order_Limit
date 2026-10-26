@@ -1,0 +1,42 @@
+---
+title: "Restrict repeat sample purchases"
+description: "Combine a single-order cap with a cumulative customer purchase rule."
+sidebarTitle: "Repeat samples"
+keywords: ["Shopify", "Order Limits", "Restrict repeat sample purchases"]
+---
+
+You want each customer to buy a particular sample only once. Cumulative rules do not cap a first purchase with no recorded history, so add a separate 1-unit cart rule.
+
+## Settings
+
+Use **All quantity rules** and **Cumulative purchase rules** on the app home page.
+
+| Setting | Example value |
+| --- | --- |
+| Rule A: type | Cart quantity limit |
+| Rule A: maximum | 1 |
+| Rule A: calculation | Limit each applicable item individually |
+| Rule B: type | Cumulative customer purchase limit |
+| Rule B: historical quantity threshold | 1 |
+| Scope for both | Specific products: the same sample |
+| Status for both | Active |
+
+## Steps
+
+1. Create rule A using the [single-product guide](/en/scenarios/limited-release), but set the maximum to `1`.
+2. Create rule B under **Cumulative purchase rules**. Set the threshold to `1` and choose the same sample.
+3. Activate and save both rules. Enable quantity rules and cart/checkout validation.
+4. Place a first order as a signed-in test customer with no recorded sample history. Wait for the purchase record to update before testing a second purchase.
+
+## Test your configuration
+
+| Test | Expected result for this scenario |
+| --- | --- |
+| Signed in, no history, first purchase of 1 | Allowed |
+| Signed in, no history, first purchase of 2 | Blocked by rule A |
+| Recorded history of 1, another purchase of 1 | Blocked by rule B |
+| Guest enters checkout with the sample | Sign-in required |
+
+<Warning>This is not a daily, monthly or email-based allowance. Review first-purchase behavior, record-update delays and refunds before using it in a promotion.</Warning>
+
+Required reading: [cumulative purchase boundaries](/en/features/purchase-history).
