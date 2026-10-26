@@ -1,9 +1,11 @@
 ---
-title: "運営シナリオから設定する"
-description: "設定内容、手順、期待されるテスト結果を使ってルールを作成します。"
+title: "Shopify 注文制限の活用例：小売・卸売・会員"
+description: "限定販売、コレクション合計、卸売の最低数量、最低金額、重量、ログイン、タグ別ルールを目的から選びます。設定表、操作手順、境界値テストで購入条件を確認します。"
 sidebarTitle: "シナリオ一覧"
-keywords: ["Shopify", "注文制限", "運営シナリオから設定する"]
+keywords: ["Shopify", "注文制限の活用例", "卸売最低数量", "会員制限"]
 ---
+
+{/* Screenshot plan M16: No new capture; see screenshot-plan.md M16 for reuse. */}
 
 Order Limit を小売の数量制限、卸売の最低数量、会員限定販売、再購入管理に使う例を紹介します。商品と数値をストアに合わせて変更し、ストアフロントで結果を確認してください。
 
@@ -31,3 +33,7 @@ Order Limit を小売の数量制限、卸売の最低数量、会員限定販�
 <Card title="特定顧客の購入を制限" href="/ja/scenarios/block-customers">対象グループによるセール商品の購入を制限します。</Card>
 <Card title="サンプルの再購入を制限" href="/ja/scenarios/repeat-purchase">初回の数量上限と購入記録を組み合わせます。</Card>
 </Columns>
+
+## その他の設定
+
+色やサイズの上限は[商品とバリエーション](/ja/getting-started/product-variant-limits)を確認します。タグなしでログインだけを要求するなら[ログイン必須](/ja/scenarios/login-required)を使います。すべての設定を[公開前テスト](/ja/getting-started/launch-checklist)で確認してください。

@@ -1,9 +1,11 @@
 ---
-title: "How price limits are calculated"
-description: "Set amount ranges using applicable merchandise and the shop’s base currency."
-sidebarTitle: "Amount calculation"
-keywords: ["Shopify", "Order Limits", "How price limits are calculated"]
+title: "How Shopify amount limits and currency conversion work"
+description: "Understand current item amounts, product scope and store-currency thresholds. Configure minimums or ranges and test discounts, markets and customer tags."
+sidebarTitle: "Price limits"
+keywords: ["Shopify", "amount calculation", "store currency", "price limit"]
 ---
+
+{/* Screenshot plan M08: M08-01-价格规则创建入口.png; M08-02-价格规则金额与货币.png; M08-03-价格功能开关.png */}
 
 Price limits check the current combined amount of applicable merchandise. Set a minimum, a maximum, or an amount range.
 
@@ -43,3 +45,7 @@ Add one or more tags and choose matching or non-matching customers. Any one matc
 Every matching price rule is checked. The first-match priority used by individual quantity rules does not apply to price rules.
 
 Try [a minimum merchandise amount](/en/scenarios/minimum-order-value) or [separate wholesale and retail thresholds](/en/scenarios/customer-pricing).
+
+## Use a maximum or a range
+
+For a maximum only, leave the minimum blank. For a range, fill both values with the maximum at least as large as the minimum. Equal boundaries pass. Test below minimum, at minimum, at maximum and above maximum using the [launch checklist](/en/getting-started/launch-checklist).

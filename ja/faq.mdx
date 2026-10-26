@@ -1,9 +1,11 @@
 ---
-title: "よくある質問"
-description: "計算方法、顧客の識別、機能の範囲について確認します。"
+title: "Shopify 注文制限 FAQ：数量・会員・再購入"
+description: "最低数量、バリエーション、購入倍数、顧客タグ、商品非表示、重量と送料、金額計算、累計の周期について確認し、現在の機能が運営目的に合うか判断します。"
 sidebarTitle: "よくある質問"
-keywords: ["Shopify", "注文制限", "よくある質問"]
+keywords: ["Shopify", "注文制限FAQ", "購入倍数", "会員制限"]
 ---
+
+{/* Screenshot plan M15: No new capture; see screenshot-plan.md M15 for reuse. */}
 
 Order Limit を使うときは、単回の数量制限、購入資格、記録済み購入履歴を区別してください。混同しやすい設定を以下で説明します。
 
@@ -38,6 +40,23 @@ Order Limit を使うときは、単回の数量制限、購入資格、記録�
 <Accordion title="配送方法、決済方法、バンドルの制限はありますか？">
 このガイドでは、確認済みの数量、金額、重量、顧客機能を説明しています。配送方法、決済方法、ページアクセス、バンドルのルールを既存機能としては紹介していません。
 </Accordion>
+<Accordion title="保存した後もスイッチの確認が必要ですか？">
+保存、有効状態、機能スイッチ、検証は別の確認です。数量ルールには **购物车与结账校验** も必要です。[最初の設定](/ja/quickstart)で順番を確認してください。
+</Accordion>
+<Accordion title="ルールを一時停止するには？">
+**草稿** と **保存为草稿** を使います。復元は **已启用** にして保存します。商品一覧では行の **限制状态** を変更します。[一時停止と復元](/ja/getting-started/launch-checklist)を参照してください。
+</Accordion>
+<Accordion title="ログインだけを要求する場合も VIP タグが必要ですか？">
+不要です。タグを空欄にし、**需要客户账户登录** をオンにします。[ログイン必須](/ja/scenarios/login-required)で確認できます。
+</Accordion>
+<Accordion title="最低条件があるコレクションを必ず購入させますか？">
+いいえ。対象商品がカートにある場合に確認します。対象外の商品だけのカートもテストしてください。
+</Accordion>
+<Accordion title="ヘルプの言語を変えるとストアの文面も変わりますか？">
+変わりません。各種類の顧客メッセージを別に設定し、ストアやチェックアウトの言語で確認します。[メッセージと言語](/ja/settings/messages)を参照してください。
+</Accordion>
 </AccordionGroup>
 
 設定の問題は[トラブルシューティング](/ja/troubleshooting/rules-not-working)を参照してください。
+
+種類に迷ったら[ルール選び](/ja/getting-started/choose-rule)を使い、公開前は[テスト一覧](/ja/getting-started/launch-checklist)で確認します。

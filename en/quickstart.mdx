@@ -1,9 +1,11 @@
 ---
-title: "Create your first quantity rule"
-description: "Limit a selected product to 2 units and test the result at checkout."
+title: "Set your first Shopify quantity limit: 2 units per order"
+description: "Create a two-unit product limit in Shopify. Select a test product, activate the rule and validation, then verify allowed and blocked checkout cases."
 sidebarTitle: "Quickstart"
-keywords: ["Shopify", "Order Limits", "Create your first quantity rule"]
+keywords: ["Shopify", "Shopify quantity limit", "first rule", "per order limit"]
 ---
+
+{/* Screenshot plan M03: M03-01-创建数量规则入口.png; M03-02-数量规则参数.png; M03-03-商品范围与创建启用.png; M03-04-数量功能开关与校验.png; M03-05-水杯2件通过-zh.png; M03-06-水杯3件拦截-zh.png */}
 
 Start with one test product in Order Limit. This guide limits the total quantity of that product, including all its variants, to 2 units in a cart.
 
@@ -13,15 +15,15 @@ Open the app from your Shopify admin. Prepare a product that customers can buy o
 
 <Steps>
 <Step title="Open quantity rules">
-Open **Apps** → **Order Limit**. On the app home page, choose **All quantity rules** and open the rule creation page.
+Open **Apps** → **Order Limit**. On the app home page, choose **All quantity rules** and click **创建规则** to open the editor.
 </Step>
 <Step title="Configure the rule">
 Name it “Test product: maximum 2”. Select **Cart quantity limit**, leave the minimum blank, and enter `2` as the maximum. Choose **Limit each applicable item individually**.
 
-Under **Applies to**, select **Specific products** and choose the test product.
+Under **Applies to**, select **Specific products** and click **选择产品** to choose the test product. Confirm its name appears in the editor.
 </Step>
 <Step title="Save and activate">
-Set the timing to **Cart interactions and checkout**. Select **Active** and click **Save and activate**.
+Set the timing to **Cart interactions and checkout**. Select **Active** and click **Create and activate** (**创建并启用**; **保存并启用** when editing).
 
 Return to **Quantity limits**, turn on **Enable quantity rules**, and confirm **Cart and checkout validation** is enabled. Otherwise, click **Enable validation**.
 </Step>
@@ -46,3 +48,9 @@ For a product with variants, also test 1 unit of variant A plus 2 of variant B. 
 <Tip>Save an unfinished rule as **Draft**. Draft rules do not enforce restrictions. Test before applying the rule to your live promotional products.</Tip>
 
 Next: [Browse scenarios](/en/scenarios/index), [edit customer messages](/en/settings/messages), or check the [Chinese UI labels](/en/getting-started/how-it-works#find-the-settings-in-the-app).
+
+## Apply the tested rule to live products
+
+Reopen the rule, replace the test product with the live product and click **保存并启用**. Retest 2 units allowed and 3 blocked. To pause, choose **草稿** and **保存为草稿**; renaming the rule does not pause it.
+
+If results differ, use [troubleshooting](/en/troubleshooting/rules-not-working). Complete the [launch checklist](/en/getting-started/launch-checklist) before rollout.

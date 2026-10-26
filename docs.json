@@ -2,7 +2,7 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "订单限制帮助中心",
-  "description": "订单限制帮助中心：按场景配置 Shopify 数量、金额、重量与客户购买限制。",
+  "description": "订单限制帮助中心：从新手入门到经营场景，学习 Shopify 商品限购、批发起订量、最低消费、重量与客户购买限制的配置和测试。",
   "colors": {
     "primary": "#A07EC8",
     "light": "#A07EC8",
@@ -24,8 +24,11 @@
             "group": "开始使用",
             "pages": [
               "index",
+              "getting-started/choose-rule",
               "quickstart",
-              "getting-started/how-it-works"
+              "getting-started/how-it-works",
+              "getting-started/product-variant-limits",
+              "getting-started/launch-checklist"
             ]
           },
           {
@@ -53,6 +56,7 @@
                 "group": "客户与复购",
                 "pages": [
                   "scenarios/members-only",
+                  "scenarios/login-required",
                   "scenarios/block-customers",
                   "scenarios/repeat-purchase"
                 ]
@@ -77,6 +81,12 @@
               "troubleshooting/rules-not-working",
               "faq"
             ]
+          },
+          {
+            "group": "隐私与数据",
+            "pages": [
+              "privacy-policy"
+            ]
           }
         ],
         "navbar": {
@@ -89,7 +99,12 @@
               "label": "常见问题",
               "href": "/faq"
             }
-          ]
+          ],
+          "primary": {
+            "type": "button",
+            "label": "安装应用",
+            "href": "https://apps.shopify.com/shopify-application-598"
+          }
         }
       },
       {
@@ -99,8 +114,11 @@
             "group": "はじめに",
             "pages": [
               "ja/index",
+              "ja/getting-started/choose-rule",
               "ja/quickstart",
-              "ja/getting-started/how-it-works"
+              "ja/getting-started/how-it-works",
+              "ja/getting-started/product-variant-limits",
+              "ja/getting-started/launch-checklist"
             ]
           },
           {
@@ -128,6 +146,7 @@
                 "group": "顧客と再購入",
                 "pages": [
                   "ja/scenarios/members-only",
+                  "ja/scenarios/login-required",
                   "ja/scenarios/block-customers",
                   "ja/scenarios/repeat-purchase"
                 ]
@@ -152,6 +171,12 @@
               "ja/troubleshooting/rules-not-working",
               "ja/faq"
             ]
+          },
+          {
+            "group": "プライバシーとデータ",
+            "pages": [
+              "ja/privacy-policy"
+            ]
           }
         ],
         "navbar": {
@@ -164,7 +189,12 @@
               "label": "よくある質問",
               "href": "/ja/faq"
             }
-          ]
+          ],
+          "primary": {
+            "type": "button",
+            "label": "今すぐインストール",
+            "href": "https://apps.shopify.com/shopify-application-598"
+          }
         }
       },
       {
@@ -174,8 +204,11 @@
             "group": "Getting started",
             "pages": [
               "en/index",
+              "en/getting-started/choose-rule",
               "en/quickstart",
-              "en/getting-started/how-it-works"
+              "en/getting-started/how-it-works",
+              "en/getting-started/product-variant-limits",
+              "en/getting-started/launch-checklist"
             ]
           },
           {
@@ -203,6 +236,7 @@
                 "group": "Customers and repeat purchases",
                 "pages": [
                   "en/scenarios/members-only",
+                  "en/scenarios/login-required",
                   "en/scenarios/block-customers",
                   "en/scenarios/repeat-purchase"
                 ]
@@ -227,6 +261,12 @@
               "en/troubleshooting/rules-not-working",
               "en/faq"
             ]
+          },
+          {
+            "group": "Privacy and data",
+            "pages": [
+              "en/privacy-policy"
+            ]
           }
         ],
         "navbar": {
@@ -239,12 +279,41 @@
               "label": "FAQ",
               "href": "/en/faq"
             }
-          ]
+          ],
+          "primary": {
+            "type": "button",
+            "label": "Install now",
+            "href": "https://apps.shopify.com/shopify-application-598"
+          }
         }
       }
     ]
   },
   "contextual": {
     "options": []
+  },
+  "seo": {
+    "indexing": "navigable",
+    "metatags": {
+      "og:site_name": "订单限制帮助中心",
+      "og:locale": "zh_CN",
+      "twitter:card": "summary_large_image"
+    },
+    "paths": [
+      {
+        "path": "en",
+        "metatags": {
+          "og:site_name": "Order Limits Help Center",
+          "og:locale": "en_US"
+        }
+      },
+      {
+        "path": "ja",
+        "metatags": {
+          "og:site_name": "注文制限ヘルプセンター",
+          "og:locale": "ja_JP"
+        }
+      }
+    ]
   }
 }

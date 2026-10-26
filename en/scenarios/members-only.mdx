@@ -1,11 +1,21 @@
 ---
-title: "Sell a collection only to VIP customers"
-description: "Use a customer-tag allowlist and require sign-in to identify eligible buyers."
+title: "Shopify VIP-only purchasing for a selected collection"
+description: "Restrict a Shopify collection to signed-in VIP customers. Set a tag allowlist, choose the product scope and test member, non-member and guest checkout."
 sidebarTitle: "Member exclusives"
-keywords: ["Shopify", "Order Limits", "Sell a collection only to VIP customers"]
+keywords: ["Shopify", "VIP-only collection", "customer allowlist", "member purchasing"]
 ---
 
+{/* Screenshot plan S08: S08-01-仅VIP可购买.png; S08-02-商品范围与生效设置.png; S08-03-VIP购买专属商品通过-zh.png; S08-04-非VIP购买专属商品拦截-zh.png; S08-05-游客购买要求登录-zh.png; S08-06-范围外商品通过-zh.png */}
+
 Your member-exclusive collection should only be purchasable by customers tagged VIP. Add a customer restriction and require an account sign-in.
+
+## When to use this
+
+Use this for member-only purchase eligibility. For a larger member allowance, use customer-tag quantity rules instead.
+
+## Before you begin
+
+Prepare a member collection and customers with and without VIP. Make sure both can sign in on the storefront.
 
 ## Settings
 
@@ -22,11 +32,18 @@ Open the app home page → **Customer restriction rules** → create a rule.
 
 ## Steps
 
-1. Add `VIP` to eligible Shopify customer profiles.
-2. Create the rule. Choose **Customers without these tags cannot purchase**.
-3. Select **Active** and save. Return to **Customer restrictions** and turn on **Enable customer restriction rules**.
+1. Open **Apps** → **订单限购** in Shopify. From the app home page, open **客户限制规则** and click **创建规则**.
+2. Add the example tag to the customer profile in Shopify. In the rule, enter the same tag, click **添加标签**, and check that it appears before choosing the tag condition.
+3. Enter the rule name and thresholds from the settings table. The name is for admin use only.
+4. Under **规则应用于**, select the scope in the table. For selected products or collections, click **选择产品** or **选择产品系列** and confirm the selected names appear.
+5. Check the direction under **标签限制方式** against the table and select **需要客户账户登录**.
+6. Set the timing from the table. Under **保存后的状态**, select **已启用** and click **创建并启用**. When editing an existing rule, click **保存并启用**.
+7. Return to **客户限制** and turn on **开启客户限制规则**. Wait for saving to complete and check for errors.
+8. Reopen the rule to confirm its thresholds, scope, customer conditions and active state were saved. Run the storefront tests below.
 
 ## Test your configuration
+
+Each result describes this recipe only. Keep the product scope consistent and verify checkout; other active rules may still block the cart.
 
 | Test | Expected result for this scenario |
 | --- | --- |
@@ -38,3 +55,9 @@ Open the app home page → **Customer restriction rules** → create a rule.
 <Warning>This restricts purchasing. It does not hide product pages, prices or collections.</Warning>
 
 You can also add a [VIP quantity allowance](/en/scenarios/vip-quantity).
+
+## If results differ
+
+If VIPs are blocked, check the restriction direction. Choose the option blocking customers without the tags, and add VIP to both the rule and customer profile.
+
+Use [troubleshooting](/en/troubleshooting/rules-not-working) to investigate. Complete the [launch checklist](/en/getting-started/launch-checklist) before rolling out.

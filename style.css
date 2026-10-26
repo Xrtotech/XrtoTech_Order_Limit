@@ -28,3 +28,91 @@ a[href*="utm_campaign=poweredBy"],
 #chat-assistant-sheet,
 #text-selection-tooltip,
 #ask-assistant-code-block-button { display: none !important; }
+
+/* Shared merchant support entry. Keep the QR's original quiet zone intact. */
+#contact-widget {
+  position: fixed;
+  right: max(24px, env(safe-area-inset-right));
+  bottom: max(24px, env(safe-area-inset-bottom));
+  z-index: 40;
+  font-family: inherit;
+  color: #38224e;
+}
+.contact-widget-trigger {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 52px;
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 999px;
+  background: #A07EC8;
+  color: #fff;
+  box-shadow: 0 6px 20px rgb(56 34 78 / 18%);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.contact-widget-trigger:hover { background: #8763af; }
+.contact-widget-trigger[aria-expanded="true"] { display: none; }
+.contact-widget-trigger img { flex-shrink: 0; }
+#contact-widget button:focus-visible {
+  outline: 3px solid #75519d;
+  outline-offset: 4px;
+}
+#contact-widget-panel {
+  position: absolute;
+  bottom: calc(100% + 12px);
+  right: 0;
+  width: 268px;
+  max-width: calc(100vw - 32px);
+  max-height: calc(100dvh - 108px);
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 16px;
+  background: #fff;
+  border: 1px solid #e9e0f2;
+  border-radius: 16px;
+  box-shadow: 0 8px 28px rgb(56 34 78 / 14%);
+}
+#contact-widget-panel[hidden] { display: none; }
+.contact-widget-header { position: relative; min-height: 32px; display: flex; align-items: center; }
+#contact-widget-title { flex: 1; margin: 0; padding: 0 32px; text-align: center; font-size: 15px; font-weight: 600; line-height: 1.5; }
+.contact-widget-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  border-radius: 8px;
+  background: #f8f5fc;
+  color: #604773;
+  font-size: 22px;
+  cursor: pointer;
+}
+.contact-widget-qr { display: block; width: 205px; max-width: 100%; height: auto; margin: 8px auto 0; }
+.contact-widget-hint { margin: 8px 0 0; color: #63576d; text-align: center; font-size: 13px; line-height: 1.6; }
+@media (max-width: 480px) {
+  #contact-widget {
+    right: max(16px, env(safe-area-inset-right));
+    bottom: max(16px, env(safe-area-inset-bottom));
+  }
+  .contact-widget-trigger { width: 52px; padding: 12px; justify-content: center; }
+  .contact-widget-trigger span { display: none; }
+}
+
+/* Shopify bag mark beside the native installation CTA. */
+#navbar a[href="https://apps.shopify.com/shopify-application-598"] > div::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-right: 8px;
+  background: url('/logo/shopify.svg') center / contain no-repeat;
+}

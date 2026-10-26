@@ -1,0 +1,72 @@
+---
+title: "Test and pause Shopify order limits before launch"
+description: "Check allowed, boundary, blocked and out-of-scope carts. Verify identity, checkout, messages and feature switches, then learn to pause and restore rules."
+sidebarTitle: "Launch checklist"
+keywords: ["Shopify", "order limit testing", "checkout validation", "pause rules"]
+---
+
+{/* Screenshot plan M06: M06-01-测试规则保存为草稿.png; M06-02-草稿规则列表状态.png */}
+
+After configuring Order Limit, verify both sides of the purchase path: eligible customers can proceed and invalid carts are blocked. Repeat these checks whenever you change thresholds, scope or customer conditions.
+
+## 1. Fix the test conditions
+
+Record the rule, products, variants, signed-in state, tags, market and language. Start with a simple scope and change one rule at a time.
+
+If isolating rules, record existing settings first. Temporarily use draft status only in a test environment or an appropriate maintenance arrangement, then restore the settings.
+
+## 2. Confirm activation
+
+| Check | Required result |
+| --- | --- |
+| Rule | Reopening shows **已启用**, correct scope and values |
+| Category | Its quantity, price, weight or customer feature switch is on |
+| Quantity validation | **购物车与结账校验** is enabled; table-based limits also need **开启产品数量限制** |
+
+New quantity and customer rules use **创建并启用**, and edits use **保存并启用**. Price and weight rules use **保存并启用**. Resolve saving errors before testing.
+
+## 3. Test allowed, boundary and blocked carts
+
+| Example | Allowed | Boundary allowed | Blocked |
+| --- | --- | --- | --- |
+| Maximum 2 units | 1 | 2 | 3 |
+| Minimum 6 per product | 7 | 6 | 5 at checkout |
+| Minimum merchandise amount 100 | 120 | 100 | 99 |
+| Maximum weight 20 kg | 19 kg | 20 kg | 22 kg |
+
+For selected products or collections, also test a cart containing only unrelated products. That cart should be outside this scoped rule.
+
+## 4. Test identity, variants and language
+
+- **Identity**: test a guest, a signed-in tagged customer and a signed-in untagged customer.
+- **Variants**: split one product across colors to check product totals and variant caps.
+- **Stage**: test cart and checkout according to timing. Successful add-to-cart alone does not establish failure.
+- **Language**: test your storefront and checkout languages, including variable substitution.
+- **Amount**: add actual discounts and market currencies after the first simple test.
+- **Cumulative purchases**: create the first order, wait for the record update and test the same account again. Refunds and cancellations do not restore quantity automatically.
+
+## 5. Record a reproducible test
+
+```text
+Rule name:
+Product and variant:
+Customer identity and tags:
+Quantity / merchandise amount / weight:
+Market and language:
+Stage: cart / checkout
+Expected: allowed / blocked
+Actual:
+Test time:
+```
+
+Keep the products, values and message visible in screenshots. Use test data and remove contact details, addresses and payment information.
+
+## 6. Pause and restore
+
+Edit a rule and select **草稿** under **保存后的状态**, then click **保存为草稿**. Reopen it to check status and retest. Restore with **已启用** and **保存并启用**, then repeat allowed and blocked cases.
+
+Product and variant table rows use **限制状态**: choose **未开启** and click **保存**. Keep a rule rather than deleting it for a temporary pause.
+
+## If results differ
+
+Keep the same cart and change one condition at a time. Follow [troubleshooting](/en/troubleshooting/rules-not-working) and [rule priority](/en/settings/rule-priority). For help, use the bottom-right contact entry with your test record and redacted screenshots. Bold Chinese labels match the app UI.

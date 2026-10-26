@@ -1,11 +1,21 @@
 ---
-title: "Block tagged customers from promotional products"
-description: "Prevent selected customer groups from buying a product collection."
+title: "Block tagged customers from Shopify promotional products"
+description: "Block reseller-tagged customers from a Shopify promotion. Configure sign-in and tag direction, then test tagged buyers, other customers and unrelated items."
 sidebarTitle: "Block customers"
-keywords: ["Shopify", "Order Limits", "Block tagged customers from promotional products"]
+keywords: ["Shopify", "customer blocklist", "reseller tag", "promotional restrictions"]
 ---
 
+{/* Screenshot plan S09: S09-01-禁止reseller购买.png; S09-02-商品范围与生效设置.png; S09-03-无reseller客户通过-zh.png; S09-04-reseller客户被拦截-zh.png; S09-05-游客购买要求登录-zh.png; S09-06-reseller买范围外通过-zh.png; S09-07-reseller测试客户标签.png */}
+
 Customers tagged reseller should not buy your retail promotion collection. A customer restriction blocks customers who match that tag.
+
+## When to use this
+
+Use this to block a tagged customer group from a promotion. It works with customer identity and does not guarantee detection across accounts.
+
+## Before you begin
+
+Prepare a retail-promotion collection and test customers with and without reseller. Use demonstration profiles.
 
 ## Settings
 
@@ -22,11 +32,18 @@ Open the app home page → **Customer restriction rules** → create a rule.
 
 ## Steps
 
-1. Confirm the target customer profiles have the `reseller` tag.
-2. Create the rule and click **Add tag** after entering the tag.
-3. Activate and save the rule, then turn on **Enable customer restriction rules**.
+1. Open **Apps** → **订单限购** in Shopify. From the app home page, open **客户限制规则** and click **创建规则**.
+2. Add the example tag to the customer profile in Shopify. In the rule, enter the same tag, click **添加标签**, and check that it appears before choosing the tag condition.
+3. Enter the rule name and thresholds from the settings table. The name is for admin use only.
+4. Under **规则应用于**, select the scope in the table. For selected products or collections, click **选择产品** or **选择产品系列** and confirm the selected names appear.
+5. Check the direction under **标签限制方式** against the table and select **需要客户账户登录**.
+6. Set the timing from the table. Under **保存后的状态**, select **已启用** and click **创建并启用**. When editing an existing rule, click **保存并启用**.
+7. Return to **客户限制** and turn on **开启客户限制规则**. Wait for saving to complete and check for errors.
+8. Reopen the rule to confirm its thresholds, scope, customer conditions and active state were saved. Run the storefront tests below.
 
 ## Test your configuration
+
+Each result describes this recipe only. Keep the product scope consistent and verify checkout; other active rules may still block the cart.
 
 | Test | Expected result for this scenario |
 | --- | --- |
@@ -38,3 +55,9 @@ Open the app home page → **Customer restriction rules** → create a rule.
 <Note>Requiring sign-in also affects regular customers buying this collection. Tags depend on an identified customer; they do not deduplicate a person across different accounts.</Note>
 
 For the opposite tag condition, see [member exclusives](/en/scenarios/members-only).
+
+## If results differ
+
+Requiring untagged customers to sign in is expected here. If tagged customers can buy, check identity, the added tag and collection membership.
+
+Use [troubleshooting](/en/troubleshooting/rules-not-working) to investigate. Complete the [launch checklist](/en/getting-started/launch-checklist) before rolling out.

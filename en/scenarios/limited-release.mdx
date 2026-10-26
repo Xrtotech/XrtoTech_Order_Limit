@@ -1,11 +1,21 @@
 ---
-title: "Limit a new product to 2 units per order"
-description: "Combine variants of one product when enforcing a single-order quantity cap."
+title: "Shopify product limit: up to 2 units per order"
+description: "Limit one Shopify product to two units per order, including its variants. Configure the scope, activate validation and test allowed and blocked carts."
 sidebarTitle: "Limited release"
-keywords: ["Shopify", "Order Limits", "Limit a new product to 2 units per order"]
+keywords: ["Shopify", "product quantity cap", "limited release", "per order limit"]
 ---
 
+{/* Screenshot plan S01: S01-01-水杯每款最大2件.png; S01-02-商品范围与生效设置.png; S01-03-红1蓝1合计2件通过-zh.png; S01-04-红1蓝2合计3件拦截-zh.png; S01-05-范围外杯垫通过-zh.png */}
+
 You are launching a limited-edition cup and want each order to contain at most 2 units. An individual quantity rule totals all variants of that product.
+
+## When to use this
+
+Use this for limited launches and retail promotions that cap each product in one purchase.
+
+## Before you begin
+
+Prepare a purchasable cup with enough stock. Red and blue must be variants of the same product. Use an unselected coaster to test scope.
 
 ## Settings
 
@@ -23,11 +33,16 @@ Open the app home page → **All quantity rules** → create a rule.
 
 ## Steps
 
-1. Create a quantity rule using the settings above. Select your actual products or collection.
-2. Set the status to **Active** and click **Save and activate**.
-3. Return to **Quantity limits**. Turn on **Enable quantity rules** and confirm **Cart and checkout validation** is enabled.
+1. Open **Apps** → **订单限购** in Shopify. From the app home page, open **所有数量规则** and click **创建规则**.
+2. Enter the rule name and thresholds from the settings table. The name is for admin use only.
+3. Under **规则应用于**, select the scope in the table. For selected products or collections, click **选择产品** or **选择产品系列** and confirm the selected names appear.
+4. Set the timing from the table. Under **保存后的状态**, select **已启用** and click **创建并启用**. When editing an existing rule, click **保存并启用**.
+5. Return to **数量限制** and turn on **开启数量规则**. Confirm **购物车与结账校验** is enabled, using **启用校验** if necessary.
+6. Reopen the rule to confirm its thresholds, scope, customer conditions and active state were saved. Run the storefront tests below.
 
 ## Test your configuration
+
+Each result describes this recipe only. Keep the product scope consistent and verify checkout; other active rules may still block the cart.
 
 | Test | Expected result for this scenario |
 | --- | --- |
@@ -39,3 +54,9 @@ Open the app home page → **All quantity rules** → create a rule.
 <Note>This rule checks each cart. It does not share a 2-unit allowance across multiple orders by the same customer.</Note>
 
 For repeat purchases, see [sample purchase limits](/en/scenarios/repeat-purchase).
+
+## If results differ
+
+Two units of each color exceed this cap because variants share the product allowance. To share an allowance across different products, use a combined rule.
+
+Use [troubleshooting](/en/troubleshooting/rules-not-working) to investigate. Complete the [launch checklist](/en/getting-started/launch-checklist) before rolling out.

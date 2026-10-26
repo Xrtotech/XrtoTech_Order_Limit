@@ -1,11 +1,25 @@
 ---
-title: "Scope, status and validation"
-description: "Understand which products and customers a rule checks, and what must be enabled."
+title: "How Shopify order limit scope and activation work"
+description: "Understand products, variants, collections and customer tags. Check rule status, feature switches and validation before testing your purchase limits."
 sidebarTitle: "Rule basics"
-keywords: ["Shopify", "Order Limits", "Scope, status and validation"]
+keywords: ["Shopify", "rule scope", "activation", "products and variants"]
 ---
 
+{/* Screenshot plan M04: M04-01-规则列表已启用.png; M04-02-选择指定产品.png; M04-03-选择产品系列.png */}
+
 Order Limit checks applicable cart items and customer conditions. Before creating a rule, decide which items it covers, which customers it applies to, and when it should run.
+
+## Key terms
+
+| Term | Cup example |
+| --- | --- |
+| Product | One cup design |
+| Variant | Its red, blue or size options |
+| Collection | A promotional group of cups, coasters and other products |
+| Individual | Each product has its own allowance; its variants count together |
+| Combined | All matching items share one threshold |
+| Customer tag | A label such as VIP in a Shopify customer profile |
+| Cumulative purchases | Recorded product purchases for one customer, separate from the current cart |
 
 ## Check three levels of activation
 
@@ -50,9 +64,18 @@ Labels in this English guide are translated for readability. The current source 
 | Limit the combined cart quantity of applicable items | 限制购物车内适用商品的加购数量合计 |
 | All products / Specific products / Collections | 所有产品 / 指定产品 / 产品系列 |
 | Customer tags / Add tag | 客户标签 / 添加标签 |
-| Active / Draft / Save and activate | 已启用 / 草稿 / 保存并启用 |
+| Active / Draft / Create and activate / Save and activate | 已启用 / 草稿 / 创建并启用 / 保存并启用 |
 | Enable quantity rules / Enable validation | 开启数量规则 / 启用校验 |
 | Configure messages / Save | 配置提示文案 / 保存 |
 | Require a customer account sign-in | 需要客户账户登录 |
 
 Read [rule priority](/en/settings/rule-priority) before combining rules.
+
+## How a rule becomes active
+
+```mermaid
+flowchart LR
+    A[Create a rule] --> B[Save as active] --> C[Enable its feature] --> D[Confirm validation] --> E[Test allowed and blocked]
+```
+
+Unsure which type to choose? Use [choose a rule](/en/getting-started/choose-rule). For pausing, restoring and test records, use the [launch checklist](/en/getting-started/launch-checklist).

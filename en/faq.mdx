@@ -1,9 +1,11 @@
 ---
-title: "Frequently asked questions"
-description: "Quick answers about calculations, identity and feature boundaries."
+title: "Shopify order limits FAQ: quantity, members and repeats"
+description: "Find answers about minimums, variants, pack multiples, customer tags, prices, weight, shipping and cumulative resets before choosing a limit recipe."
 sidebarTitle: "FAQ"
-keywords: ["Shopify", "Order Limits", "Frequently asked questions"]
+keywords: ["Shopify", "order limit FAQ", "pack multiples", "customer limits"]
 ---
+
+{/* Screenshot plan M15: No new capture; see screenshot-plan.md M15 for reuse. */}
 
 When using Order Limit, distinguish single-cart limits, buying eligibility and recorded purchase history. These answers clarify commonly confused settings.
 
@@ -38,6 +40,23 @@ The current cumulative rule has no time window or scheduled reset. Do not use it
 <Accordion title="Are delivery, payment method or bundle restrictions available?">
 This manual documents the verified quantity, price, weight and customer features. It does not present delivery methods, payment methods, page access or bundle rules as existing app features.
 </Accordion>
+<Accordion title="Why check switches after saving a rule?">
+Saving, active status, category switches and validation are separate checks. Quantity rules also need **购物车与结账校验**. Follow the complete [quickstart](/en/quickstart).
+</Accordion>
+<Accordion title="How do I pause a rule temporarily?">
+Choose **草稿** and click **保存为草稿**. Restore with **已启用** and save. Product and variant table rows use **限制状态**. See [pause and restore](/en/getting-started/launch-checklist).
+</Accordion>
+<Accordion title="Do all customers need a VIP tag just to sign in?">
+No. Leave customer tags empty and enable **需要客户账户登录**. Follow [require sign-in](/en/scenarios/login-required).
+</Accordion>
+<Accordion title="Does a collection minimum force customers to buy it?">
+No. A scoped rule checks only when the cart contains matching items. Also test a cart with unrelated products only.
+</Accordion>
+<Accordion title="Does changing the help center language translate store messages?">
+No. Configure each category's customer messages separately, then test storefront or checkout language. See [messages and languages](/en/settings/messages).
+</Accordion>
 </AccordionGroup>
 
 For configuration issues, follow [troubleshooting](/en/troubleshooting/rules-not-working).
+
+Unsure which limit fits? Start with [choose a rule](/en/getting-started/choose-rule), then use the [launch checklist](/en/getting-started/launch-checklist).

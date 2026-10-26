@@ -1,11 +1,21 @@
 ---
-title: "Allow up to 3 units across a collection"
-description: "Share one quantity allowance across several products in a collection."
+title: "Shopify collection limit: 3 units across products"
+description: "Share a three-unit allowance across a Shopify collection. Configure combined quantity and test mixed carts, collection membership and unrelated items."
 sidebarTitle: "Mix and match"
-keywords: ["Shopify", "Order Limits", "Allow up to 3 units across a collection"]
+keywords: ["Shopify", "collection quantity limit", "combined quantity", "mix and match"]
 ---
 
+{/* Screenshot plan S02: S02-01-产品系列合计最大3件.png; S02-02-商品范围与生效设置.png; S02-03-A1加B2合计3件通过-zh.png; S02-04-A2加B2合计4件拦截-zh.png; S02-05-A3加范围外5件通过-zh.png; S02-06-促销产品系列成员.png */}
+
 Your promotion includes products A, B and C. Customers can mix them freely, but the collection total in a cart must not exceed 3 units.
+
+## When to use this
+
+Use this when several samples or promotional products share an allowance. It allows combinations without creating bundles or discounts.
+
+## Before you begin
+
+Create a promotional collection containing distinct products A, B and C, plus one product outside the collection.
 
 ## Settings
 
@@ -22,11 +32,16 @@ Open the app home page → **All quantity rules** → create a rule.
 
 ## Steps
 
-1. Create a quantity rule using the settings above. Select your actual products or collection.
-2. Set the status to **Active** and click **Save and activate**.
-3. Return to **Quantity limits**. Turn on **Enable quantity rules** and confirm **Cart and checkout validation** is enabled.
+1. Open **Apps** → **订单限购** in Shopify. From the app home page, open **所有数量规则** and click **创建规则**.
+2. Enter the rule name and thresholds from the settings table. The name is for admin use only.
+3. Under **规则应用于**, select the scope in the table. For selected products or collections, click **选择产品** or **选择产品系列** and confirm the selected names appear.
+4. Set the timing from the table. Under **保存后的状态**, select **已启用** and click **创建并启用**. When editing an existing rule, click **保存并启用**.
+5. Return to **数量限制** and turn on **开启数量规则**. Confirm **购物车与结账校验** is enabled, using **启用校验** if necessary.
+6. Reopen the rule to confirm its thresholds, scope, customer conditions and active state were saved. Run the storefront tests below.
 
 ## Test your configuration
+
+Each result describes this recipe only. Keep the product scope consistent and verify checkout; other active rules may still block the cart.
 
 | Test | Expected result for this scenario |
 | --- | --- |
@@ -38,3 +53,9 @@ Open the app home page → **All quantity rules** → create a rule.
 <Tip>Products added to this collection later also match. Use **Specific products** if you want a fixed list instead.</Tip>
 
 Compare calculation methods in [quantity limits](/en/features/quantity).
+
+## If results differ
+
+If A × 2 plus B × 2 passes, check that calculation is combined and both products belong to the selected collection.
+
+Use [troubleshooting](/en/troubleshooting/rules-not-working) to investigate. Complete the [launch checklist](/en/getting-started/launch-checklist) before rolling out.

@@ -1,9 +1,11 @@
 ---
-title: "Customize customer messages and languages"
-description: "Edit category-specific messages and preserve the supported template tokens."
+title: "Customize Shopify limit messages, languages and tokens"
+description: "Edit quantity, amount, weight, eligibility and sign-in messages. Preserve supported tokens and test language fallback and customer actions at checkout."
 sidebarTitle: "Messages and languages"
-keywords: ["Shopify", "Order Limits", "Customize customer messages and languages"]
+keywords: ["Shopify", "restriction messages", "template tokens", "multilingual messages"]
 ---
+
+{/* Screenshot plan M12: M12-01-提示文案语言管理.png; M12-02-数量提示模板与变量.png; M12-03-金额提示模板与变量.png; M12-04-重量提示模板与变量.png; M12-05-客户禁止与登录提示.png; M12-06-变量替换后的数量提示-zh.png */}
 
 Order Limit shows a restriction message when a customer fails a rule. Configure messages in each category so customers know how to adjust their cart.
 
@@ -51,6 +53,20 @@ Applicable items must not exceed {{maxWeight}}. The current weight is {{currentW
 ```
 
 Weight templates support `{{minWeight}}`, `{{maxWeight}}` and `{{currentWeight}}`.
+
+### Eligibility and sign-in messages
+
+In **客户限制**, **禁止购买提示** and **需要客户账户登录提示** are separate fields. Eligibility messages support `{{itemName}}` and `{{productTitle}}`. Do not add quantity, amount or weight tokens.
+
+```text
+{{itemName}} is available only to eligible customers. Check your account eligibility before checkout.
+```
+
+For sign-in, ask customers to sign in and try again. Do not promise sign-in alone guarantees eligibility; tags may still apply.
+
+### Give customers a next step
+
+Name the affected item, explain the threshold and state the action. Ask customers to reduce units for a maximum or increase applicable merchandise for a minimum amount. Trigger the rule after saving and verify real values replace tokens.
 
 ## Test the selected language
 

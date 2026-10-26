@@ -1,0 +1,54 @@
+---
+title: "Set product and variant quantity limits in Shopify"
+description: "Set a product cap of 3 and a blue-variant cap of 1 from the product table. Save, enable validation and test four carts to check both quantity levels."
+sidebarTitle: "Product and variants"
+keywords: ["Shopify", "variant quantity limits", "product limits", "color size limits"]
+---
+
+{/* Screenshot plan M05: M05-01-产品与蓝色变体参数.png; M05-02-蓝色2件触发变体上限-zh.png; M05-03-水杯合计4件触发产品上限-zh.png; M05-04-蓝1红2合计3件通过-zh.png; M05-05-产品数量功能已开启.png */}
+
+Use the product table in Order Limit for independent product or variant thresholds. This example caps all colors of a cup at 3 units, while its blue variant has a separate cap of 1.
+
+## Before you begin
+
+Prepare red and blue variants of the same purchasable cup. Review [rule priority](/en/settings/rule-priority): an overlapping individual quantity rule can relax the product cap.
+
+## Set both levels
+
+<Steps>
+<Step title="Find the product">
+Open **Apps** → **订单限购** in Shopify. Choose **按产品设置数量限制** on the app home page. Search for the cup under **搜索产品**.
+</Step>
+<Step title="Set the whole-product cap">
+On the product row, set **限制状态** to **已开启**, leave **最小值** blank and enter `3` under **最大值**. This counts all variants of the product together.
+</Step>
+<Step title="Set the blue-variant cap">
+Expand the product variants. On the blue row, select **已开启**, leave the minimum blank and set the maximum to `1`. Click **保存** at the top and wait for saving to finish.
+</Step>
+<Step title="Enable the feature and validation">
+Return to **数量限制**, turn on **开启产品数量限制**, and choose **购物车互动时和结账时**. Confirm **购物车与结账校验** is enabled, using **启用校验** if needed.
+</Step>
+</Steps>
+
+## Test four carts
+
+| Cart | Result for this example | Reason |
+| --- | --- | --- |
+| Red × 3 | Allowed | Product total is 3 |
+| Blue × 1 + red × 2 | Allowed | Total 3, blue within 1 |
+| Blue × 2 | Blocked | Blue exceeds 1 |
+| Blue × 1 + red × 3 | Blocked | Product total exceeds 3 |
+
+Other active rules can still block a cart that passes these settings.
+
+## Edit or pause
+
+Change the row values and click **保存**. To pause one row, set **限制状态** to **未开启** and save. Disabling a product row does not disable its active variant rows; check each separately.
+
+Turning off **开启产品数量限制** pauses these product and variant settings. It is separate from **开启数量规则**.
+
+## If results differ
+
+If blue × 2 passes, check that you edited the blue variant row and saved. If the whole product exceeds 3, check product status, the feature switch and overlapping individual rules. Product and individual rule limits combine using relaxed thresholds.
+
+For a shared allowance across products, use [combined quantity](/en/scenarios/mix-and-match). Complete the [launch checklist](/en/getting-started/launch-checklist). The bold Chinese labels above match the current app.

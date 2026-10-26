@@ -1,11 +1,21 @@
 ---
-title: "Keep merchandise weight within 20 kg"
-description: "Multiply variant weights by quantities to limit the total merchandise weight."
+title: "Shopify weight limit: up to 20 kg of merchandise"
+description: "Cap Shopify merchandise weight at 20 kg. Check variant data and units, activate the rule and test 20 kg allowed versus 22 kg blocked at checkout."
 sidebarTitle: "Weight cap"
-keywords: ["Shopify", "Order Limits", "Keep merchandise weight within 20 kg"]
+keywords: ["Shopify", "cart weight limit", "variant weight", "20 kg cap"]
 ---
 
+{/* Screenshot plan S07: S07-01-最高重量20kg.png; S07-02-商品范围与生效设置.png; S07-03-2kg乘10等于20kg通过-zh.png; S07-04-2kg乘11等于22kg拦截-zh.png; S07-05-混合单位合计19kg通过-zh.png */}
+
 Your fulfillment process needs merchandise in each order to weigh no more than 20 kg. A weight rule totals product variant weights; it does not include boxes or packing materials.
+
+## When to use this
+
+Use this when merchandise weight needs an order cap. The 20 kg example must be adapted to your shipping process and packaging allowance.
+
+## Before you begin
+
+Prepare products weighing 2 kg and 500 g per unit. Check every selected variant and correct missing weights in Shopify.
 
 ## Settings
 
@@ -23,11 +33,17 @@ Open the app home page → **Weight rules** → create a weight rule.
 
 ## Steps
 
-1. Check variant weights under **Weight limits by product**. Correct missing data in Shopify product details.
-2. Create the rule, select **Active**, and click **Save and activate**.
-3. Return to **Weight limits** and turn on **Enable weight rules**.
+1. Open **Apps** → **订单限购** in Shopify. From the app home page, open **重量规则** and click **创建重量规则**.
+2. Check variant weights under **按产品设置重量限制** first. In the rule, select `kg` under **规则重量单位**, then enter a maximum of `20`.
+3. Enter the rule name and thresholds from the settings table. The name is for admin use only.
+4. Under **规则应用于**, select the scope in the table. For selected products or collections, click **选择产品** or **选择产品系列** and confirm the selected names appear.
+5. Set the timing from the table. Under **保存后的状态**, select **已启用** and click **保存并启用**. When editing an existing rule, click **保存并启用**.
+6. Return to **重量限制** and turn on **开启重量规则**. Wait for saving to complete and check for errors.
+7. Reopen the rule to confirm its thresholds, scope, customer conditions and active state were saved. Run the storefront tests below.
 
 ## Test your configuration
+
+Each result describes this recipe only. Keep the product scope consistent and verify checkout; other active rules may still block the cart.
 
 | Test | Expected result for this scenario |
 | --- | --- |
@@ -39,3 +55,9 @@ Open the app home page → **Weight rules** → create a weight rule.
 <Warning>The rule does not split orders, calculate shipping charges or choose a shipping method. Lower the merchandise cap yourself if you need to reserve weight for packaging.</Warning>
 
 For collection and tag-based thresholds, see [weight limits](/en/features/weight).
+
+## If results differ
+
+If 11 units of 2 kg pass, check the purchased variant weight, scope, rule unit and feature switch.
+
+Use [troubleshooting](/en/troubleshooting/rules-not-working) to investigate. Complete the [launch checklist](/en/getting-started/launch-checklist) before rolling out.

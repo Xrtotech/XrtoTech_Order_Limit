@@ -1,9 +1,11 @@
 ---
-title: "按经营场景配置"
-description: "找到适合你的限购方案，再使用参数表与测试案例完成设置。"
-keywords: ["Shopify", "订单限购", "按经营场景配置"]
+title: "Shopify 限购场景教程：新品、批发、会员与复购"
+description: "按经营目标选择 Shopify 限购方案。比较单品上限、产品系列合计、批发起订、最低消费、重量、登录和客户标签规则，再按参数表、步骤和边界测试完成配置。"
+keywords: ["Shopify", "Shopify 限购场景", "批发起订量", "会员限购"]
 sidebarTitle: "场景目录"
 ---
+
+{/* Screenshot plan M16: No new capture; see screenshot-plan.md M16 for reuse. */}
 
 订单限购可以用于日常零售、批发起订、会员商品和重复购买管理。以下场景提供可替换的商品与门槛，你可以先照着建立一条规则，再按店铺需求调整。
 
@@ -11,7 +13,7 @@ sidebarTitle: "场景目录"
 
 <Columns cols={2}>
 <Card title="限量发售，每单最多 2 件" href="/scenarios/limited-release">合并同一产品的不同变体，控制单次购买数量。</Card>
-<Card title="系列任选，合计最多 3 件" href="/scenarios/mix-and-match">多个商品共用同一个数量上限。</Card>
+<Card title="产品系列任选，合计最多 3 件" href="/scenarios/mix-and-match">多个商品共用同一个数量上限。</Card>
 <Card title="批发商品至少 6 件起订" href="/scenarios/wholesale-minimum">为每个产品设置起订量，并在结账时检查。</Card>
 <Card title="VIP 与普通客户不同上限" href="/scenarios/vip-quantity">使用标签条件建立互斥的两条数量规则。</Card>
 </Columns>
@@ -28,6 +30,10 @@ sidebarTitle: "场景目录"
 
 <Columns cols={2}>
 <Card title="VIP 专属商品" href="/scenarios/members-only">只允许有指定标签且已登录的客户购买。</Card>
-<Card title="指定客户不能买促销商品" href="/scenarios/block-customers">限制特定标签客户购买指定系列。</Card>
+<Card title="指定客户不能买促销商品" href="/scenarios/block-customers">限制特定标签客户购买指定产品系列。</Card>
 <Card title="样品重复购买限制" href="/scenarios/repeat-purchase">结合首次单次限购与客户历史购买记录。</Card>
 </Columns>
+
+## 还可以这样设置
+
+产品表格中的颜色与尺码上限，参见[产品与变体设置](/getting-started/product-variant-limits)。不区分会员标签，只要求登录，参见[登录后购买](/scenarios/login-required)。所有场景都应按[上线测试清单](/getting-started/launch-checklist)验证。

@@ -1,0 +1,2733 @@
+{
+  "updated": "2026-10-26",
+  "authoritative_document": ".mintlify/screenshot-plan.md",
+  "language_policy": "实际中文后台截图跨语言复用；前台真实提示按zh/en/ja实测，绝不翻译拼图冒充应用UI。",
+  "articles": [
+    {
+      "code": "M01",
+      "path": "index",
+      "title": "帮助中心首页",
+      "purpose": "认识应用入口；这一张是后台导航图，不是帮助中心网页截图。",
+      "prep": "",
+      "reuse": "",
+      "note": "",
+      "images": [
+        {
+          "id": "M01-01-应用首页入口",
+          "filename": "M01-01-应用首页入口.png",
+          "content": "Shopify 后台 → 应用 → 订单限购。显示数量、价格、重量、客户限制入口；保留应用名称与入口标签。",
+          "placement": "四类能力介绍之后",
+          "priority": "核心",
+          "frontend": false
+        }
+      ]
+    },
+    {
+      "code": "M02",
+      "path": "getting-started/choose-rule",
+      "title": "先选对规则",
+      "purpose": "用文章内流程图选规则；无需重新拍后台。",
+      "prep": "",
+      "reuse": "M01-01-应用首页入口.png；文章已有规则选择流程图。",
+      "note": "",
+      "images": []
+    },
+    {
+      "code": "M03",
+      "path": "quickstart",
+      "title": "快速上手",
+      "purpose": "带零基础读者完整做出第一条规则。",
+      "prep": "准备可购买的测试水杯；只启用本次测试需要的规则。",
+      "reuse": "",
+      "note": "",
+      "images": [
+        {
+          "id": "M03-01-创建数量规则入口",
+          "filename": "M03-01-创建数量规则入口.png",
+          "content": "应用首页 → 所有数量规则。截列表与「创建规则」按钮。",
+          "placement": "进入规则列表步骤",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "M03-02-数量规则参数",
+          "filename": "M03-02-数量规则参数.png",
+          "content": "点击创建规则。规则名称填「测试水杯每单2件」；最小留空、最大2；数量计算方式选「分别限制每个适用商品」；条件选「购物车数量限制」。保留字段标签和选中状态。",
+          "placement": "填写数量参数步骤",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "M03-03-商品范围与创建启用",
+          "filename": "M03-03-商品范围与创建启用.png",
+          "content": "同一编辑器下半部：规则应用于「指定产品」，已选测试水杯；时机「购物车互动时和结账时」；截「创建并启用」按钮。保存后状态另见 M04。",
+          "placement": "选择产品及创建步骤",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "M03-04-数量功能开关与校验",
+          "filename": "M03-04-数量功能开关与校验.png",
+          "content": "返回数量限制首页。显示「开启数量规则」已开启、「开启产品数量限制」当前状态，以及「购物车与结账校验」已启用；开关标签全部保留。",
+          "placement": "开启功能与校验步骤",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "M03-05-水杯2件通过-zh",
+          "filename": "M03-05-水杯2件通过-zh.png",
+          "content": "前台同一测试水杯2件，继续进入结账，无本规则错误；保留产品、数量2及结账上下文。无需付款。",
+          "placement": "测试成功用例",
+          "priority": "核心",
+          "frontend": true
+        },
+        {
+          "id": "M03-06-水杯3件拦截-zh",
+          "filename": "M03-06-水杯3件拦截-zh.png",
+          "content": "同一测试水杯改3件，实际触发上限；保留商品、数量3、完整真实提示与当前页面上下文。",
+          "placement": "测试拦截用例",
+          "priority": "核心",
+          "frontend": true
+        }
+      ]
+    },
+    {
+      "code": "M04",
+      "path": "getting-started/how-it-works",
+      "title": "规则基础",
+      "purpose": "讲清商品范围、规则状态、功能开关和校验的区别。",
+      "prep": "",
+      "reuse": "M03-04-数量功能开关与校验.png；文章已有生效流程图。",
+      "note": "",
+      "images": [
+        {
+          "id": "M04-01-规则列表已启用",
+          "filename": "M04-01-规则列表已启用.png",
+          "content": "所有数量规则列表；显示「测试水杯每单2件」规则名称与「已启用」。必须是保存成功后的列表。",
+          "placement": "三个状态说明",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "M04-02-选择指定产品",
+          "filename": "M04-02-选择指定产品.png",
+          "content": "数量规则编辑器 → 规则应用于「指定产品」→「选择产品」。截打开的产品选择界面、搜索结果和已选择对象；使用测试水杯。",
+          "placement": "选择适用商品",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "M04-03-选择产品系列",
+          "filename": "M04-03-选择产品系列.png",
+          "content": "另用普通购物车数量演示规则，选择「产品系列」→「选择产品系列」，选「促销产品系列」。保留选项名称与勾选项；不要在累计规则中演示。",
+          "placement": "选择适用商品",
+          "priority": "核心",
+          "frontend": false
+        }
+      ]
+    },
+    {
+      "code": "M05",
+      "path": "getting-started/product-variant-limits",
+      "title": "产品与变体设置",
+      "purpose": "学会区分整款与蓝色变体限制，不能用场景的单条规则编辑器代替。",
+      "prep": "同一水杯的红蓝变体；产品级最大3，蓝色最大1；不要同时启用会放宽上限的单品规则。",
+      "reuse": "M03-04 用于对比两个开关；本篇产品数量限制已开启的实际状态另拍 M05-05。",
+      "note": "",
+      "images": [
+        {
+          "id": "M05-01-产品与蓝色变体参数",
+          "filename": "M05-01-产品与蓝色变体参数.png",
+          "content": "按产品设置数量限制 → 搜索水杯并展开。产品行「已开启」、最小空、最大3；蓝色行「已开启」、最小空、最大1；红色行可见；保留顶部「保存」。",
+          "placement": "设置整款与蓝色步骤",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "M05-02-蓝色2件触发变体上限-zh",
+          "filename": "M05-02-蓝色2件触发变体上限-zh.png",
+          "content": "前台只放蓝色2件，真实触发蓝色上限1。产品、颜色、数量和提示同时可读。",
+          "placement": "变体上限验证",
+          "priority": "核心",
+          "frontend": true
+        },
+        {
+          "id": "M05-03-水杯合计4件触发产品上限-zh",
+          "filename": "M05-03-水杯合计4件触发产品上限-zh.png",
+          "content": "蓝色1件＋红色3件，合计4；真实触发整款最大3提示。",
+          "placement": "产品上限验证",
+          "priority": "核心",
+          "frontend": true
+        },
+        {
+          "id": "M05-04-蓝1红2合计3件通过-zh",
+          "filename": "M05-04-蓝1红2合计3件通过-zh.png",
+          "content": "蓝色1件＋红色2件，进入结账通过，保留两个变体与数量。",
+          "placement": "边界通过验证",
+          "priority": "补充",
+          "frontend": true
+        },
+        {
+          "id": "M05-05-产品数量功能已开启",
+          "filename": "M05-05-产品数量功能已开启.png",
+          "content": "数量限制首页：开启产品数量限制已开启，显示时机为购物车互动时和结账时，购物车与结账校验已启用；保留开启数量规则的独立标签，避免混淆。",
+          "placement": "开启产品数量限制步骤",
+          "priority": "核心",
+          "frontend": false
+        }
+      ]
+    },
+    {
+      "code": "M06",
+      "path": "getting-started/launch-checklist",
+      "title": "上线前测试与暂停",
+      "purpose": "学会验证、暂停、恢复；前台测试复用快速上手，不要再拍一套相同结果。",
+      "prep": "",
+      "reuse": "M03-04、M03-05、M03-06；M04-01 的完整文件名见各篇。",
+      "note": "",
+      "images": [
+        {
+          "id": "M06-01-测试规则保存为草稿",
+          "filename": "M06-01-测试规则保存为草稿.png",
+          "content": "编辑测试数量规则，切换保存后的状态为「草稿」，截「保存为草稿」及状态选项。只操作演示规则。",
+          "placement": "暂停规则步骤",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "M06-02-草稿规则列表状态",
+          "filename": "M06-02-草稿规则列表状态.png",
+          "content": "保存后返回列表，同一测试规则显示「草稿」。之后恢复为已启用并复核，可复用 M04-01 已启用图。",
+          "placement": "确认暂停及恢复步骤",
+          "priority": "核心",
+          "frontend": false
+        }
+      ]
+    },
+    {
+      "code": "M07",
+      "path": "features/quantity",
+      "title": "数量限制操作手册",
+      "purpose": "认识数量字段和两种计算方式；业务案例另拍。",
+      "prep": "",
+      "reuse": "M03-01/02/03/04 的入口、分别计算、范围及启用；M05-01 的产品变体表格。",
+      "note": "",
+      "images": [
+        {
+          "id": "M07-01-合计数量计算方式",
+          "filename": "M07-01-合计数量计算方式.png",
+          "content": "创建普通数量演示规则：最大3、最小空；选「限制购物车内适用商品的加购数量合计」与「购物车数量限制」。截数值、两种计算选项与当前选中状态。",
+          "placement": "分别与合计的区别",
+          "priority": "核心",
+          "frontend": false
+        }
+      ]
+    },
+    {
+      "code": "M08",
+      "path": "features/price",
+      "title": "价格限制操作手册",
+      "purpose": "找到创建入口、金额字段和基础货币。",
+      "prep": "",
+      "reuse": "",
+      "note": "",
+      "images": [
+        {
+          "id": "M08-01-价格规则创建入口",
+          "filename": "M08-01-价格规则创建入口.png",
+          "content": "首页 → 价格规则；截规则列表与「创建价格规则」。",
+          "placement": "创建规则第一步",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "M08-02-价格规则金额与货币",
+          "filename": "M08-02-价格规则金额与货币.png",
+          "content": "创建演示价格规则：最低100、最高空，购物车价格限制，所有产品。显示实际基础货币、金额字段、商品范围和「保存并启用」；页面长则以金额和货币为主，范围见文字步骤。",
+          "placement": "填写金额参数",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "M08-03-价格功能开关",
+          "filename": "M08-03-价格功能开关.png",
+          "content": "价格限制首页，「开启价格规则」保存完成后的开启状态。",
+          "placement": "启用价格规则",
+          "priority": "核心",
+          "frontend": false
+        }
+      ]
+    },
+    {
+      "code": "M09",
+      "path": "features/weight",
+      "title": "重量限制操作手册",
+      "purpose": "先核对变体重量，再创建重量规则；两种页面分开。",
+      "prep": "",
+      "reuse": "",
+      "note": "",
+      "images": [
+        {
+          "id": "M09-01-变体重量与单位",
+          "filename": "M09-01-变体重量与单位.png",
+          "content": "首页 → 按产品设置重量限制。显示两个可购买变体，一个2kg、另一个500g；保留产品、变体、重量数值和单位。",
+          "placement": "核对商品重量",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "M09-02-重量规则参数",
+          "filename": "M09-02-重量规则参数.png",
+          "content": "重量规则 → 创建重量规则。规则重量单位kg、最低空、最高20；适用商品所有产品、适用客户所有客户，时机仅结账时；保留「保存并启用」。长页优先保留重量字段。",
+          "placement": "创建重量规则",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "M09-03-重量功能开关",
+          "filename": "M09-03-重量功能开关.png",
+          "content": "重量限制首页，「开启重量规则」已开启并保存完成。",
+          "placement": "启用重量规则",
+          "priority": "核心",
+          "frontend": false
+        }
+      ]
+    },
+    {
+      "code": "M10",
+      "path": "features/customer",
+      "title": "客户购买资格操作手册",
+      "purpose": "识别标签方向与仅登录设置；不把客户资格当成数量额度。",
+      "prep": "",
+      "reuse": "",
+      "note": "",
+      "images": [
+        {
+          "id": "M10-01-客户规则创建入口",
+          "filename": "M10-01-客户规则创建入口.png",
+          "content": "首页 → 客户限制规则 → 列表；保留「创建规则」按钮。",
+          "placement": "进入客户规则",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "M10-02-标签禁止方向",
+          "filename": "M10-02-标签禁止方向.png",
+          "content": "创建演示客户规则，客户标签填reseller，选「有这些标签的客户不能购买」，勾选「需要客户账户登录」。保留完整方向文字。",
+          "placement": "限制方式说明",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "M10-03-标签准入方向",
+          "filename": "M10-03-标签准入方向.png",
+          "content": "另一演示规则，客户标签VIP，选「没有这些标签的客户不能购买」，勾选登录。截图重点是与上一张相反的选项，商品范围另见案例。",
+          "placement": "限制方式说明",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "M10-04-只要求登录不填标签",
+          "filename": "M10-04-只要求登录不填标签.png",
+          "content": "新客户规则，客户标签为空，勾选「需要客户账户登录」。保留空标签区域、登录选项及「创建并启用」。",
+          "placement": "仅要求登录说明",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "M10-05-客户功能开关",
+          "filename": "M10-05-客户功能开关.png",
+          "content": "客户限制首页，「开启客户限制规则」已开启并保存完成。",
+          "placement": "启用客户限制",
+          "priority": "核心",
+          "frontend": false
+        }
+      ]
+    },
+    {
+      "code": "M11",
+      "path": "features/purchase-history",
+      "title": "累计购买限制操作手册",
+      "purpose": "认识累计门槛和支持的商品范围。",
+      "prep": "",
+      "reuse": "",
+      "note": "应用没有可供本手册截图的独立购买历史查询页面。实际订单与复购结果见 S10，不要求截不存在的历史面板。",
+      "images": [
+        {
+          "id": "M11-01-累计规则门槛与范围",
+          "filename": "M11-01-累计规则门槛与范围.png",
+          "content": "新数量规则：选「客户累计购买限制」，「历史已购达到多少件后限制再次购买」填1；指定非订阅样品；保留范围选项及选中产品。不得选择产品系列。",
+          "placement": "设置累计门槛与商品范围",
+          "priority": "核心",
+          "frontend": false
+        }
+      ]
+    },
+    {
+      "code": "M12",
+      "path": "settings/messages",
+      "title": "顾客提示文案操作手册",
+      "purpose": "学会添加语言、保留模板变量，并核对真实前台替换结果。",
+      "prep": "先建测试规则触发数量上限；后台标签以实际中文为准。",
+      "reuse": "",
+      "note": "",
+      "images": [
+        {
+          "id": "M12-01-提示文案语言管理",
+          "filename": "M12-01-提示文案语言管理.png",
+          "content": "数量限制首页 → 顾客提示文案 → 配置提示文案。显示「已添加的语言」「添加语言」及可选语言/当前编辑语言。",
+          "placement": "添加语言步骤",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "M12-02-数量提示模板与变量",
+          "filename": "M12-02-数量提示模板与变量.png",
+          "content": "数量提示编辑器，显示真实最大数量提示、变量如 {{maxQuantity}} 与 {{itemName}}、保存按钮。不要把变量替换成固定商品名。",
+          "placement": "编辑数量提示",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "M12-03-金额提示模板与变量",
+          "filename": "M12-03-金额提示模板与变量.png",
+          "content": "价格限制的提示配置：最低金额提示、实际支持的 {{minAmount}} 等变量及保存。",
+          "placement": "金额提示示例",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "M12-04-重量提示模板与变量",
+          "filename": "M12-04-重量提示模板与变量.png",
+          "content": "重量限制的提示配置：最高重量提示、{{maxWeight}} 等实际变量及保存。",
+          "placement": "重量提示示例",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "M12-05-客户禁止与登录提示",
+          "filename": "M12-05-客户禁止与登录提示.png",
+          "content": "客户限制的提示配置：同时展示「禁止购买提示」和「需要客户账户登录提示」；保留真实模板及保存。",
+          "placement": "客户提示示例",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "M12-06-变量替换后的数量提示-zh",
+          "filename": "M12-06-变量替换后的数量提示-zh.png",
+          "content": "使用已保存的中文文案，测试水杯3件触发最大2的真实提示；变量已替换成商品名与数值，保留商品与数量。",
+          "placement": "前台验证文案",
+          "priority": "核心",
+          "frontend": true
+        }
+      ]
+    },
+    {
+      "code": "M13",
+      "path": "settings/rule-priority",
+      "title": "规则优先级操作手册",
+      "purpose": "展示可排序列表，配合正文说明各类规则如何共同生效。",
+      "prep": "",
+      "reuse": "",
+      "note": "",
+      "images": [
+        {
+          "id": "M13-01-数量规则顺序与状态",
+          "filename": "M13-01-数量规则顺序与状态.png",
+          "content": "所有数量规则列表。显示VIP最多4件、非VIP最多2件及通用单品规则的名称、状态和上下移动按钮；客户专用规则在通用单品规则之前。",
+          "placement": "调整数量规则顺序",
+          "priority": "核心",
+          "frontend": false
+        }
+      ]
+    },
+    {
+      "code": "M14",
+      "path": "troubleshooting/rules-not-working",
+      "title": "规则不生效排查",
+      "purpose": "按状态、开关、范围、客户与前台测试依次排查，无需新拍。",
+      "prep": "",
+      "reuse": "M04-01 已启用状态；M06-02 草稿；M03-04 数量开关/校验；M04-02/03 范围；M08-03、M09-03、M10-05 类别开关；M03-06 真实拦截。",
+      "note": "",
+      "images": []
+    },
+    {
+      "code": "M15",
+      "path": "faq",
+      "title": "常见问题",
+      "purpose": "以答案和相关手册链接为主，无需新拍。",
+      "prep": "",
+      "reuse": "具体问题链接到相应手册；不要重复堆截图。",
+      "note": "",
+      "images": []
+    },
+    {
+      "code": "M16",
+      "path": "scenarios/index",
+      "title": "场景案例导航",
+      "purpose": "让读者按业务目标找到案例，无需新拍。",
+      "prep": "",
+      "reuse": "M01-01-应用首页入口.png 可选；各场景的结果图可后续用作案例卡片。",
+      "note": "",
+      "images": []
+    },
+    {
+      "code": "S01",
+      "path": "scenarios/limited-release",
+      "title": "新品每单最多2件",
+      "purpose": "用完整业务配置和真实通过/拦截证明方案；不以基础操作截图代替关键参数。",
+      "prep": "限量水杯：红蓝为同一产品的两个变体；杯垫为不同且范围外的产品。",
+      "reuse": "M01-01 应用入口；对应类别创建入口、开关图见基础操作手册。",
+      "note": "本例是每单数量，不是累计购买次数。",
+      "images": [
+        {
+          "id": "S01-01-水杯每款最大2件",
+          "filename": "S01-01-水杯每款最大2件.png",
+          "content": "所有数量规则 → 创建规则：名称新品水杯每单2件；最小空、最大2；分别限制每个适用商品；购物车数量限制。",
+          "placement": "设置规则参数",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "S01-02-商品范围与生效设置",
+          "filename": "S01-02-商品范围与生效设置.png",
+          "content": "同一规则下半部：指定产品→限量水杯；购物车互动时和结账时；创建并启用。保存成功，数量规则开关与校验均开启。",
+          "placement": "选择商品、时机及启用",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "S01-03-红1蓝1合计2件通过-zh",
+          "filename": "S01-03-红1蓝1合计2件通过-zh.png",
+          "content": "水杯红1＋蓝1进入结账通过；显示同款两个变体和各自数量。",
+          "placement": "测试表对应行",
+          "priority": "核心",
+          "frontend": true
+        },
+        {
+          "id": "S01-04-红1蓝2合计3件拦截-zh",
+          "filename": "S01-04-红1蓝2合计3件拦截-zh.png",
+          "content": "同款水杯红1＋蓝2，触发最大2提示；保留两个颜色与数量。",
+          "placement": "测试表对应行",
+          "priority": "核心",
+          "frontend": true
+        },
+        {
+          "id": "S01-05-范围外杯垫通过-zh",
+          "filename": "S01-05-范围外杯垫通过-zh.png",
+          "content": "只买范围外杯垫3件，进入结账通过；证明范围外不受本规则限制。",
+          "placement": "测试表对应行",
+          "priority": "补充",
+          "frontend": true
+        }
+      ]
+    },
+    {
+      "code": "S02",
+      "path": "scenarios/mix-and-match",
+      "title": "促销产品系列共享3件",
+      "purpose": "用完整业务配置和真实通过/拦截证明方案；不以基础操作截图代替关键参数。",
+      "prep": "创建「促销产品系列」，内含不同产品A/B/C；另备不在该产品系列的商品。",
+      "reuse": "M01-01 应用入口；对应类别创建入口、开关图见基础操作手册。",
+      "note": "",
+      "images": [
+        {
+          "id": "S02-01-产品系列合计最大3件",
+          "filename": "S02-01-产品系列合计最大3件.png",
+          "content": "新数量规则：最小空、最大3；「限制购物车内适用商品的加购数量合计」；购物车数量限制。",
+          "placement": "设置规则参数",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "S02-02-商品范围与生效设置",
+          "filename": "S02-02-商品范围与生效设置.png",
+          "content": "规则应用于产品系列；已选「促销产品系列」；购物车互动时和结账时；创建并启用。",
+          "placement": "选择商品、时机及启用",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "S02-03-A1加B2合计3件通过-zh",
+          "filename": "S02-03-A1加B2合计3件通过-zh.png",
+          "content": "A1＋B2通过，显示两个不同产品与数量。",
+          "placement": "测试表对应行",
+          "priority": "核心",
+          "frontend": true
+        },
+        {
+          "id": "S02-04-A2加B2合计4件拦截-zh",
+          "filename": "S02-04-A2加B2合计4件拦截-zh.png",
+          "content": "A2＋B2触发合计最大3提示。",
+          "placement": "测试表对应行",
+          "priority": "核心",
+          "frontend": true
+        },
+        {
+          "id": "S02-05-A3加范围外5件通过-zh",
+          "filename": "S02-05-A3加范围外5件通过-zh.png",
+          "content": "A3＋范围外商品5件通过；保留两行数量，证明不把范围外5件计入。",
+          "placement": "测试表对应行",
+          "priority": "补充",
+          "frontend": true
+        },
+        {
+          "id": "S02-06-促销产品系列成员",
+          "filename": "S02-06-促销产品系列成员.png",
+          "content": "Shopify 后台 → 产品 → 产品系列 → 促销产品系列；显示A/B/C成员，截图不要含无关经营数据。",
+          "placement": "测试前准备",
+          "priority": "补充",
+          "frontend": false
+        }
+      ]
+    },
+    {
+      "code": "S03",
+      "path": "scenarios/wholesale-minimum",
+      "title": "批发每款至少6件",
+      "purpose": "用完整业务配置和真实通过/拦截证明方案；不以基础操作截图代替关键参数。",
+      "prep": "批发马克杯与托盘是两个不同产品；不是同一产品的变体。",
+      "reuse": "M01-01 应用入口；对应类别创建入口、开关图见基础操作手册。",
+      "note": "无需同时购买托盘；每个已购买的适用产品分别满足最低值。",
+      "images": [
+        {
+          "id": "S03-01-每款最低6件",
+          "filename": "S03-01-每款最低6件.png",
+          "content": "新数量规则：最小6、最大空；分别限制每个适用商品；购物车数量限制。",
+          "placement": "设置规则参数",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "S03-02-商品范围与生效设置",
+          "filename": "S03-02-商品范围与生效设置.png",
+          "content": "指定产品选择批发马克杯和托盘；仅结账时；创建并启用。",
+          "placement": "选择商品、时机及启用",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "S03-03-马克杯6件通过-zh",
+          "filename": "S03-03-马克杯6件通过-zh.png",
+          "content": "马克杯6件进入结账通过。",
+          "placement": "测试表对应行",
+          "priority": "核心",
+          "frontend": true
+        },
+        {
+          "id": "S03-04-马克杯5件拦截-zh",
+          "filename": "S03-04-马克杯5件拦截-zh.png",
+          "content": "马克杯5件在结账时触发最低6提示。",
+          "placement": "测试表对应行",
+          "priority": "核心",
+          "frontend": true
+        },
+        {
+          "id": "S03-05-马克杯3加托盘3拦截-zh",
+          "filename": "S03-05-马克杯3加托盘3拦截-zh.png",
+          "content": "两款分别3件，虽然合计6仍拦截；保留两个商品与各自数量。",
+          "placement": "测试表对应行",
+          "priority": "核心",
+          "frontend": true
+        },
+        {
+          "id": "S03-06-马克杯7件通过-zh",
+          "filename": "S03-06-马克杯7件通过-zh.png",
+          "content": "马克杯7件通过；证明不是必须6的倍数。",
+          "placement": "测试表对应行",
+          "priority": "补充",
+          "frontend": true
+        }
+      ]
+    },
+    {
+      "code": "S04",
+      "path": "scenarios/vip-quantity",
+      "title": "VIP最多4件，普通客户最多2件",
+      "purpose": "用完整业务配置和真实通过/拦截证明方案；不以基础操作截图代替关键参数。",
+      "prep": "同一个新品；准备VIP客户、无VIP客户和游客。后台标签资料与前台身份需对应，勿展示私人信息。",
+      "reuse": "M01-01 应用入口；对应类别创建入口、开关图见基础操作手册。",
+      "note": "",
+      "images": [
+        {
+          "id": "S04-01-VIP标签最大4件",
+          "filename": "S04-01-VIP标签最大4件.png",
+          "content": "数量规则A：分别限制每个适用商品、按客户标签使用不同数量；标签VIP、带有这些标签的客户；最小空、最大4。",
+          "placement": "设置规则参数",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "S04-02-非VIP标签最大2件",
+          "filename": "S04-02-非VIP标签最大2件.png",
+          "content": "数量规则B：分别限制每个适用商品、按客户标签使用不同数量；标签VIP、不带这些标签的客户；最小空、最大2。",
+          "placement": "设置规则参数",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "S04-03-商品范围与生效设置",
+          "filename": "S04-03-商品范围与生效设置.png",
+          "content": "两条规则都指定同一新品；购物车互动时和结账时；都创建并启用。此图截规则A范围；B范围也核对一致；规则列表拍法可复用M13-01。",
+          "placement": "选择商品、时机及启用",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "S04-04-VIP4件通过-zh",
+          "filename": "S04-04-VIP4件通过-zh.png",
+          "content": "登录VIP测试客户，同款4件通过。配对VIP标签资料或录屏身份切换。",
+          "placement": "测试表对应行",
+          "priority": "核心",
+          "frontend": true
+        },
+        {
+          "id": "S04-05-VIP5件拦截-zh",
+          "filename": "S04-05-VIP5件拦截-zh.png",
+          "content": "同一VIP账号，同款5件触发最大4提示。",
+          "placement": "测试表对应行",
+          "priority": "核心",
+          "frontend": true
+        },
+        {
+          "id": "S04-06-非VIP3件拦截-zh",
+          "filename": "S04-06-非VIP3件拦截-zh.png",
+          "content": "登录不带VIP标签客户，同款3件触发最大2提示。",
+          "placement": "测试表对应行",
+          "priority": "核心",
+          "frontend": true
+        },
+        {
+          "id": "S04-07-游客3件拦截-zh",
+          "filename": "S04-07-游客3件拦截-zh.png",
+          "content": "退出登录，游客同款3件触发最大2提示。",
+          "placement": "测试表对应行",
+          "priority": "补充",
+          "frontend": true
+        },
+        {
+          "id": "S04-08-VIP测试客户标签",
+          "filename": "S04-08-VIP测试客户标签.png",
+          "content": "Shopify 后台 → 客户 → 测试客户 → 标签；显示VIP标签。裁掉或遮住姓名、邮箱、地址、订单隐私。",
+          "placement": "测试前准备",
+          "priority": "补充",
+          "frontend": false
+        }
+      ]
+    },
+    {
+      "code": "S05",
+      "path": "scenarios/minimum-order-value",
+      "title": "商品金额至少100",
+      "purpose": "用完整业务配置和真实通过/拦截证明方案；不以基础操作截图代替关键参数。",
+      "prep": "店铺基础货币；使用无折扣测试商品组合，商品金额可精确凑99、100、120。",
+      "reuse": "M01-01 应用入口；对应类别创建入口、开关图见基础操作手册。",
+      "note": "不要使用含运费税费总额解释商品金额门槛。",
+      "images": [
+        {
+          "id": "S05-01-最低商品金额100",
+          "filename": "S05-01-最低商品金额100.png",
+          "content": "价格规则 → 创建价格规则：购物车价格限制；最低金额100、最高空；保留基础货币标识。",
+          "placement": "设置规则参数",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "S05-02-商品范围与生效设置",
+          "filename": "S05-02-商品范围与生效设置.png",
+          "content": "适用商品所有产品；仅结账时；保存并启用；开启价格规则。",
+          "placement": "选择商品、时机及启用",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "S05-03-商品金额100通过-zh",
+          "filename": "S05-03-商品金额100通过-zh.png",
+          "content": "商品金额100进入结账通过；能看清商品金额、基础货币及运费税费的区别。",
+          "placement": "测试表对应行",
+          "priority": "核心",
+          "frontend": true
+        },
+        {
+          "id": "S05-04-商品金额99拦截-zh",
+          "filename": "S05-04-商品金额99拦截-zh.png",
+          "content": "商品金额99在结账触发最低100提示；保留完整提示与金额。",
+          "placement": "测试表对应行",
+          "priority": "核心",
+          "frontend": true
+        },
+        {
+          "id": "S05-05-商品金额120通过-zh",
+          "filename": "S05-05-商品金额120通过-zh.png",
+          "content": "商品金额120进入结账通过。",
+          "placement": "测试表对应行",
+          "priority": "补充",
+          "frontend": true
+        }
+      ]
+    },
+    {
+      "code": "S06",
+      "path": "scenarios/customer-pricing",
+      "title": "批发客户最低500，普通客户最低100",
+      "purpose": "用完整业务配置和真实通过/拦截证明方案；不以基础操作截图代替关键参数。",
+      "prep": "准备带wholesale标签和不带此标签的两个客户；基础货币一致；先不叠加折扣。",
+      "reuse": "M01-01 应用入口；对应类别创建入口、开关图见基础操作手册。",
+      "note": "本例限制购物车金额，不修改售价，不是批发折扣。",
+      "images": [
+        {
+          "id": "S06-01-wholesale最低500",
+          "filename": "S06-01-wholesale最低500.png",
+          "content": "价格规则A：按客户标签使用不同价格限制；标签wholesale、带有这些标签的客户；最低500、最高空；保留货币。",
+          "placement": "设置规则参数",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "S06-02-非wholesale最低100",
+          "filename": "S06-02-非wholesale最低100.png",
+          "content": "价格规则B：同一类型；标签wholesale、不带这些标签的客户；最低100、最高空；保留货币。",
+          "placement": "设置规则参数",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "S06-03-商品范围与生效设置",
+          "filename": "S06-03-商品范围与生效设置.png",
+          "content": "两条规则均所有产品、仅结账时、保存并启用；开启价格规则。图截A范围，核对B相同。",
+          "placement": "选择商品、时机及启用",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "S06-04-批发500通过-zh",
+          "filename": "S06-04-批发500通过-zh.png",
+          "content": "wholesale客户登录，商品金额500通过。",
+          "placement": "测试表对应行",
+          "priority": "核心",
+          "frontend": true
+        },
+        {
+          "id": "S06-05-批发499拦截-zh",
+          "filename": "S06-05-批发499拦截-zh.png",
+          "content": "同一wholesale客户，499触发最低500提示。",
+          "placement": "测试表对应行",
+          "priority": "核心",
+          "frontend": true
+        },
+        {
+          "id": "S06-06-普通100通过-zh",
+          "filename": "S06-06-普通100通过-zh.png",
+          "content": "无wholesale客户，100通过。",
+          "placement": "测试表对应行",
+          "priority": "核心",
+          "frontend": true
+        },
+        {
+          "id": "S06-07-普通99拦截-zh",
+          "filename": "S06-07-普通99拦截-zh.png",
+          "content": "无wholesale客户，99触发最低100提示。",
+          "placement": "测试表对应行",
+          "priority": "核心",
+          "frontend": true
+        },
+        {
+          "id": "S06-08-wholesale测试客户标签",
+          "filename": "S06-08-wholesale测试客户标签.png",
+          "content": "Shopify 客户资料标签区域，显示wholesale；遮住个人资料。",
+          "placement": "测试前准备",
+          "priority": "补充",
+          "frontend": false
+        }
+      ]
+    },
+    {
+      "code": "S07",
+      "path": "scenarios/shipping-weight",
+      "title": "商品总重最多20kg",
+      "purpose": "用完整业务配置和真实通过/拦截证明方案；不以基础操作截图代替关键参数。",
+      "prep": "可购买变体重量分别2kg与500g，先核对真实商品数据。",
+      "reuse": "M01-01 应用入口；对应类别创建入口、开关图见基础操作手册。",
+      "note": "复用 M09-01-变体重量与单位.png；重量是商品重量，不含包装，也不计算运费。",
+      "images": [
+        {
+          "id": "S07-01-最高重量20kg",
+          "filename": "S07-01-最高重量20kg.png",
+          "content": "重量规则 → 创建重量规则：规则重量单位kg、最低空、最高20。",
+          "placement": "设置规则参数",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "S07-02-商品范围与生效设置",
+          "filename": "S07-02-商品范围与生效设置.png",
+          "content": "适用商品所有产品、适用客户所有客户、仅结账时；保存并启用；开启重量规则。",
+          "placement": "选择商品、时机及启用",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "S07-03-2kg乘10等于20kg通过-zh",
+          "filename": "S07-03-2kg乘10等于20kg通过-zh.png",
+          "content": "2kg变体10件进入结账通过；画面保留商品名称和数量。重量来源配M09-01核对，不手工伪造前台重量字段。",
+          "placement": "测试表对应行",
+          "priority": "核心",
+          "frontend": true
+        },
+        {
+          "id": "S07-04-2kg乘11等于22kg拦截-zh",
+          "filename": "S07-04-2kg乘11等于22kg拦截-zh.png",
+          "content": "相同变体11件，在结账显示最高重量提示。",
+          "placement": "测试表对应行",
+          "priority": "核心",
+          "frontend": true
+        },
+        {
+          "id": "S07-05-混合单位合计19kg通过-zh",
+          "filename": "S07-05-混合单位合计19kg通过-zh.png",
+          "content": "500g变体2件＋2kg变体9件，共19kg通过；保留两种产品与数量。",
+          "placement": "测试表对应行",
+          "priority": "补充",
+          "frontend": true
+        }
+      ]
+    },
+    {
+      "code": "S08",
+      "path": "scenarios/members-only",
+      "title": "VIP专属产品系列准入",
+      "purpose": "用完整业务配置和真实通过/拦截证明方案；不以基础操作截图代替关键参数。",
+      "prep": "会员专属产品系列；VIP客户、无VIP客户、游客；另有范围外产品。",
+      "reuse": "M01-01 应用入口；对应类别创建入口、开关图见基础操作手册。",
+      "note": "VIP标签资料可复用S04对应原图。此功能限制购买资格，不隐藏商品页面。",
+      "images": [
+        {
+          "id": "S08-01-仅VIP可购买",
+          "filename": "S08-01-仅VIP可购买.png",
+          "content": "客户限制规则 → 创建规则：标签VIP；「没有这些标签的客户不能购买」；勾选需要客户账户登录。",
+          "placement": "设置规则参数",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "S08-02-商品范围与生效设置",
+          "filename": "S08-02-商品范围与生效设置.png",
+          "content": "规则应用于产品系列，已选会员专属产品系列；仅结账时；创建并启用；开启客户限制规则。",
+          "placement": "选择商品、时机及启用",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "S08-03-VIP购买专属商品通过-zh",
+          "filename": "S08-03-VIP购买专属商品通过-zh.png",
+          "content": "VIP登录后，购买会员专属产品系列内商品进入结账通过。",
+          "placement": "测试表对应行",
+          "priority": "核心",
+          "frontend": true
+        },
+        {
+          "id": "S08-04-非VIP购买专属商品拦截-zh",
+          "filename": "S08-04-非VIP购买专属商品拦截-zh.png",
+          "content": "无VIP客户登录，购买相同商品出现禁止购买提示。",
+          "placement": "测试表对应行",
+          "priority": "核心",
+          "frontend": true
+        },
+        {
+          "id": "S08-05-游客购买要求登录-zh",
+          "filename": "S08-05-游客购买要求登录-zh.png",
+          "content": "退出登录，购买相同商品出现需要登录提示。",
+          "placement": "测试表对应行",
+          "priority": "核心",
+          "frontend": true
+        },
+        {
+          "id": "S08-06-范围外商品通过-zh",
+          "filename": "S08-06-范围外商品通过-zh.png",
+          "content": "无VIP登录客户只买范围外商品，通过。",
+          "placement": "测试表对应行",
+          "priority": "补充",
+          "frontend": true
+        }
+      ]
+    },
+    {
+      "code": "S09",
+      "path": "scenarios/block-customers",
+      "title": "禁止指定标签客户购买促销品",
+      "purpose": "用完整业务配置和真实通过/拦截证明方案；不以基础操作截图代替关键参数。",
+      "prep": "零售促销产品系列；带reseller标签客户、无此标签客户和游客；另备范围外商品。",
+      "reuse": "M01-01 应用入口；对应类别创建入口、开关图见基础操作手册。",
+      "note": "",
+      "images": [
+        {
+          "id": "S09-01-禁止reseller购买",
+          "filename": "S09-01-禁止reseller购买.png",
+          "content": "客户规则：标签reseller；「有这些标签的客户不能购买」；勾选需要客户账户登录。",
+          "placement": "设置规则参数",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "S09-02-商品范围与生效设置",
+          "filename": "S09-02-商品范围与生效设置.png",
+          "content": "规则应用于产品系列，已选零售促销产品系列；仅结账时；创建并启用；开启客户限制规则。",
+          "placement": "选择商品、时机及启用",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "S09-03-无reseller客户通过-zh",
+          "filename": "S09-03-无reseller客户通过-zh.png",
+          "content": "登录不带reseller标签客户，购买促销产品系列内商品通过。",
+          "placement": "测试表对应行",
+          "priority": "核心",
+          "frontend": true
+        },
+        {
+          "id": "S09-04-reseller客户被拦截-zh",
+          "filename": "S09-04-reseller客户被拦截-zh.png",
+          "content": "登录带reseller标签客户，购买相同商品出现禁止购买提示。",
+          "placement": "测试表对应行",
+          "priority": "核心",
+          "frontend": true
+        },
+        {
+          "id": "S09-05-游客购买要求登录-zh",
+          "filename": "S09-05-游客购买要求登录-zh.png",
+          "content": "退出登录，购买相同商品出现需要登录提示。",
+          "placement": "测试表对应行",
+          "priority": "核心",
+          "frontend": true
+        },
+        {
+          "id": "S09-06-reseller买范围外通过-zh",
+          "filename": "S09-06-reseller买范围外通过-zh.png",
+          "content": "reseller客户只买范围外商品通过。",
+          "placement": "测试表对应行",
+          "priority": "补充",
+          "frontend": true
+        },
+        {
+          "id": "S09-07-reseller测试客户标签",
+          "filename": "S09-07-reseller测试客户标签.png",
+          "content": "Shopify 客户资料标签区域，显示reseller；遮住个人资料。",
+          "placement": "测试前准备",
+          "priority": "补充",
+          "frontend": false
+        }
+      ]
+    },
+    {
+      "code": "S10",
+      "path": "scenarios/repeat-purchase",
+      "title": "样品每单1件，累计达到1件后限制复购",
+      "purpose": "用完整业务配置和真实通过/拦截证明方案；不以基础操作截图代替关键参数。",
+      "prep": "全新可登录客户、非订阅样品、测试下单方式。测试会创建订单，使用测试环境。",
+      "reuse": "M01-01 应用入口；对应类别创建入口、开关图见基础操作手册。",
+      "note": "拍摄顺序：先测首次2件拦截 → 首次1件通过 → 创建测试订单并等待记录更新 → 同客户再次1件拦截。退款/取消不清零，不用旧账号演示首次。没有独立历史面板。",
+      "images": [
+        {
+          "id": "S10-01-每单最多1件规则",
+          "filename": "S10-01-每单最多1件规则.png",
+          "content": "数量规则A：购物车数量限制、分别限制每个适用商品、最小空、最大1。",
+          "placement": "设置规则参数",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "S10-02-累计达到1件规则",
+          "filename": "S10-02-累计达到1件规则.png",
+          "content": "数量规则B：客户累计购买限制、历史已购达到多少件后限制再次购买填1；截实际门槛和说明。",
+          "placement": "设置规则参数",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "S10-03-商品范围与生效设置",
+          "filename": "S10-03-商品范围与生效设置.png",
+          "content": "两条规则均指定同一个非订阅样品，购物车互动时和结账时，均创建并启用；数量规则开关与校验已开启。图截累计规则范围，核对单次规则相同。",
+          "placement": "选择商品、时机及启用",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "S10-04-首次1件允许结账-zh",
+          "filename": "S10-04-首次1件允许结账-zh.png",
+          "content": "全新客户登录，首次样品1件通过；之后实际创建测试订单才进入复购步骤。",
+          "placement": "测试表对应行",
+          "priority": "核心",
+          "frontend": true
+        },
+        {
+          "id": "S10-05-首次2件被单次规则拦截-zh",
+          "filename": "S10-05-首次2件被单次规则拦截-zh.png",
+          "content": "尚无记录时，样品2件触发每单最多1件；先完成此测试再创建首次订单。",
+          "placement": "测试表对应行",
+          "priority": "核心",
+          "frontend": true
+        },
+        {
+          "id": "S10-06-已有记录再买1件拦截-zh",
+          "filename": "S10-06-已有记录再买1件拦截-zh.png",
+          "content": "同一客户首次测试订单记录更新后，再买同一样品1件，触发累计限制。",
+          "placement": "测试表对应行",
+          "priority": "核心",
+          "frontend": true
+        },
+        {
+          "id": "S10-07-游客购买要求登录-zh",
+          "filename": "S10-07-游客购买要求登录-zh.png",
+          "content": "退出登录后购买样品，保留真实登录提示。",
+          "placement": "测试表对应行",
+          "priority": "补充",
+          "frontend": true
+        },
+        {
+          "id": "S10-08-首次样品测试订单",
+          "filename": "S10-08-首次样品测试订单.png",
+          "content": "Shopify 后台 → 订单 → 刚创建的首次测试订单；保留样品名称、数量1、创建时间与测试状态，遮住订单号/个人资料；用连续录屏证明同一测试账户，不能把普通订单图当累计数据库。",
+          "placement": "首次实际下单与等待记录更新",
+          "priority": "核心",
+          "frontend": false
+        }
+      ]
+    },
+    {
+      "code": "S11",
+      "path": "scenarios/login-required",
+      "title": "购买指定商品必须登录",
+      "purpose": "用完整业务配置和真实通过/拦截证明方案；不以基础操作截图代替关键参数。",
+      "prep": "指定测试商品、范围外商品；游客、已登录无VIP客户、已登录VIP客户。",
+      "reuse": "M01-01 应用入口；对应类别创建入口、开关图见基础操作手册。",
+      "note": "不要求VIP，只验证登录条件；不要误用会员准入图。",
+      "images": [
+        {
+          "id": "S11-01-标签留空仅要求登录",
+          "filename": "S11-01-标签留空仅要求登录.png",
+          "content": "新客户规则：客户标签为空，勾选需要客户账户登录。保留空标签区域和勾选项；不要添加VIP。",
+          "placement": "设置规则参数",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "S11-02-商品范围与生效设置",
+          "filename": "S11-02-商品范围与生效设置.png",
+          "content": "指定产品选择测试商品；仅结账时；创建并启用；开启客户限制规则。",
+          "placement": "选择商品、时机及启用",
+          "priority": "核心",
+          "frontend": false
+        },
+        {
+          "id": "S11-03-游客购买要求登录-zh",
+          "filename": "S11-03-游客购买要求登录-zh.png",
+          "content": "游客购买指定商品，触发真实需要登录提示。",
+          "placement": "测试表对应行",
+          "priority": "核心",
+          "frontend": true
+        },
+        {
+          "id": "S11-04-无VIP登录客户通过-zh",
+          "filename": "S11-04-无VIP登录客户通过-zh.png",
+          "content": "登录无VIP标签客户，购买指定商品通过。",
+          "placement": "测试表对应行",
+          "priority": "核心",
+          "frontend": true
+        },
+        {
+          "id": "S11-05-VIP登录客户通过-zh",
+          "filename": "S11-05-VIP登录客户通过-zh.png",
+          "content": "登录VIP客户，购买同一商品也通过。",
+          "placement": "测试表对应行",
+          "priority": "补充",
+          "frontend": true
+        },
+        {
+          "id": "S11-06-游客购买范围外商品通过-zh",
+          "filename": "S11-06-游客购买范围外商品通过-zh.png",
+          "content": "游客只买范围外商品通过。",
+          "placement": "测试表对应行",
+          "priority": "补充",
+          "frontend": true
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "M01-01-应用首页入口",
+      "filename": "M01-01-应用首页入口.png",
+      "content": "Shopify 后台 → 应用 → 订单限购。显示数量、价格、重量、客户限制入口；保留应用名称与入口标签。",
+      "placement": "四类能力介绍之后",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "M01",
+      "article": "index",
+      "folder": "01-基础操作",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "M03-01-创建数量规则入口",
+      "filename": "M03-01-创建数量规则入口.png",
+      "content": "应用首页 → 所有数量规则。截列表与「创建规则」按钮。",
+      "placement": "进入规则列表步骤",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "M03",
+      "article": "quickstart",
+      "folder": "01-基础操作",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "M03-02-数量规则参数",
+      "filename": "M03-02-数量规则参数.png",
+      "content": "点击创建规则。规则名称填「测试水杯每单2件」；最小留空、最大2；数量计算方式选「分别限制每个适用商品」；条件选「购物车数量限制」。保留字段标签和选中状态。",
+      "placement": "填写数量参数步骤",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "M03",
+      "article": "quickstart",
+      "folder": "01-基础操作",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "M03-03-商品范围与创建启用",
+      "filename": "M03-03-商品范围与创建启用.png",
+      "content": "同一编辑器下半部：规则应用于「指定产品」，已选测试水杯；时机「购物车互动时和结账时」；截「创建并启用」按钮。保存后状态另见 M04。",
+      "placement": "选择产品及创建步骤",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "M03",
+      "article": "quickstart",
+      "folder": "01-基础操作",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "M03-04-数量功能开关与校验",
+      "filename": "M03-04-数量功能开关与校验.png",
+      "content": "返回数量限制首页。显示「开启数量规则」已开启、「开启产品数量限制」当前状态，以及「购物车与结账校验」已启用；开关标签全部保留。",
+      "placement": "开启功能与校验步骤",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "M03",
+      "article": "quickstart",
+      "folder": "01-基础操作",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "M03-05-水杯2件通过-zh",
+      "filename": "M03-05-水杯2件通过-zh.png",
+      "content": "前台同一测试水杯2件，继续进入结账，无本规则错误；保留产品、数量2及结账上下文。无需付款。",
+      "placement": "测试成功用例",
+      "priority": "核心",
+      "frontend": true,
+      "article_id": "M03",
+      "article": "quickstart",
+      "folder": "01-基础操作",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "M03-05-水杯2件通过-zh.png",
+        "en": "M03-05-水杯2件通过-en.png",
+        "ja": "M03-05-水杯2件通过-ja.png"
+      }
+    },
+    {
+      "id": "M03-06-水杯3件拦截-zh",
+      "filename": "M03-06-水杯3件拦截-zh.png",
+      "content": "同一测试水杯改3件，实际触发上限；保留商品、数量3、完整真实提示与当前页面上下文。",
+      "placement": "测试拦截用例",
+      "priority": "核心",
+      "frontend": true,
+      "article_id": "M03",
+      "article": "quickstart",
+      "folder": "01-基础操作",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "M03-06-水杯3件拦截-zh.png",
+        "en": "M03-06-水杯3件拦截-en.png",
+        "ja": "M03-06-水杯3件拦截-ja.png"
+      }
+    },
+    {
+      "id": "M04-01-规则列表已启用",
+      "filename": "M04-01-规则列表已启用.png",
+      "content": "所有数量规则列表；显示「测试水杯每单2件」规则名称与「已启用」。必须是保存成功后的列表。",
+      "placement": "三个状态说明",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "M04",
+      "article": "getting-started/how-it-works",
+      "folder": "01-基础操作",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "M04-02-选择指定产品",
+      "filename": "M04-02-选择指定产品.png",
+      "content": "数量规则编辑器 → 规则应用于「指定产品」→「选择产品」。截打开的产品选择界面、搜索结果和已选择对象；使用测试水杯。",
+      "placement": "选择适用商品",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "M04",
+      "article": "getting-started/how-it-works",
+      "folder": "01-基础操作",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "M04-03-选择产品系列",
+      "filename": "M04-03-选择产品系列.png",
+      "content": "另用普通购物车数量演示规则，选择「产品系列」→「选择产品系列」，选「促销产品系列」。保留选项名称与勾选项；不要在累计规则中演示。",
+      "placement": "选择适用商品",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "M04",
+      "article": "getting-started/how-it-works",
+      "folder": "01-基础操作",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "M05-01-产品与蓝色变体参数",
+      "filename": "M05-01-产品与蓝色变体参数.png",
+      "content": "按产品设置数量限制 → 搜索水杯并展开。产品行「已开启」、最小空、最大3；蓝色行「已开启」、最小空、最大1；红色行可见；保留顶部「保存」。",
+      "placement": "设置整款与蓝色步骤",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "M05",
+      "article": "getting-started/product-variant-limits",
+      "folder": "01-基础操作",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "M05-02-蓝色2件触发变体上限-zh",
+      "filename": "M05-02-蓝色2件触发变体上限-zh.png",
+      "content": "前台只放蓝色2件，真实触发蓝色上限1。产品、颜色、数量和提示同时可读。",
+      "placement": "变体上限验证",
+      "priority": "核心",
+      "frontend": true,
+      "article_id": "M05",
+      "article": "getting-started/product-variant-limits",
+      "folder": "01-基础操作",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "M05-02-蓝色2件触发变体上限-zh.png",
+        "en": "M05-02-蓝色2件触发变体上限-en.png",
+        "ja": "M05-02-蓝色2件触发变体上限-ja.png"
+      }
+    },
+    {
+      "id": "M05-03-水杯合计4件触发产品上限-zh",
+      "filename": "M05-03-水杯合计4件触发产品上限-zh.png",
+      "content": "蓝色1件＋红色3件，合计4；真实触发整款最大3提示。",
+      "placement": "产品上限验证",
+      "priority": "核心",
+      "frontend": true,
+      "article_id": "M05",
+      "article": "getting-started/product-variant-limits",
+      "folder": "01-基础操作",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "M05-03-水杯合计4件触发产品上限-zh.png",
+        "en": "M05-03-水杯合计4件触发产品上限-en.png",
+        "ja": "M05-03-水杯合计4件触发产品上限-ja.png"
+      }
+    },
+    {
+      "id": "M05-04-蓝1红2合计3件通过-zh",
+      "filename": "M05-04-蓝1红2合计3件通过-zh.png",
+      "content": "蓝色1件＋红色2件，进入结账通过，保留两个变体与数量。",
+      "placement": "边界通过验证",
+      "priority": "补充",
+      "frontend": true,
+      "article_id": "M05",
+      "article": "getting-started/product-variant-limits",
+      "folder": "01-基础操作",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "M05-04-蓝1红2合计3件通过-zh.png",
+        "en": "M05-04-蓝1红2合计3件通过-en.png",
+        "ja": "M05-04-蓝1红2合计3件通过-ja.png"
+      }
+    },
+    {
+      "id": "M05-05-产品数量功能已开启",
+      "filename": "M05-05-产品数量功能已开启.png",
+      "content": "数量限制首页：开启产品数量限制已开启，显示时机为购物车互动时和结账时，购物车与结账校验已启用；保留开启数量规则的独立标签，避免混淆。",
+      "placement": "开启产品数量限制步骤",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "M05",
+      "article": "getting-started/product-variant-limits",
+      "folder": "01-基础操作",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "M06-01-测试规则保存为草稿",
+      "filename": "M06-01-测试规则保存为草稿.png",
+      "content": "编辑测试数量规则，切换保存后的状态为「草稿」，截「保存为草稿」及状态选项。只操作演示规则。",
+      "placement": "暂停规则步骤",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "M06",
+      "article": "getting-started/launch-checklist",
+      "folder": "01-基础操作",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "M06-02-草稿规则列表状态",
+      "filename": "M06-02-草稿规则列表状态.png",
+      "content": "保存后返回列表，同一测试规则显示「草稿」。之后恢复为已启用并复核，可复用 M04-01 已启用图。",
+      "placement": "确认暂停及恢复步骤",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "M06",
+      "article": "getting-started/launch-checklist",
+      "folder": "01-基础操作",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "M07-01-合计数量计算方式",
+      "filename": "M07-01-合计数量计算方式.png",
+      "content": "创建普通数量演示规则：最大3、最小空；选「限制购物车内适用商品的加购数量合计」与「购物车数量限制」。截数值、两种计算选项与当前选中状态。",
+      "placement": "分别与合计的区别",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "M07",
+      "article": "features/quantity",
+      "folder": "01-基础操作",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "M08-01-价格规则创建入口",
+      "filename": "M08-01-价格规则创建入口.png",
+      "content": "首页 → 价格规则；截规则列表与「创建价格规则」。",
+      "placement": "创建规则第一步",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "M08",
+      "article": "features/price",
+      "folder": "01-基础操作",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "M08-02-价格规则金额与货币",
+      "filename": "M08-02-价格规则金额与货币.png",
+      "content": "创建演示价格规则：最低100、最高空，购物车价格限制，所有产品。显示实际基础货币、金额字段、商品范围和「保存并启用」；页面长则以金额和货币为主，范围见文字步骤。",
+      "placement": "填写金额参数",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "M08",
+      "article": "features/price",
+      "folder": "01-基础操作",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "M08-03-价格功能开关",
+      "filename": "M08-03-价格功能开关.png",
+      "content": "价格限制首页，「开启价格规则」保存完成后的开启状态。",
+      "placement": "启用价格规则",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "M08",
+      "article": "features/price",
+      "folder": "01-基础操作",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "M09-01-变体重量与单位",
+      "filename": "M09-01-变体重量与单位.png",
+      "content": "首页 → 按产品设置重量限制。显示两个可购买变体，一个2kg、另一个500g；保留产品、变体、重量数值和单位。",
+      "placement": "核对商品重量",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "M09",
+      "article": "features/weight",
+      "folder": "01-基础操作",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "M09-02-重量规则参数",
+      "filename": "M09-02-重量规则参数.png",
+      "content": "重量规则 → 创建重量规则。规则重量单位kg、最低空、最高20；适用商品所有产品、适用客户所有客户，时机仅结账时；保留「保存并启用」。长页优先保留重量字段。",
+      "placement": "创建重量规则",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "M09",
+      "article": "features/weight",
+      "folder": "01-基础操作",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "M09-03-重量功能开关",
+      "filename": "M09-03-重量功能开关.png",
+      "content": "重量限制首页，「开启重量规则」已开启并保存完成。",
+      "placement": "启用重量规则",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "M09",
+      "article": "features/weight",
+      "folder": "01-基础操作",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "M10-01-客户规则创建入口",
+      "filename": "M10-01-客户规则创建入口.png",
+      "content": "首页 → 客户限制规则 → 列表；保留「创建规则」按钮。",
+      "placement": "进入客户规则",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "M10",
+      "article": "features/customer",
+      "folder": "01-基础操作",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "M10-02-标签禁止方向",
+      "filename": "M10-02-标签禁止方向.png",
+      "content": "创建演示客户规则，客户标签填reseller，选「有这些标签的客户不能购买」，勾选「需要客户账户登录」。保留完整方向文字。",
+      "placement": "限制方式说明",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "M10",
+      "article": "features/customer",
+      "folder": "01-基础操作",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "M10-03-标签准入方向",
+      "filename": "M10-03-标签准入方向.png",
+      "content": "另一演示规则，客户标签VIP，选「没有这些标签的客户不能购买」，勾选登录。截图重点是与上一张相反的选项，商品范围另见案例。",
+      "placement": "限制方式说明",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "M10",
+      "article": "features/customer",
+      "folder": "01-基础操作",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "M10-04-只要求登录不填标签",
+      "filename": "M10-04-只要求登录不填标签.png",
+      "content": "新客户规则，客户标签为空，勾选「需要客户账户登录」。保留空标签区域、登录选项及「创建并启用」。",
+      "placement": "仅要求登录说明",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "M10",
+      "article": "features/customer",
+      "folder": "01-基础操作",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "M10-05-客户功能开关",
+      "filename": "M10-05-客户功能开关.png",
+      "content": "客户限制首页，「开启客户限制规则」已开启并保存完成。",
+      "placement": "启用客户限制",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "M10",
+      "article": "features/customer",
+      "folder": "01-基础操作",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "M11-01-累计规则门槛与范围",
+      "filename": "M11-01-累计规则门槛与范围.png",
+      "content": "新数量规则：选「客户累计购买限制」，「历史已购达到多少件后限制再次购买」填1；指定非订阅样品；保留范围选项及选中产品。不得选择产品系列。",
+      "placement": "设置累计门槛与商品范围",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "M11",
+      "article": "features/purchase-history",
+      "folder": "01-基础操作",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "M12-01-提示文案语言管理",
+      "filename": "M12-01-提示文案语言管理.png",
+      "content": "数量限制首页 → 顾客提示文案 → 配置提示文案。显示「已添加的语言」「添加语言」及可选语言/当前编辑语言。",
+      "placement": "添加语言步骤",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "M12",
+      "article": "settings/messages",
+      "folder": "01-基础操作",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "M12-02-数量提示模板与变量",
+      "filename": "M12-02-数量提示模板与变量.png",
+      "content": "数量提示编辑器，显示真实最大数量提示、变量如 {{maxQuantity}} 与 {{itemName}}、保存按钮。不要把变量替换成固定商品名。",
+      "placement": "编辑数量提示",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "M12",
+      "article": "settings/messages",
+      "folder": "01-基础操作",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "M12-03-金额提示模板与变量",
+      "filename": "M12-03-金额提示模板与变量.png",
+      "content": "价格限制的提示配置：最低金额提示、实际支持的 {{minAmount}} 等变量及保存。",
+      "placement": "金额提示示例",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "M12",
+      "article": "settings/messages",
+      "folder": "01-基础操作",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "M12-04-重量提示模板与变量",
+      "filename": "M12-04-重量提示模板与变量.png",
+      "content": "重量限制的提示配置：最高重量提示、{{maxWeight}} 等实际变量及保存。",
+      "placement": "重量提示示例",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "M12",
+      "article": "settings/messages",
+      "folder": "01-基础操作",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "M12-05-客户禁止与登录提示",
+      "filename": "M12-05-客户禁止与登录提示.png",
+      "content": "客户限制的提示配置：同时展示「禁止购买提示」和「需要客户账户登录提示」；保留真实模板及保存。",
+      "placement": "客户提示示例",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "M12",
+      "article": "settings/messages",
+      "folder": "01-基础操作",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "M12-06-变量替换后的数量提示-zh",
+      "filename": "M12-06-变量替换后的数量提示-zh.png",
+      "content": "使用已保存的中文文案，测试水杯3件触发最大2的真实提示；变量已替换成商品名与数值，保留商品与数量。",
+      "placement": "前台验证文案",
+      "priority": "核心",
+      "frontend": true,
+      "article_id": "M12",
+      "article": "settings/messages",
+      "folder": "01-基础操作",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "M12-06-变量替换后的数量提示-zh.png",
+        "en": "M12-06-变量替换后的数量提示-en.png",
+        "ja": "M12-06-变量替换后的数量提示-ja.png"
+      }
+    },
+    {
+      "id": "M13-01-数量规则顺序与状态",
+      "filename": "M13-01-数量规则顺序与状态.png",
+      "content": "所有数量规则列表。显示VIP最多4件、非VIP最多2件及通用单品规则的名称、状态和上下移动按钮；客户专用规则在通用单品规则之前。",
+      "placement": "调整数量规则顺序",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "M13",
+      "article": "settings/rule-priority",
+      "folder": "01-基础操作",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "S01-01-水杯每款最大2件",
+      "filename": "S01-01-水杯每款最大2件.png",
+      "content": "所有数量规则 → 创建规则：名称新品水杯每单2件；最小空、最大2；分别限制每个适用商品；购物车数量限制。",
+      "placement": "设置规则参数",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "S01",
+      "article": "scenarios/limited-release",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "S01-02-商品范围与生效设置",
+      "filename": "S01-02-商品范围与生效设置.png",
+      "content": "同一规则下半部：指定产品→限量水杯；购物车互动时和结账时；创建并启用。保存成功，数量规则开关与校验均开启。",
+      "placement": "选择商品、时机及启用",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "S01",
+      "article": "scenarios/limited-release",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "S01-03-红1蓝1合计2件通过-zh",
+      "filename": "S01-03-红1蓝1合计2件通过-zh.png",
+      "content": "水杯红1＋蓝1进入结账通过；显示同款两个变体和各自数量。",
+      "placement": "测试表对应行",
+      "priority": "核心",
+      "frontend": true,
+      "article_id": "S01",
+      "article": "scenarios/limited-release",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "S01-03-红1蓝1合计2件通过-zh.png",
+        "en": "S01-03-红1蓝1合计2件通过-en.png",
+        "ja": "S01-03-红1蓝1合计2件通过-ja.png"
+      }
+    },
+    {
+      "id": "S01-04-红1蓝2合计3件拦截-zh",
+      "filename": "S01-04-红1蓝2合计3件拦截-zh.png",
+      "content": "同款水杯红1＋蓝2，触发最大2提示；保留两个颜色与数量。",
+      "placement": "测试表对应行",
+      "priority": "核心",
+      "frontend": true,
+      "article_id": "S01",
+      "article": "scenarios/limited-release",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "S01-04-红1蓝2合计3件拦截-zh.png",
+        "en": "S01-04-红1蓝2合计3件拦截-en.png",
+        "ja": "S01-04-红1蓝2合计3件拦截-ja.png"
+      }
+    },
+    {
+      "id": "S01-05-范围外杯垫通过-zh",
+      "filename": "S01-05-范围外杯垫通过-zh.png",
+      "content": "只买范围外杯垫3件，进入结账通过；证明范围外不受本规则限制。",
+      "placement": "测试表对应行",
+      "priority": "补充",
+      "frontend": true,
+      "article_id": "S01",
+      "article": "scenarios/limited-release",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "S01-05-范围外杯垫通过-zh.png",
+        "en": "S01-05-范围外杯垫通过-en.png",
+        "ja": "S01-05-范围外杯垫通过-ja.png"
+      }
+    },
+    {
+      "id": "S02-01-产品系列合计最大3件",
+      "filename": "S02-01-产品系列合计最大3件.png",
+      "content": "新数量规则：最小空、最大3；「限制购物车内适用商品的加购数量合计」；购物车数量限制。",
+      "placement": "设置规则参数",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "S02",
+      "article": "scenarios/mix-and-match",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "S02-02-商品范围与生效设置",
+      "filename": "S02-02-商品范围与生效设置.png",
+      "content": "规则应用于产品系列；已选「促销产品系列」；购物车互动时和结账时；创建并启用。",
+      "placement": "选择商品、时机及启用",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "S02",
+      "article": "scenarios/mix-and-match",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "S02-03-A1加B2合计3件通过-zh",
+      "filename": "S02-03-A1加B2合计3件通过-zh.png",
+      "content": "A1＋B2通过，显示两个不同产品与数量。",
+      "placement": "测试表对应行",
+      "priority": "核心",
+      "frontend": true,
+      "article_id": "S02",
+      "article": "scenarios/mix-and-match",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "S02-03-A1加B2合计3件通过-zh.png",
+        "en": "S02-03-A1加B2合计3件通过-en.png",
+        "ja": "S02-03-A1加B2合计3件通过-ja.png"
+      }
+    },
+    {
+      "id": "S02-04-A2加B2合计4件拦截-zh",
+      "filename": "S02-04-A2加B2合计4件拦截-zh.png",
+      "content": "A2＋B2触发合计最大3提示。",
+      "placement": "测试表对应行",
+      "priority": "核心",
+      "frontend": true,
+      "article_id": "S02",
+      "article": "scenarios/mix-and-match",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "S02-04-A2加B2合计4件拦截-zh.png",
+        "en": "S02-04-A2加B2合计4件拦截-en.png",
+        "ja": "S02-04-A2加B2合计4件拦截-ja.png"
+      }
+    },
+    {
+      "id": "S02-05-A3加范围外5件通过-zh",
+      "filename": "S02-05-A3加范围外5件通过-zh.png",
+      "content": "A3＋范围外商品5件通过；保留两行数量，证明不把范围外5件计入。",
+      "placement": "测试表对应行",
+      "priority": "补充",
+      "frontend": true,
+      "article_id": "S02",
+      "article": "scenarios/mix-and-match",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "S02-05-A3加范围外5件通过-zh.png",
+        "en": "S02-05-A3加范围外5件通过-en.png",
+        "ja": "S02-05-A3加范围外5件通过-ja.png"
+      }
+    },
+    {
+      "id": "S02-06-促销产品系列成员",
+      "filename": "S02-06-促销产品系列成员.png",
+      "content": "Shopify 后台 → 产品 → 产品系列 → 促销产品系列；显示A/B/C成员，截图不要含无关经营数据。",
+      "placement": "测试前准备",
+      "priority": "补充",
+      "frontend": false,
+      "article_id": "S02",
+      "article": "scenarios/mix-and-match",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "S03-01-每款最低6件",
+      "filename": "S03-01-每款最低6件.png",
+      "content": "新数量规则：最小6、最大空；分别限制每个适用商品；购物车数量限制。",
+      "placement": "设置规则参数",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "S03",
+      "article": "scenarios/wholesale-minimum",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "S03-02-商品范围与生效设置",
+      "filename": "S03-02-商品范围与生效设置.png",
+      "content": "指定产品选择批发马克杯和托盘；仅结账时；创建并启用。",
+      "placement": "选择商品、时机及启用",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "S03",
+      "article": "scenarios/wholesale-minimum",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "S03-03-马克杯6件通过-zh",
+      "filename": "S03-03-马克杯6件通过-zh.png",
+      "content": "马克杯6件进入结账通过。",
+      "placement": "测试表对应行",
+      "priority": "核心",
+      "frontend": true,
+      "article_id": "S03",
+      "article": "scenarios/wholesale-minimum",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "S03-03-马克杯6件通过-zh.png",
+        "en": "S03-03-马克杯6件通过-en.png",
+        "ja": "S03-03-马克杯6件通过-ja.png"
+      }
+    },
+    {
+      "id": "S03-04-马克杯5件拦截-zh",
+      "filename": "S03-04-马克杯5件拦截-zh.png",
+      "content": "马克杯5件在结账时触发最低6提示。",
+      "placement": "测试表对应行",
+      "priority": "核心",
+      "frontend": true,
+      "article_id": "S03",
+      "article": "scenarios/wholesale-minimum",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "S03-04-马克杯5件拦截-zh.png",
+        "en": "S03-04-马克杯5件拦截-en.png",
+        "ja": "S03-04-马克杯5件拦截-ja.png"
+      }
+    },
+    {
+      "id": "S03-05-马克杯3加托盘3拦截-zh",
+      "filename": "S03-05-马克杯3加托盘3拦截-zh.png",
+      "content": "两款分别3件，虽然合计6仍拦截；保留两个商品与各自数量。",
+      "placement": "测试表对应行",
+      "priority": "核心",
+      "frontend": true,
+      "article_id": "S03",
+      "article": "scenarios/wholesale-minimum",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "S03-05-马克杯3加托盘3拦截-zh.png",
+        "en": "S03-05-马克杯3加托盘3拦截-en.png",
+        "ja": "S03-05-马克杯3加托盘3拦截-ja.png"
+      }
+    },
+    {
+      "id": "S03-06-马克杯7件通过-zh",
+      "filename": "S03-06-马克杯7件通过-zh.png",
+      "content": "马克杯7件通过；证明不是必须6的倍数。",
+      "placement": "测试表对应行",
+      "priority": "补充",
+      "frontend": true,
+      "article_id": "S03",
+      "article": "scenarios/wholesale-minimum",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "S03-06-马克杯7件通过-zh.png",
+        "en": "S03-06-马克杯7件通过-en.png",
+        "ja": "S03-06-马克杯7件通过-ja.png"
+      }
+    },
+    {
+      "id": "S04-01-VIP标签最大4件",
+      "filename": "S04-01-VIP标签最大4件.png",
+      "content": "数量规则A：分别限制每个适用商品、按客户标签使用不同数量；标签VIP、带有这些标签的客户；最小空、最大4。",
+      "placement": "设置规则参数",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "S04",
+      "article": "scenarios/vip-quantity",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "S04-02-非VIP标签最大2件",
+      "filename": "S04-02-非VIP标签最大2件.png",
+      "content": "数量规则B：分别限制每个适用商品、按客户标签使用不同数量；标签VIP、不带这些标签的客户；最小空、最大2。",
+      "placement": "设置规则参数",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "S04",
+      "article": "scenarios/vip-quantity",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "S04-03-商品范围与生效设置",
+      "filename": "S04-03-商品范围与生效设置.png",
+      "content": "两条规则都指定同一新品；购物车互动时和结账时；都创建并启用。此图截规则A范围；B范围也核对一致；规则列表拍法可复用M13-01。",
+      "placement": "选择商品、时机及启用",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "S04",
+      "article": "scenarios/vip-quantity",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "S04-04-VIP4件通过-zh",
+      "filename": "S04-04-VIP4件通过-zh.png",
+      "content": "登录VIP测试客户，同款4件通过。配对VIP标签资料或录屏身份切换。",
+      "placement": "测试表对应行",
+      "priority": "核心",
+      "frontend": true,
+      "article_id": "S04",
+      "article": "scenarios/vip-quantity",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "S04-04-VIP4件通过-zh.png",
+        "en": "S04-04-VIP4件通过-en.png",
+        "ja": "S04-04-VIP4件通过-ja.png"
+      }
+    },
+    {
+      "id": "S04-05-VIP5件拦截-zh",
+      "filename": "S04-05-VIP5件拦截-zh.png",
+      "content": "同一VIP账号，同款5件触发最大4提示。",
+      "placement": "测试表对应行",
+      "priority": "核心",
+      "frontend": true,
+      "article_id": "S04",
+      "article": "scenarios/vip-quantity",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "S04-05-VIP5件拦截-zh.png",
+        "en": "S04-05-VIP5件拦截-en.png",
+        "ja": "S04-05-VIP5件拦截-ja.png"
+      }
+    },
+    {
+      "id": "S04-06-非VIP3件拦截-zh",
+      "filename": "S04-06-非VIP3件拦截-zh.png",
+      "content": "登录不带VIP标签客户，同款3件触发最大2提示。",
+      "placement": "测试表对应行",
+      "priority": "核心",
+      "frontend": true,
+      "article_id": "S04",
+      "article": "scenarios/vip-quantity",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "S04-06-非VIP3件拦截-zh.png",
+        "en": "S04-06-非VIP3件拦截-en.png",
+        "ja": "S04-06-非VIP3件拦截-ja.png"
+      }
+    },
+    {
+      "id": "S04-07-游客3件拦截-zh",
+      "filename": "S04-07-游客3件拦截-zh.png",
+      "content": "退出登录，游客同款3件触发最大2提示。",
+      "placement": "测试表对应行",
+      "priority": "补充",
+      "frontend": true,
+      "article_id": "S04",
+      "article": "scenarios/vip-quantity",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "S04-07-游客3件拦截-zh.png",
+        "en": "S04-07-游客3件拦截-en.png",
+        "ja": "S04-07-游客3件拦截-ja.png"
+      }
+    },
+    {
+      "id": "S04-08-VIP测试客户标签",
+      "filename": "S04-08-VIP测试客户标签.png",
+      "content": "Shopify 后台 → 客户 → 测试客户 → 标签；显示VIP标签。裁掉或遮住姓名、邮箱、地址、订单隐私。",
+      "placement": "测试前准备",
+      "priority": "补充",
+      "frontend": false,
+      "article_id": "S04",
+      "article": "scenarios/vip-quantity",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "S05-01-最低商品金额100",
+      "filename": "S05-01-最低商品金额100.png",
+      "content": "价格规则 → 创建价格规则：购物车价格限制；最低金额100、最高空；保留基础货币标识。",
+      "placement": "设置规则参数",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "S05",
+      "article": "scenarios/minimum-order-value",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "S05-02-商品范围与生效设置",
+      "filename": "S05-02-商品范围与生效设置.png",
+      "content": "适用商品所有产品；仅结账时；保存并启用；开启价格规则。",
+      "placement": "选择商品、时机及启用",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "S05",
+      "article": "scenarios/minimum-order-value",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "S05-03-商品金额100通过-zh",
+      "filename": "S05-03-商品金额100通过-zh.png",
+      "content": "商品金额100进入结账通过；能看清商品金额、基础货币及运费税费的区别。",
+      "placement": "测试表对应行",
+      "priority": "核心",
+      "frontend": true,
+      "article_id": "S05",
+      "article": "scenarios/minimum-order-value",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "S05-03-商品金额100通过-zh.png",
+        "en": "S05-03-商品金额100通过-en.png",
+        "ja": "S05-03-商品金额100通过-ja.png"
+      }
+    },
+    {
+      "id": "S05-04-商品金额99拦截-zh",
+      "filename": "S05-04-商品金额99拦截-zh.png",
+      "content": "商品金额99在结账触发最低100提示；保留完整提示与金额。",
+      "placement": "测试表对应行",
+      "priority": "核心",
+      "frontend": true,
+      "article_id": "S05",
+      "article": "scenarios/minimum-order-value",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "S05-04-商品金额99拦截-zh.png",
+        "en": "S05-04-商品金额99拦截-en.png",
+        "ja": "S05-04-商品金额99拦截-ja.png"
+      }
+    },
+    {
+      "id": "S05-05-商品金额120通过-zh",
+      "filename": "S05-05-商品金额120通过-zh.png",
+      "content": "商品金额120进入结账通过。",
+      "placement": "测试表对应行",
+      "priority": "补充",
+      "frontend": true,
+      "article_id": "S05",
+      "article": "scenarios/minimum-order-value",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "S05-05-商品金额120通过-zh.png",
+        "en": "S05-05-商品金额120通过-en.png",
+        "ja": "S05-05-商品金额120通过-ja.png"
+      }
+    },
+    {
+      "id": "S06-01-wholesale最低500",
+      "filename": "S06-01-wholesale最低500.png",
+      "content": "价格规则A：按客户标签使用不同价格限制；标签wholesale、带有这些标签的客户；最低500、最高空；保留货币。",
+      "placement": "设置规则参数",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "S06",
+      "article": "scenarios/customer-pricing",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "S06-02-非wholesale最低100",
+      "filename": "S06-02-非wholesale最低100.png",
+      "content": "价格规则B：同一类型；标签wholesale、不带这些标签的客户；最低100、最高空；保留货币。",
+      "placement": "设置规则参数",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "S06",
+      "article": "scenarios/customer-pricing",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "S06-03-商品范围与生效设置",
+      "filename": "S06-03-商品范围与生效设置.png",
+      "content": "两条规则均所有产品、仅结账时、保存并启用；开启价格规则。图截A范围，核对B相同。",
+      "placement": "选择商品、时机及启用",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "S06",
+      "article": "scenarios/customer-pricing",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "S06-04-批发500通过-zh",
+      "filename": "S06-04-批发500通过-zh.png",
+      "content": "wholesale客户登录，商品金额500通过。",
+      "placement": "测试表对应行",
+      "priority": "核心",
+      "frontend": true,
+      "article_id": "S06",
+      "article": "scenarios/customer-pricing",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "S06-04-批发500通过-zh.png",
+        "en": "S06-04-批发500通过-en.png",
+        "ja": "S06-04-批发500通过-ja.png"
+      }
+    },
+    {
+      "id": "S06-05-批发499拦截-zh",
+      "filename": "S06-05-批发499拦截-zh.png",
+      "content": "同一wholesale客户，499触发最低500提示。",
+      "placement": "测试表对应行",
+      "priority": "核心",
+      "frontend": true,
+      "article_id": "S06",
+      "article": "scenarios/customer-pricing",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "S06-05-批发499拦截-zh.png",
+        "en": "S06-05-批发499拦截-en.png",
+        "ja": "S06-05-批发499拦截-ja.png"
+      }
+    },
+    {
+      "id": "S06-06-普通100通过-zh",
+      "filename": "S06-06-普通100通过-zh.png",
+      "content": "无wholesale客户，100通过。",
+      "placement": "测试表对应行",
+      "priority": "核心",
+      "frontend": true,
+      "article_id": "S06",
+      "article": "scenarios/customer-pricing",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "S06-06-普通100通过-zh.png",
+        "en": "S06-06-普通100通过-en.png",
+        "ja": "S06-06-普通100通过-ja.png"
+      }
+    },
+    {
+      "id": "S06-07-普通99拦截-zh",
+      "filename": "S06-07-普通99拦截-zh.png",
+      "content": "无wholesale客户，99触发最低100提示。",
+      "placement": "测试表对应行",
+      "priority": "核心",
+      "frontend": true,
+      "article_id": "S06",
+      "article": "scenarios/customer-pricing",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "S06-07-普通99拦截-zh.png",
+        "en": "S06-07-普通99拦截-en.png",
+        "ja": "S06-07-普通99拦截-ja.png"
+      }
+    },
+    {
+      "id": "S06-08-wholesale测试客户标签",
+      "filename": "S06-08-wholesale测试客户标签.png",
+      "content": "Shopify 客户资料标签区域，显示wholesale；遮住个人资料。",
+      "placement": "测试前准备",
+      "priority": "补充",
+      "frontend": false,
+      "article_id": "S06",
+      "article": "scenarios/customer-pricing",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "S07-01-最高重量20kg",
+      "filename": "S07-01-最高重量20kg.png",
+      "content": "重量规则 → 创建重量规则：规则重量单位kg、最低空、最高20。",
+      "placement": "设置规则参数",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "S07",
+      "article": "scenarios/shipping-weight",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "S07-02-商品范围与生效设置",
+      "filename": "S07-02-商品范围与生效设置.png",
+      "content": "适用商品所有产品、适用客户所有客户、仅结账时；保存并启用；开启重量规则。",
+      "placement": "选择商品、时机及启用",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "S07",
+      "article": "scenarios/shipping-weight",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "S07-03-2kg乘10等于20kg通过-zh",
+      "filename": "S07-03-2kg乘10等于20kg通过-zh.png",
+      "content": "2kg变体10件进入结账通过；画面保留商品名称和数量。重量来源配M09-01核对，不手工伪造前台重量字段。",
+      "placement": "测试表对应行",
+      "priority": "核心",
+      "frontend": true,
+      "article_id": "S07",
+      "article": "scenarios/shipping-weight",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "S07-03-2kg乘10等于20kg通过-zh.png",
+        "en": "S07-03-2kg乘10等于20kg通过-en.png",
+        "ja": "S07-03-2kg乘10等于20kg通过-ja.png"
+      }
+    },
+    {
+      "id": "S07-04-2kg乘11等于22kg拦截-zh",
+      "filename": "S07-04-2kg乘11等于22kg拦截-zh.png",
+      "content": "相同变体11件，在结账显示最高重量提示。",
+      "placement": "测试表对应行",
+      "priority": "核心",
+      "frontend": true,
+      "article_id": "S07",
+      "article": "scenarios/shipping-weight",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "S07-04-2kg乘11等于22kg拦截-zh.png",
+        "en": "S07-04-2kg乘11等于22kg拦截-en.png",
+        "ja": "S07-04-2kg乘11等于22kg拦截-ja.png"
+      }
+    },
+    {
+      "id": "S07-05-混合单位合计19kg通过-zh",
+      "filename": "S07-05-混合单位合计19kg通过-zh.png",
+      "content": "500g变体2件＋2kg变体9件，共19kg通过；保留两种产品与数量。",
+      "placement": "测试表对应行",
+      "priority": "补充",
+      "frontend": true,
+      "article_id": "S07",
+      "article": "scenarios/shipping-weight",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "S07-05-混合单位合计19kg通过-zh.png",
+        "en": "S07-05-混合单位合计19kg通过-en.png",
+        "ja": "S07-05-混合单位合计19kg通过-ja.png"
+      }
+    },
+    {
+      "id": "S08-01-仅VIP可购买",
+      "filename": "S08-01-仅VIP可购买.png",
+      "content": "客户限制规则 → 创建规则：标签VIP；「没有这些标签的客户不能购买」；勾选需要客户账户登录。",
+      "placement": "设置规则参数",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "S08",
+      "article": "scenarios/members-only",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "S08-02-商品范围与生效设置",
+      "filename": "S08-02-商品范围与生效设置.png",
+      "content": "规则应用于产品系列，已选会员专属产品系列；仅结账时；创建并启用；开启客户限制规则。",
+      "placement": "选择商品、时机及启用",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "S08",
+      "article": "scenarios/members-only",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "S08-03-VIP购买专属商品通过-zh",
+      "filename": "S08-03-VIP购买专属商品通过-zh.png",
+      "content": "VIP登录后，购买会员专属产品系列内商品进入结账通过。",
+      "placement": "测试表对应行",
+      "priority": "核心",
+      "frontend": true,
+      "article_id": "S08",
+      "article": "scenarios/members-only",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "S08-03-VIP购买专属商品通过-zh.png",
+        "en": "S08-03-VIP购买专属商品通过-en.png",
+        "ja": "S08-03-VIP购买专属商品通过-ja.png"
+      }
+    },
+    {
+      "id": "S08-04-非VIP购买专属商品拦截-zh",
+      "filename": "S08-04-非VIP购买专属商品拦截-zh.png",
+      "content": "无VIP客户登录，购买相同商品出现禁止购买提示。",
+      "placement": "测试表对应行",
+      "priority": "核心",
+      "frontend": true,
+      "article_id": "S08",
+      "article": "scenarios/members-only",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "S08-04-非VIP购买专属商品拦截-zh.png",
+        "en": "S08-04-非VIP购买专属商品拦截-en.png",
+        "ja": "S08-04-非VIP购买专属商品拦截-ja.png"
+      }
+    },
+    {
+      "id": "S08-05-游客购买要求登录-zh",
+      "filename": "S08-05-游客购买要求登录-zh.png",
+      "content": "退出登录，购买相同商品出现需要登录提示。",
+      "placement": "测试表对应行",
+      "priority": "核心",
+      "frontend": true,
+      "article_id": "S08",
+      "article": "scenarios/members-only",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "S08-05-游客购买要求登录-zh.png",
+        "en": "S08-05-游客购买要求登录-en.png",
+        "ja": "S08-05-游客购买要求登录-ja.png"
+      }
+    },
+    {
+      "id": "S08-06-范围外商品通过-zh",
+      "filename": "S08-06-范围外商品通过-zh.png",
+      "content": "无VIP登录客户只买范围外商品，通过。",
+      "placement": "测试表对应行",
+      "priority": "补充",
+      "frontend": true,
+      "article_id": "S08",
+      "article": "scenarios/members-only",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "S08-06-范围外商品通过-zh.png",
+        "en": "S08-06-范围外商品通过-en.png",
+        "ja": "S08-06-范围外商品通过-ja.png"
+      }
+    },
+    {
+      "id": "S09-01-禁止reseller购买",
+      "filename": "S09-01-禁止reseller购买.png",
+      "content": "客户规则：标签reseller；「有这些标签的客户不能购买」；勾选需要客户账户登录。",
+      "placement": "设置规则参数",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "S09",
+      "article": "scenarios/block-customers",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "S09-02-商品范围与生效设置",
+      "filename": "S09-02-商品范围与生效设置.png",
+      "content": "规则应用于产品系列，已选零售促销产品系列；仅结账时；创建并启用；开启客户限制规则。",
+      "placement": "选择商品、时机及启用",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "S09",
+      "article": "scenarios/block-customers",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "S09-03-无reseller客户通过-zh",
+      "filename": "S09-03-无reseller客户通过-zh.png",
+      "content": "登录不带reseller标签客户，购买促销产品系列内商品通过。",
+      "placement": "测试表对应行",
+      "priority": "核心",
+      "frontend": true,
+      "article_id": "S09",
+      "article": "scenarios/block-customers",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "S09-03-无reseller客户通过-zh.png",
+        "en": "S09-03-无reseller客户通过-en.png",
+        "ja": "S09-03-无reseller客户通过-ja.png"
+      }
+    },
+    {
+      "id": "S09-04-reseller客户被拦截-zh",
+      "filename": "S09-04-reseller客户被拦截-zh.png",
+      "content": "登录带reseller标签客户，购买相同商品出现禁止购买提示。",
+      "placement": "测试表对应行",
+      "priority": "核心",
+      "frontend": true,
+      "article_id": "S09",
+      "article": "scenarios/block-customers",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "S09-04-reseller客户被拦截-zh.png",
+        "en": "S09-04-reseller客户被拦截-en.png",
+        "ja": "S09-04-reseller客户被拦截-ja.png"
+      }
+    },
+    {
+      "id": "S09-05-游客购买要求登录-zh",
+      "filename": "S09-05-游客购买要求登录-zh.png",
+      "content": "退出登录，购买相同商品出现需要登录提示。",
+      "placement": "测试表对应行",
+      "priority": "核心",
+      "frontend": true,
+      "article_id": "S09",
+      "article": "scenarios/block-customers",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "S09-05-游客购买要求登录-zh.png",
+        "en": "S09-05-游客购买要求登录-en.png",
+        "ja": "S09-05-游客购买要求登录-ja.png"
+      }
+    },
+    {
+      "id": "S09-06-reseller买范围外通过-zh",
+      "filename": "S09-06-reseller买范围外通过-zh.png",
+      "content": "reseller客户只买范围外商品通过。",
+      "placement": "测试表对应行",
+      "priority": "补充",
+      "frontend": true,
+      "article_id": "S09",
+      "article": "scenarios/block-customers",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "S09-06-reseller买范围外通过-zh.png",
+        "en": "S09-06-reseller买范围外通过-en.png",
+        "ja": "S09-06-reseller买范围外通过-ja.png"
+      }
+    },
+    {
+      "id": "S09-07-reseller测试客户标签",
+      "filename": "S09-07-reseller测试客户标签.png",
+      "content": "Shopify 客户资料标签区域，显示reseller；遮住个人资料。",
+      "placement": "测试前准备",
+      "priority": "补充",
+      "frontend": false,
+      "article_id": "S09",
+      "article": "scenarios/block-customers",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "S10-01-每单最多1件规则",
+      "filename": "S10-01-每单最多1件规则.png",
+      "content": "数量规则A：购物车数量限制、分别限制每个适用商品、最小空、最大1。",
+      "placement": "设置规则参数",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "S10",
+      "article": "scenarios/repeat-purchase",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "S10-02-累计达到1件规则",
+      "filename": "S10-02-累计达到1件规则.png",
+      "content": "数量规则B：客户累计购买限制、历史已购达到多少件后限制再次购买填1；截实际门槛和说明。",
+      "placement": "设置规则参数",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "S10",
+      "article": "scenarios/repeat-purchase",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "S10-03-商品范围与生效设置",
+      "filename": "S10-03-商品范围与生效设置.png",
+      "content": "两条规则均指定同一个非订阅样品，购物车互动时和结账时，均创建并启用；数量规则开关与校验已开启。图截累计规则范围，核对单次规则相同。",
+      "placement": "选择商品、时机及启用",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "S10",
+      "article": "scenarios/repeat-purchase",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "S10-04-首次1件允许结账-zh",
+      "filename": "S10-04-首次1件允许结账-zh.png",
+      "content": "全新客户登录，首次样品1件通过；之后实际创建测试订单才进入复购步骤。",
+      "placement": "测试表对应行",
+      "priority": "核心",
+      "frontend": true,
+      "article_id": "S10",
+      "article": "scenarios/repeat-purchase",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "S10-04-首次1件允许结账-zh.png",
+        "en": "S10-04-首次1件允许结账-en.png",
+        "ja": "S10-04-首次1件允许结账-ja.png"
+      }
+    },
+    {
+      "id": "S10-05-首次2件被单次规则拦截-zh",
+      "filename": "S10-05-首次2件被单次规则拦截-zh.png",
+      "content": "尚无记录时，样品2件触发每单最多1件；先完成此测试再创建首次订单。",
+      "placement": "测试表对应行",
+      "priority": "核心",
+      "frontend": true,
+      "article_id": "S10",
+      "article": "scenarios/repeat-purchase",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "S10-05-首次2件被单次规则拦截-zh.png",
+        "en": "S10-05-首次2件被单次规则拦截-en.png",
+        "ja": "S10-05-首次2件被单次规则拦截-ja.png"
+      }
+    },
+    {
+      "id": "S10-06-已有记录再买1件拦截-zh",
+      "filename": "S10-06-已有记录再买1件拦截-zh.png",
+      "content": "同一客户首次测试订单记录更新后，再买同一样品1件，触发累计限制。",
+      "placement": "测试表对应行",
+      "priority": "核心",
+      "frontend": true,
+      "article_id": "S10",
+      "article": "scenarios/repeat-purchase",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "S10-06-已有记录再买1件拦截-zh.png",
+        "en": "S10-06-已有记录再买1件拦截-en.png",
+        "ja": "S10-06-已有记录再买1件拦截-ja.png"
+      }
+    },
+    {
+      "id": "S10-07-游客购买要求登录-zh",
+      "filename": "S10-07-游客购买要求登录-zh.png",
+      "content": "退出登录后购买样品，保留真实登录提示。",
+      "placement": "测试表对应行",
+      "priority": "补充",
+      "frontend": true,
+      "article_id": "S10",
+      "article": "scenarios/repeat-purchase",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "S10-07-游客购买要求登录-zh.png",
+        "en": "S10-07-游客购买要求登录-en.png",
+        "ja": "S10-07-游客购买要求登录-ja.png"
+      }
+    },
+    {
+      "id": "S10-08-首次样品测试订单",
+      "filename": "S10-08-首次样品测试订单.png",
+      "content": "Shopify 后台 → 订单 → 刚创建的首次测试订单；保留样品名称、数量1、创建时间与测试状态，遮住订单号/个人资料；用连续录屏证明同一测试账户，不能把普通订单图当累计数据库。",
+      "placement": "首次实际下单与等待记录更新",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "S10",
+      "article": "scenarios/repeat-purchase",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "S11-01-标签留空仅要求登录",
+      "filename": "S11-01-标签留空仅要求登录.png",
+      "content": "新客户规则：客户标签为空，勾选需要客户账户登录。保留空标签区域和勾选项；不要添加VIP。",
+      "placement": "设置规则参数",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "S11",
+      "article": "scenarios/login-required",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "S11-02-商品范围与生效设置",
+      "filename": "S11-02-商品范围与生效设置.png",
+      "content": "指定产品选择测试商品；仅结账时；创建并启用；开启客户限制规则。",
+      "placement": "选择商品、时机及启用",
+      "priority": "核心",
+      "frontend": false,
+      "article_id": "S11",
+      "article": "scenarios/login-required",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {}
+    },
+    {
+      "id": "S11-03-游客购买要求登录-zh",
+      "filename": "S11-03-游客购买要求登录-zh.png",
+      "content": "游客购买指定商品，触发真实需要登录提示。",
+      "placement": "测试表对应行",
+      "priority": "核心",
+      "frontend": true,
+      "article_id": "S11",
+      "article": "scenarios/login-required",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "S11-03-游客购买要求登录-zh.png",
+        "en": "S11-03-游客购买要求登录-en.png",
+        "ja": "S11-03-游客购买要求登录-ja.png"
+      }
+    },
+    {
+      "id": "S11-04-无VIP登录客户通过-zh",
+      "filename": "S11-04-无VIP登录客户通过-zh.png",
+      "content": "登录无VIP标签客户，购买指定商品通过。",
+      "placement": "测试表对应行",
+      "priority": "核心",
+      "frontend": true,
+      "article_id": "S11",
+      "article": "scenarios/login-required",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "S11-04-无VIP登录客户通过-zh.png",
+        "en": "S11-04-无VIP登录客户通过-en.png",
+        "ja": "S11-04-无VIP登录客户通过-ja.png"
+      }
+    },
+    {
+      "id": "S11-05-VIP登录客户通过-zh",
+      "filename": "S11-05-VIP登录客户通过-zh.png",
+      "content": "登录VIP客户，购买同一商品也通过。",
+      "placement": "测试表对应行",
+      "priority": "补充",
+      "frontend": true,
+      "article_id": "S11",
+      "article": "scenarios/login-required",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "S11-05-VIP登录客户通过-zh.png",
+        "en": "S11-05-VIP登录客户通过-en.png",
+        "ja": "S11-05-VIP登录客户通过-ja.png"
+      }
+    },
+    {
+      "id": "S11-06-游客购买范围外商品通过-zh",
+      "filename": "S11-06-游客购买范围外商品通过-zh.png",
+      "content": "游客只买范围外商品通过。",
+      "placement": "测试表对应行",
+      "priority": "补充",
+      "frontend": true,
+      "article_id": "S11",
+      "article": "scenarios/login-required",
+      "folder": "02-场景案例",
+      "status": "待截图",
+      "localized_filenames": {
+        "zh": "S11-06-游客购买范围外商品通过-zh.png",
+        "en": "S11-06-游客购买范围外商品通过-en.png",
+        "ja": "S11-06-游客购买范围外商品通过-ja.png"
+      }
+    }
+  ]
+}

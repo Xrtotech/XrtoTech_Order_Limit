@@ -1,9 +1,11 @@
 ---
-title: "常见问题"
-description: "快速确认订单限购的能力边界、计算方式和常见使用疑问。"
-keywords: ["Shopify", "订单限购", "常见问题"]
+title: "Shopify 订单限购常见问题：数量、金额、会员与复购"
+description: "解答数量最低值、产品变体、购买倍数、客户标签、商品隐藏、重量运费、金额计算和累计周期等常见问题，帮助你判断现有功能是否符合业务目标。"
+keywords: ["Shopify", "订单限购常见问题", "购买倍数", "会员限购", "功能边界"]
 sidebarTitle: "常见问题"
 ---
+
+{/* Screenshot plan M15: No new capture; see screenshot-plan.md M15 for reuse. */}
 
 使用订单限购时，先区分单次购买、客户购买资格和已记录的历史购买。以下问题解释最容易混淆的设置。
 
@@ -24,7 +26,7 @@ sidebarTitle: "常见问题"
 当前按任意一个标签匹配。客户限制中选择“没有这些标签的客户不能购买”，表示客户至少匹配一个标签才能购买。
 </Accordion>
 <Accordion title="客户限制会隐藏商品或价格吗？">
-不会。它限制购买资格，不自动隐藏产品页、价格或系列，也不提供网站访问控制。
+不会。它限制购买资格，不自动隐藏产品页、价格或产品系列，也不提供网站访问控制。
 </Accordion>
 <Accordion title="重量限制会替我设置运费或拆包吗？">
 不会。它只判断适用商品的合计重量。包装、运费和配送安排需要你另行设置。
@@ -38,6 +40,23 @@ sidebarTitle: "常见问题"
 <Accordion title="是否支持配送、支付方式或组合套餐限制？">
 本手册核对的当前功能是数量、价格、重量和客户限制。没有将配送方式、支付方式、页面访问或组合套餐规则作为现有功能介绍。
 </Accordion>
+<Accordion title="保存成功后，为什么还要检查开关？">
+规则保存、规则状态、功能类别开关和实际校验是不同步骤。数量规则还要确认 **购物车与结账校验**。[快速上手](/quickstart)列出了完整顺序。
+</Accordion>
+<Accordion title="怎样临时暂停一条规则？">
+把规则状态改为 **草稿**，点击 **保存为草稿**。恢复时选择 **已启用** 并保存。产品与变体表格则修改行内 **限制状态**。详见[暂停与恢复](/getting-started/launch-checklist)。
+</Accordion>
+<Accordion title="只想要求登录，所有人都要加 VIP 标签吗？">
+不需要。客户规则可以不添加标签，只勾选 **需要客户账户登录**。参见[登录后购买](/scenarios/login-required)。
+</Accordion>
+<Accordion title="适用产品系列里没有商品在购物车，会强制顾客购买吗？">
+不会。这条范围规则只在购物车有适用商品时检查。测试时请加一组仅购买范围外商品的用例。
+</Accordion>
+<Accordion title="帮助中心切换英文，会把店铺提示一起改成英文吗？">
+不会。你需要在对应类别的 **顾客提示文案** 单独配置语言，然后切换前台或结账语言测试。参见[提示文案与语言](/settings/messages)。
+</Accordion>
 </AccordionGroup>
 
 遇到配置问题时，阅读[规则排查](/troubleshooting/rules-not-working)。
+
+不确定该选哪种限制？先看[方案选择](/getting-started/choose-rule)。准备上线时，按[测试清单](/getting-started/launch-checklist)逐项检查。

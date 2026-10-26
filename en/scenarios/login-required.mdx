@@ -1,0 +1,48 @@
+---
+title: "Require sign-in to buy selected Shopify products"
+description: "Create a sign-in-only customer rule with no tags. Select products, enable the rule and test guest checkout against signed-in customers with and without VIP."
+sidebarTitle: "Require sign-in"
+keywords: ["Shopify", "require login", "customer sign-in", "purchase eligibility"]
+---
+
+{/* Screenshot plan S11: S11-01-标签留空仅要求登录.png; S11-02-商品范围与生效设置.png; S11-03-游客购买要求登录-zh.png; S11-04-无VIP登录客户通过-zh.png; S11-05-VIP登录客户通过-zh.png; S11-06-游客购买范围外商品通过-zh.png */}
+
+Use a customer rule in Order Limit when buyers must sign in for selected products without needing a VIP or wholesale tag. This example allows any signed-in customer to buy one selected product.
+
+## Before you begin
+
+Prepare a purchasable product and a customer account that can sign in on your storefront. Confirm that the store sign-in flow works.
+
+## Settings
+
+| Setting | Example value |
+| --- | --- |
+| Rule name | Selected product requires sign-in |
+| Customer tags | None |
+| Require customer account sign-in | Selected |
+| Product scope | Specific products: the test product |
+| Timing | Checkout only |
+| Status | Active |
+
+## Steps
+
+1. Open **Apps** → **订单限购** → **客户限制规则** in Shopify, then click **创建规则**.
+2. Enter the rule name. Leave tags empty and select **需要客户账户登录**.
+3. Under **规则应用于**, select **指定产品**, click **选择产品**, and confirm the test product name appears.
+4. Select **仅结账时**, set **保存后的状态** to **已启用**, and click **创建并启用**.
+5. Return to **客户限制**, turn on **开启客户限制规则**, and wait for successful saving. Reopen the rule to confirm the values.
+
+## Test your configuration
+
+| Test | Result for this example |
+| --- | --- |
+| Guest enters checkout with the selected product | Sign-in required |
+| Signed in without VIP, selected product | Allowed by this rule |
+| Signed in with VIP, selected product | Allowed by this rule |
+| Guest buys only unrelated products | Outside this rule |
+
+## Boundaries
+
+This rule does not hide products, create accounts or assign tags. Other active quantity, price, weight or eligibility rules still apply. A guest adding items to a cart does not prove a checkout-only rule failed.
+
+For VIP-only eligibility, use [member exclusives](/en/scenarios/members-only). Follow [troubleshooting](/en/troubleshooting/rules-not-working) if needed and complete the [launch checklist](/en/getting-started/launch-checklist). Bold Chinese labels match the app UI.

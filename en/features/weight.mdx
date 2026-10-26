@@ -1,9 +1,11 @@
 ---
-title: "How weight limits are calculated"
-description: "Use variant weights multiplied by quantities to set total merchandise thresholds."
-sidebarTitle: "Weight calculation"
-keywords: ["Shopify", "Order Limits", "How weight limits are calculated"]
+title: "How Shopify weight limits count variants and units"
+description: "Calculate merchandise weight from variant weights and quantities. Check unit conversion, missing data, customer conditions and minimum or maximum limits."
+sidebarTitle: "Weight limits"
+keywords: ["Shopify", "weight calculation", "weight units", "variant data"]
 ---
+
+{/* Screenshot plan M09: M09-01-变体重量与单位.png; M09-02-重量规则参数.png; M09-03-重量功能开关.png */}
 
 Weight limits total applicable variant weights multiplied by cart quantities. Rules can apply to all products, selected products or collections, with optional customer-tag conditions.
 
@@ -43,3 +45,7 @@ Tag conditions can match customers with or without specified tags. Every matchin
 <Warning>Packaging is not included. The rule does not set shipping charges, split packages or select carriers.</Warning>
 
 Try [a 20 kg merchandise cap](/en/scenarios/shipping-weight).
+
+## Set a minimum or weight range
+
+Fill at least one threshold. For a range, the maximum must not be below the minimum. Choose the unit before entering values. For customer groups, use matching and non-matching tag conditions to avoid incompatible overlapping ranges. Follow the [launch checklist](/en/getting-started/launch-checklist).

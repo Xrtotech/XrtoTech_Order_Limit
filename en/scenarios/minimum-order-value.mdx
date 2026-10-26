@@ -1,11 +1,21 @@
 ---
-title: "Require a merchandise amount of at least 100"
-description: "Set a minimum using the current amount of applicable cart items."
+title: "Shopify minimum order amount: merchandise total 100"
+description: "Set a Shopify merchandise minimum of 100 in the store currency. Test boundaries and understand current item amounts, compare-at prices and shipping."
 sidebarTitle: "Minimum order value"
-keywords: ["Shopify", "Order Limits", "Require a merchandise amount of at least 100"]
+keywords: ["Shopify", "minimum order amount", "merchandise minimum", "checkout threshold"]
 ---
 
+{/* Screenshot plan S05: S05-01-最低商品金额100.png; S05-02-商品范围与生效设置.png; S05-03-商品金额100通过-zh.png; S05-04-商品金额99拦截-zh.png; S05-05-商品金额120通过-zh.png */}
+
 Your store requires merchandise worth at least 100 before checkout. Use a price rule and enter the threshold in the shop’s base currency.
+
+## When to use this
+
+Use this when checkout requires a minimum merchandise amount. It sets a purchase condition without creating free shipping or discounts.
+
+## Before you begin
+
+Confirm the store currency. Prepare carts with merchandise amounts of 99, 100 and 120. Start without discounts.
 
 ## Settings
 
@@ -22,11 +32,16 @@ Open the app home page → **Price rules** → create a price rule.
 
 ## Steps
 
-1. Create the rule with the settings above. Enter amounts in the shop’s base currency.
-2. Select **Active** and click **Save and activate**.
-3. Return to **Price limits**, turn on **Enable price rules**, and check for any saving error.
+1. Open **Apps** → **订单限购** in Shopify. From the app home page, open **价格规则** and click **创建价格规则**.
+2. Enter the rule name and thresholds from the settings table. The name is for admin use only.
+3. Under **规则应用于**, select the scope in the table. For selected products or collections, click **选择产品** or **选择产品系列** and confirm the selected names appear.
+4. Set the timing from the table. Under **保存后的状态**, select **已启用** and click **保存并启用**. When editing an existing rule, click **保存并启用**.
+5. Return to **价格限制** and turn on **开启价格规则**. Wait for saving to complete and check for errors.
+6. Reopen the rule to confirm its thresholds, scope, customer conditions and active state were saved. Run the storefront tests below.
 
 ## Test your configuration
+
+Each result describes this recipe only. Keep the product scope consistent and verify checkout; other active rules may still block the cart.
 
 | Test | Expected result for this scenario |
 | --- | --- |
@@ -38,3 +53,9 @@ Open the app home page → **Price rules** → create a price rule.
 <Warning>The rule checks applicable merchandise amounts, not the final order total including shipping and taxes. Test your actual discounts and markets.</Warning>
 
 To limit a collection instead, change the scope to **Collections**. See [price limits](/en/features/price).
+
+## If results differ
+
+Merchandise of 90 plus shipping of 10 does not meet 100. Check current merchandise amounts, discounts, market conversion and other price rules.
+
+Use [troubleshooting](/en/troubleshooting/rules-not-working) to investigate. Complete the [launch checklist](/en/getting-started/launch-checklist) before rolling out.

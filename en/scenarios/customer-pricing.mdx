@@ -1,11 +1,21 @@
 ---
-title: "Use different minimum amounts for wholesale and retail"
-description: "Set complementary tag conditions for wholesale and other customers."
+title: "Shopify minimums: wholesale 500 and retail 100"
+description: "Set wholesale merchandise minimums of 500 and retail minimums of 100 in Shopify. Use complementary tags and test overlapping rules and customer identity."
 sidebarTitle: "Customer pricing"
-keywords: ["Shopify", "Order Limits", "Use different minimum amounts for wholesale and retail"]
+keywords: ["Shopify", "wholesale minimum amount", "customer pricing rules", "tag conditions"]
 ---
 
+{/* Screenshot plan S06: S06-01-wholesale最低500.png; S06-02-非wholesale最低100.png; S06-03-商品范围与生效设置.png; S06-04-批发500通过-zh.png; S06-05-批发499拦截-zh.png; S06-06-普通100通过-zh.png; S06-07-普通99拦截-zh.png; S06-08-wholesale测试客户标签.png */}
+
 Customers tagged wholesale must reach 500 in merchandise value. Other customers must reach 100. Two price rules apply different thresholds to these separate groups.
+
+## When to use this
+
+Use this for customer groups with different order minimums. Price limits set purchase thresholds; they do not change product prices.
+
+## Before you begin
+
+Prepare customers with and without the wholesale tag. Confirm the store currency and carts of 99, 100, 499 and 500.
 
 ## Settings
 
@@ -19,15 +29,23 @@ Open the app home page → **Price rules** → create a price rule.
 | Rule B | Tag wholesale, customers without the tag, minimum 100 |
 | Maximum amount for both | Leave blank |
 | Timing | Checkout only |
+| Rule names | Wholesale minimum 500; retail minimum 100 |
+| Status for both | Active |
 
 ## Steps
 
-1. Add `wholesale` to your test wholesale customer’s profile.
-2. Create both rules, add the tag, and choose the corresponding matching condition.
-3. Activate and save both rules, then turn on **Enable price rules**.
-4. Test with a signed-in wholesale customer and a regular customer.
+1. Open **Apps** → **订单限购** in Shopify. From the app home page, open **价格规则** and click **创建价格规则**.
+2. Add the example tag to the customer profile in Shopify. In the rule, enter the same tag, click **添加标签**, and check that it appears before choosing the tag condition.
+3. Enter the rule name and thresholds from the settings table. The name is for admin use only.
+4. Under **规则应用于**, select the scope in the table. For selected products or collections, click **选择产品** or **选择产品系列** and confirm the selected names appear.
+5. Create both rule A and rule B with the same product scope. Match tagged customers in one and untagged customers in the other; set each threshold separately.
+6. Set the timing from the table. Under **保存后的状态**, select **已启用** and click **保存并启用**. When editing an existing rule, click **保存并启用**.
+7. Return to **价格限制** and turn on **开启价格规则**. Wait for saving to complete and check for errors.
+8. Reopen the rule to confirm its thresholds, scope, customer conditions and active state were saved. Run the storefront tests below.
 
 ## Test your configuration
+
+Each result describes this recipe only. Keep the product scope consistent and verify checkout; other active rules may still block the cart.
 
 | Test | Expected result for this scenario |
 | --- | --- |
@@ -39,3 +57,9 @@ Open the app home page → **Price rules** → create a price rule.
 <Note>Every matching price rule is checked. Remove or revise an additional all-customer minimum of 500; otherwise regular customers must satisfy it too.</Note>
 
 Read [price calculations and currency conversion](/en/features/price).
+
+## If results differ
+
+If retail customers also need 500, check for a general 500 minimum. One group rule must match the tag and the other must match its absence.
+
+Use [troubleshooting](/en/troubleshooting/rules-not-working) to investigate. Complete the [launch checklist](/en/getting-started/launch-checklist) before rolling out.

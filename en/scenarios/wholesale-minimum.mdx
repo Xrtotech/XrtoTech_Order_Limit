@@ -1,11 +1,21 @@
 ---
-title: "Require at least 6 units of each wholesale product"
-description: "Check each selected product against a minimum quantity at checkout."
+title: "Shopify wholesale minimum: 6 units of each product"
+description: "Require six units of each selected wholesale product in Shopify. Test the minimum at checkout and distinguish minimum quantity from pack multiples."
 sidebarTitle: "Wholesale minimum"
-keywords: ["Shopify", "Order Limits", "Require at least 6 units of each wholesale product"]
+keywords: ["Shopify", "minimum order quantity", "wholesale MOQ", "per product minimum"]
 ---
 
+{/* Screenshot plan S03: S03-01-每款最低6件.png; S03-02-商品范围与生效设置.png; S03-03-马克杯6件通过-zh.png; S03-04-马克杯5件拦截-zh.png; S03-05-马克杯3加托盘3拦截-zh.png; S03-06-马克杯7件通过-zh.png */}
+
 You sell wholesale mugs and trays. Each product a customer chooses must have at least 6 units. An individual rule prevents one product from contributing to another product’s minimum.
+
+## When to use this
+
+Use this for wholesale orders where each product has its own minimum. This example does not assign wholesale prices or identify wholesale customers.
+
+## Before you begin
+
+Prepare two distinct products, wholesale mugs and trays, with stock for at least 6 units of each.
 
 ## Settings
 
@@ -23,11 +33,16 @@ Open the app home page → **All quantity rules** → create a rule.
 
 ## Steps
 
-1. Create a quantity rule using the settings above. Select your actual products or collection.
-2. Set the status to **Active** and click **Save and activate**.
-3. Return to **Quantity limits**. Turn on **Enable quantity rules** and confirm **Cart and checkout validation** is enabled.
+1. Open **Apps** → **订单限购** in Shopify. From the app home page, open **所有数量规则** and click **创建规则**.
+2. Enter the rule name and thresholds from the settings table. The name is for admin use only.
+3. Under **规则应用于**, select the scope in the table. For selected products or collections, click **选择产品** or **选择产品系列** and confirm the selected names appear.
+4. Set the timing from the table. Under **保存后的状态**, select **已启用** and click **创建并启用**. When editing an existing rule, click **保存并启用**.
+5. Return to **数量限制** and turn on **开启数量规则**. Confirm **购物车与结账校验** is enabled, using **启用校验** if necessary.
+6. Reopen the rule to confirm its thresholds, scope, customer conditions and active state were saved. Run the storefront tests below.
 
 ## Test your configuration
+
+Each result describes this recipe only. Keep the product scope consistent and verify checkout; other active rules may still block the cart.
 
 | Test | Expected result for this scenario |
 | --- | --- |
@@ -39,3 +54,9 @@ Open the app home page → **All quantity rules** → create a rule.
 <Warning>A minimum of 6 also allows 7. It does not require multiples such as 6, 12 and 18. The current editor has no purchase-step setting.</Warning>
 
 To let different products contribute to the same minimum, choose the combined calculation. See [quantity limits](/en/features/quantity).
+
+## If results differ
+
+Adding one unit without a warning is expected. Continue to checkout to check the minimum. Use combined quantity if products should count toward one minimum of 6.
+
+Use [troubleshooting](/en/troubleshooting/rules-not-working) to investigate. Complete the [launch checklist](/en/getting-started/launch-checklist) before rolling out.

@@ -1,11 +1,21 @@
 ---
-title: "Give VIPs 4 units and other customers 2"
-description: "Create mutually exclusive tag conditions for different quantity allowances."
+title: "Shopify VIP limits: 4 units for members, 2 for others"
+description: "Give VIP customers four units and others two in Shopify. Create complementary tag rules, check rule order and test signed-in customers and guests."
 sidebarTitle: "Customer allowances"
-keywords: ["Shopify", "Order Limits", "Give VIPs 4 units and other customers 2"]
+keywords: ["Shopify", "VIP quantity limit", "customer tags", "member allowance"]
 ---
 
+{/* Screenshot plan S04: S04-01-VIP标签最大4件.png; S04-02-非VIP标签最大2件.png; S04-03-商品范围与生效设置.png; S04-04-VIP4件通过-zh.png; S04-05-VIP5件拦截-zh.png; S04-06-非VIP3件拦截-zh.png; S04-07-游客3件拦截-zh.png; S04-08-VIP测试客户标签.png */}
+
 VIP customers can buy up to 4 units of a new product, while everyone else can buy 2. Two complementary customer-tag rules keep the customer groups separate.
+
+## When to use this
+
+Use this to give members and other customers different allowances. The VIP tag selects the allowance; it does not create a membership program.
+
+## Before you begin
+
+Prepare one new product, a test customer tagged VIP and a customer without that tag. Adding a tag to a rule does not assign it to customer profiles.
 
 ## Settings
 
@@ -20,15 +30,26 @@ Open the app home page → **Customer tag quantity rules** → create a rule.
 | Rule A: maximum | 4 |
 | Rule B: tag condition | Customers without these tags: VIP |
 | Rule B: maximum | 2 |
+| Rule names | VIP maximum 4; non-VIP maximum 2 |
+| Minimum for both | Blank |
+| Timing | Cart interactions and checkout |
+| Status | Active |
 
 ## Steps
 
-1. Add the `VIP` tag to your test member’s Shopify customer profile.
-2. Create and activate both rules. After entering a tag, click **Add tag**.
-3. Enable quantity rules and cart/checkout validation on the quantity overview page.
-4. Check **All quantity rules** for a general individual rule covering the same product. Move the specific rules above it if necessary.
+1. Open **Apps** → **订单限购** in Shopify. From the app home page, open **客户标签数量规则** and click **创建规则**.
+2. Add the example tag to the customer profile in Shopify. In the rule, enter the same tag, click **添加标签**, and check that it appears before choosing the tag condition.
+3. Enter the rule name and thresholds from the settings table. The name is for admin use only.
+4. Under **规则应用于**, select the scope in the table. For selected products or collections, click **选择产品** or **选择产品系列** and confirm the selected names appear.
+5. Create both rule A and rule B with the same product scope. Match tagged customers in one and untagged customers in the other; set each threshold separately.
+6. Set the timing from the table. Under **保存后的状态**, select **已启用** and click **创建并启用**. When editing an existing rule, click **保存并启用**.
+7. Return to **数量限制** and turn on **开启数量规则**. Confirm **购物车与结账校验** is enabled, using **启用校验** if necessary.
+8. Reopen the rule to confirm its thresholds, scope, customer conditions and active state were saved. Run the storefront tests below.
+9. In **所有数量规则**, move dedicated rules above any general individual rule for the same product so the general allowance does not match first.
 
 ## Test your configuration
+
+Each result describes this recipe only. Keep the product scope consistent and verify checkout; other active rules may still block the cart.
 
 | Test | Expected result for this scenario |
 | --- | --- |
@@ -40,3 +61,9 @@ Open the app home page → **Customer tag quantity rules** → create a rule.
 <Note>Sign in with the appropriate customer account when testing tags. The store must identify the customer to use the VIP allowance.</Note>
 
 See [rule priority](/en/settings/rule-priority) for overlapping rules.
+
+## If results differ
+
+If a VIP still gets only 2 units, check the signed-in account, the added tag, list order, variant caps and combined collection caps.
+
+Use [troubleshooting](/en/troubleshooting/rules-not-working) to investigate. Complete the [launch checklist](/en/getting-started/launch-checklist) before rolling out.

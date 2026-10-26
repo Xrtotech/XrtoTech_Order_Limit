@@ -1,11 +1,21 @@
 ---
-title: "Restrict repeat sample purchases"
-description: "Combine a single-order cap with a cumulative customer purchase rule."
+title: "Limit Shopify repeat samples with cart and history rules"
+description: "Combine a one-unit cart cap with recorded customer history to restrict repeat samples. Test first orders, record updates, sign-in and repeat checkout."
 sidebarTitle: "Repeat samples"
-keywords: ["Shopify", "Order Limits", "Restrict repeat sample purchases"]
+keywords: ["Shopify", "repeat sample purchase", "cumulative limit", "customer history"]
 ---
 
+{/* Screenshot plan S10: S10-01-每单最多1件规则.png; S10-02-累计达到1件规则.png; S10-03-商品范围与生效设置.png; S10-04-首次1件允许结账-zh.png; S10-05-首次2件被单次规则拦截-zh.png; S10-06-已有记录再买1件拦截-zh.png; S10-07-游客购买要求登录-zh.png; S10-08-首次样品测试订单.png */}
+
 You want each customer to buy a particular sample only once. Cumulative rules do not cap a first purchase with no recorded history, so add a separate 1-unit cart rule.
+
+## When to use this
+
+Use this to manage sample repeats for one customer account. Two rules are required; a cumulative rule alone does not enforce a first-order cap.
+
+## Before you begin
+
+Prepare a non-subscription sample and a signed-in test customer with no recorded sample purchases. The first test must create an order; record its state and test time.
 
 ## Settings
 
@@ -20,15 +30,23 @@ Use **All quantity rules** and **Cumulative purchase rules** on the app home pag
 | Rule B: historical quantity threshold | 1 |
 | Scope for both | Specific products: the same sample |
 | Status for both | Active |
+| Rule names | Sample maximum 1 per cart; sample history threshold 1 |
+| Timing for both | Cart interactions and checkout |
 
 ## Steps
 
-1. Create rule A using the [single-product guide](/en/scenarios/limited-release), but set the maximum to `1`.
-2. Create rule B under **Cumulative purchase rules**. Set the threshold to `1` and choose the same sample.
-3. Activate and save both rules. Enable quantity rules and cart/checkout validation.
-4. Place a first order as a signed-in test customer with no recorded sample history. Wait for the purchase record to update before testing a second purchase.
+1. First create rule A with the [single-product steps](/en/scenarios/limited-release): the same sample, individual calculation, maximum `1`. Rule B below does not replace rule A.
+2. Open **Apps** → **订单限购** in Shopify. From the app home page, open **客户累计规则** and click **创建规则**.
+3. Enter the rule name and thresholds from the settings table. The name is for admin use only.
+4. Under **规则应用于**, choose **指定产品** and click **选择产品**. Select the same sample as rule A and confirm its name. Cumulative rules do not support collections.
+5. Set the timing from the table. Under **保存后的状态**, select **已启用** and click **创建并启用**. When editing an existing rule, click **保存并启用**.
+6. Return to **数量限制** and turn on **开启数量规则**. Confirm **购物车与结账校验** is enabled, using **启用校验** if necessary.
+7. Reopen the rule to confirm its thresholds, scope, customer conditions and active state were saved. Run the storefront tests below.
+8. Create the first test order while signed in as the customer with no history. After the record updates, try checkout again using the same account and sample. Refunds or cancellations do not restore the allowance automatically.
 
 ## Test your configuration
+
+Each result describes this recipe only. Keep the product scope consistent and verify checkout; other active rules may still block the cart.
 
 | Test | Expected result for this scenario |
 | --- | --- |
@@ -40,3 +58,9 @@ Use **All quantity rules** and **Cumulative purchase rules** on the app home pag
 <Warning>This is not a daily, monthly or email-based allowance. Review first-purchase behavior, record-update delays and refunds before using it in a promotion.</Warning>
 
 Required reading: [cumulative purchase boundaries](/en/features/purchase-history).
+
+## If results differ
+
+If a first purchase of 2 passes, check rule A. If a repeat passes, check the same customer and product, non-subscription items and purchase-record updates.
+
+Use [troubleshooting](/en/troubleshooting/rules-not-working) to investigate. Complete the [launch checklist](/en/getting-started/launch-checklist) before rolling out.
