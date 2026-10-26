@@ -21,3 +21,10 @@ html:lang(ja) img.nav-logo { content: url('/logo/order-limit-ja.svg'); }
 a[href*="utm_campaign=poweredBy"],
 #page-context-menu,
 #page-context-menu-button { display: none !important; }
+
+/* AI is off by default. Keep ordinary documentation search available. */
+#assistant-entry,
+#assistant-entry-mobile,
+#chat-assistant-sheet,
+#text-selection-tooltip,
+#ask-assistant-code-block-button { display: none !important; }
