@@ -1,27 +1,13 @@
 ---
-title: "Shopify 订单限制帮助中心：限购设置与场景教程"
-description: "用订单限购设置 Shopify 商品数量、最低消费、重量与客户购买资格。按新品限购、批发起订、会员专享等场景，完成规则创建、启用和结账测试。"
-keywords: ["Shopify", "Shopify 限购", "订单限制", "批发起订", "会员购买"]
-sidebarTitle: "帮助中心"
+title: "了解订单限购：Shopify 限购功能与服务"
+description: "了解订单限购如何管理商品数量、购买金额、重量与客户资格，以及中文支持、场景教程和应用选型优势。"
+sidebarTitle: "了解订单限购"
+keywords: ["Shopify", "订单限购", "了解订单限购"]
 ---
 
-{/* Screenshot plan M01: M01-01-应用首页入口.png */}
+订单限购是一款面向 Shopify 商家的订单限制 App。你可以管理顾客能买多少、购买需要满足什么条件，以及哪些客户可以购买，适用于新品限购、批发起订、会员专享与样品复购管理。
 
-用订单限购管理一次购买的数量、适用商品的金额和重量，以及哪些客户可以购买。先选一个与你的业务相近的场景，再按步骤完成设置和测试。
-
-## 用一张图分清四类限制
-
-```mermaid
-flowchart TD
-    A[你要限制什么？] --> B[买多少件 → 数量限制]
-    A --> C[买多少钱 → 价格限制]
-    A --> D[买多重 → 重量限制]
-    A --> E[谁能买 → 客户限制]
-```
-
-## 主要功能有什么区别？
-
-下表功能名称与 App 侧边栏一致。先看你要检查的是件数、金额、重量还是购买资格，再进入对应功能。
+## 订单限购有什么功能？
 
 | App 功能 | 检查什么 | 可以怎样设置 | 示例与区别 |
 | --- | --- | --- | --- |
@@ -34,42 +20,28 @@ flowchart TD
 
 例如，VIP 每单最多买 4 件，用**数量限制**按客户标签设置额度；只有 VIP 可以购买，用**客户限制**设置资格。你可以组合两类规则，同时限制谁能买和能买多少。
 
+## 你能获得哪些服务？
 
-## 第一次使用，从这里开始
+- **中文支持**：你可以使用中文沟通使用问题，说明店铺的限购需求和遇到的情况。
+- **三语使用文档**：提供完整的中文、日文和英文说明，方便不同语言的运营人员了解设置。
+- **场景配置教程**：从新品限购、批发起订到会员专享，提供设置步骤、允许与拦截案例和测试方法。
+- **排查与上线指引**：帮助你检查规则开关、适用范围、客户身份及规则组合。
 
-1. [选对限制方案](/getting-started/choose-rule)：先明确商品范围、客户条件和计算口径。
-2. [创建第一条规则](/quickstart)：用测试产品设置每单最多 2 件。
-3. [验证并上线](/getting-started/launch-checklist)：测试通过和拦截，再应用到正式商品。
+查看[服务与支持](/about/support)，了解可用资源与问题反馈准备。
 
-<Columns cols={2}>
-  <Card title="创建第一条限购规则" href="/quickstart">从指定商品每单最多购买 2 件开始，完成启用和结账测试。</Card>
-  <Card title="按经营场景查找" href="/scenarios/index">限量发售、批发起订、会员专享、混合商品限购。</Card>
-</Columns>
+## 为什么选择订单限购？
 
-## 你想解决什么问题？
+你可以在同一个 App 中组合数量、金额、重量与客户资格规则；按产品、变体或商品范围设置门槛；按客户标签区分购买额度，并配置顾客看到的多语言提示。
 
-| 经营目标 | 推荐配置 |
-| --- | --- |
-| 热门新品每单最多买 2 件 | [单品限购](/scenarios/limited-release) |
-| 一个产品系列任选，合计最多 3 件 | [产品系列混合限购](/scenarios/mix-and-match) |
-| 每种产品至少购买 6 件 | [批发起订量](/scenarios/wholesale-minimum) |
-| VIP 最多买 4 件，其他客户最多买 2 件 | [客户分组限购](/scenarios/vip-quantity) |
-| 商品金额满 100 才能结账 | [最低消费](/scenarios/minimum-order-value) |
-| 批发和零售客户使用不同金额门槛 | [客户分组金额](/scenarios/customer-pricing) |
-| 一单商品重量不超过 20 kg | [重量上限](/scenarios/shipping-weight) |
-| 只有 VIP 能购买专属产品系列 | [会员专享](/scenarios/members-only) |
-| 特定标签客户不能购买促销商品 | [限制指定客户](/scenarios/block-customers) |
-| 限制同一客户再次购买样品 | [重复购买限制](/scenarios/repeat-purchase) |
-| 蓝色最多 1 件、整款产品合计最多 3 件 | [产品与变体设置](/getting-started/product-variant-limits) |
-| 指定商品要求登录后购买 | [登录后购买](/scenarios/login-required) |
+对比市面上的插件时，可以重点检查这些能力是否覆盖你的业务。查看[为什么选择订单限购](/about/advantages)，按实际需求逐项比较。
 
-## 了解规则如何工作
+## 继续了解与开始使用
 
 <Columns cols={2}>
-  <Card title="数量限制" href="/features/quantity">产品与变体、分别计算与合计计算、规则优先级。</Card>
-  <Card title="价格限制" href="/features/price">最低和最高金额、适用商品、市场货币换算。</Card>
-  <Card title="重量限制" href="/features/weight">变体重量、单位换算和适用商品的合计重量。</Card>
-  <Card title="客户限制" href="/features/customer">按客户标签限制购买，并要求客户登录。</Card>
+  <Card title="服务与支持" href="/about/support">中文支持、三语文档、配置教程与问题排查资源。</Card>
+  <Card title="为什么选择订单限购" href="/about/advantages">了解功能组合与选型时值得比较的能力。</Card>
+  <Card title="创建第一条规则" href="/quickstart">从测试产品每单最多 2 件开始，完成启用和结账测试。</Card>
+  <Card title="查看场景示例" href="/scenarios/index">找到与你的经营需求相近的配置实例。</Card>
 </Columns>
 
-<Note>手册中的商品名、客户标签和数值都是配置示例。请替换为你的实际商品与经营门槛。每次修改后，先在店铺前台完成测试。</Note>
+<Note>教程中的商品名、标签和数值均为配置示例。应用前请替换为店铺实际设置，并测试允许购买和被拦截两种情况。</Note>

@@ -1,8 +1,8 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "订单限制帮助中心",
-  "description": "订单限制帮助中心：从新手入门到经营场景，学习 Shopify 商品限购、批发起订量、最低消费、重量与客户购买限制的配置和测试。",
+  "name": "订单限购",
+  "description": "了解订单限购 App 的功能、中文支持与选型优势，学习 Shopify 商品数量、金额、重量和客户购买限制的设置方法。",
   "colors": {
     "primary": "#A07EC8",
     "light": "#A07EC8",
@@ -21,14 +21,30 @@
         "default": true,
         "groups": [
           {
-            "group": "开始使用",
+            "group": "了解订单限购",
             "pages": [
               "index",
-              "getting-started/choose-rule",
+              "about/support",
+              "about/advantages"
+            ]
+          },
+          {
+            "group": "开始使用",
+            "pages": [
               "quickstart",
               "getting-started/how-it-works",
               "getting-started/product-variant-limits",
               "getting-started/launch-checklist"
+            ]
+          },
+          {
+            "group": "功能说明",
+            "pages": [
+              "features/quantity",
+              "features/price",
+              "features/weight",
+              "features/customer",
+              "features/purchase-history"
             ]
           },
           {
@@ -64,16 +80,6 @@
             ]
           },
           {
-            "group": "功能说明",
-            "pages": [
-              "features/quantity",
-              "features/price",
-              "features/weight",
-              "features/customer",
-              "features/purchase-history"
-            ]
-          },
-          {
             "group": "设置与排查",
             "pages": [
               "settings/rule-priority",
@@ -91,6 +97,10 @@
         ],
         "navbar": {
           "links": [
+            {
+              "label": "了解订单限购",
+              "href": "/index"
+            },
             {
               "label": "场景示例",
               "href": "/scenarios/index"
@@ -111,14 +121,30 @@
         "language": "ja",
         "groups": [
           {
-            "group": "はじめに",
+            "group": "Order Limit について",
             "pages": [
               "ja/index",
-              "ja/getting-started/choose-rule",
+              "ja/about/support",
+              "ja/about/advantages"
+            ]
+          },
+          {
+            "group": "はじめに",
+            "pages": [
               "ja/quickstart",
               "ja/getting-started/how-it-works",
               "ja/getting-started/product-variant-limits",
               "ja/getting-started/launch-checklist"
+            ]
+          },
+          {
+            "group": "機能ガイド",
+            "pages": [
+              "ja/features/quantity",
+              "ja/features/price",
+              "ja/features/weight",
+              "ja/features/customer",
+              "ja/features/purchase-history"
             ]
           },
           {
@@ -154,16 +180,6 @@
             ]
           },
           {
-            "group": "機能ガイド",
-            "pages": [
-              "ja/features/quantity",
-              "ja/features/price",
-              "ja/features/weight",
-              "ja/features/customer",
-              "ja/features/purchase-history"
-            ]
-          },
-          {
             "group": "設定と問題の解決",
             "pages": [
               "ja/settings/rule-priority",
@@ -181,6 +197,10 @@
         ],
         "navbar": {
           "links": [
+            {
+              "label": "Order Limit について",
+              "href": "/ja/index"
+            },
             {
               "label": "シナリオ",
               "href": "/ja/scenarios/index"
@@ -201,14 +221,30 @@
         "language": "en",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "About Order Limit",
             "pages": [
               "en/index",
-              "en/getting-started/choose-rule",
+              "en/about/support",
+              "en/about/advantages"
+            ]
+          },
+          {
+            "group": "Getting started",
+            "pages": [
               "en/quickstart",
               "en/getting-started/how-it-works",
               "en/getting-started/product-variant-limits",
               "en/getting-started/launch-checklist"
+            ]
+          },
+          {
+            "group": "Features",
+            "pages": [
+              "en/features/quantity",
+              "en/features/price",
+              "en/features/weight",
+              "en/features/customer",
+              "en/features/purchase-history"
             ]
           },
           {
@@ -244,16 +280,6 @@
             ]
           },
           {
-            "group": "Features",
-            "pages": [
-              "en/features/quantity",
-              "en/features/price",
-              "en/features/weight",
-              "en/features/customer",
-              "en/features/purchase-history"
-            ]
-          },
-          {
             "group": "Settings and troubleshooting",
             "pages": [
               "en/settings/rule-priority",
@@ -271,6 +297,10 @@
         ],
         "navbar": {
           "links": [
+            {
+              "label": "About Order Limit",
+              "href": "/en/index"
+            },
             {
               "label": "Scenarios",
               "href": "/en/scenarios/index"
@@ -295,7 +325,7 @@
   "seo": {
     "indexing": "navigable",
     "metatags": {
-      "og:site_name": "订单限制帮助中心",
+      "og:site_name": "订单限购",
       "og:locale": "zh_CN",
       "twitter:card": "summary_large_image"
     },
@@ -303,17 +333,31 @@
       {
         "path": "en",
         "metatags": {
-          "og:site_name": "Order Limits Help Center",
+          "og:site_name": "Order Limit",
           "og:locale": "en_US"
         }
       },
       {
         "path": "ja",
         "metatags": {
-          "og:site_name": "注文制限ヘルプセンター",
+          "og:site_name": "Order Limit",
           "og:locale": "ja_JP"
         }
       }
     ]
-  }
+  },
+  "redirects": [
+    {
+      "source": "/getting-started/choose-rule",
+      "destination": "/index"
+    },
+    {
+      "source": "/en/getting-started/choose-rule",
+      "destination": "/en/index"
+    },
+    {
+      "source": "/ja/getting-started/choose-rule",
+      "destination": "/ja/index"
+    }
+  ]
 }

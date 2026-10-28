@@ -1,27 +1,15 @@
 ---
-title: "Shopify 注文制限ヘルプセンター：設定と活用例"
-description: "Shopify の商品数量、最低購入金額、重量、顧客の購入資格を Order Limit で設定します。限定販売、卸売、会員限定などの手順から、有効化とチェックアウトの確認まで進めます。"
-sidebarTitle: "ヘルプセンター"
-keywords: ["Shopify", "注文制限", "数量制限", "最低購入数量", "会員限定"]
+title: "Order Limit の紹介：Shopify の注文制限機能とサービス"
+description: "数量、金額、重量、顧客の購入資格の制限、中国語サポート、活用ガイド、アプリ選びで比較したい機能を紹介します。"
+sidebarTitle: "Order Limit について"
+keywords: ["Shopify", "Order Limit", "Order Limit について"]
 ---
 
-{/* Screenshot plan M01: M01-01-应用首页入口.png */}
+Order Limit は Shopify のストア運営者向けの注文制限アプリです。購入できる数量、購入に必要な条件、購入できる顧客を管理できます。限定販売、卸売の最低数量、会員限定商品、サンプルの再購入管理に活用できます。
 
-Order Limit を使うと、購入数量や対象商品の金額・重量、購入できる顧客を制限できます。運営に近いシナリオを選び、設定後に購入できるカートと制限されるカートを確認してください。
+## Order Limit でできること
 
-## 図で分かる 4 種類の制限
-
-```mermaid
-flowchart TD
-    A[何を制限したいですか？] --> B[購入点数 → 数量制限]
-    A --> C[購入金額 → 価格制限]
-    A --> D[商品重量 → 重量制限]
-    A --> E[誰が買えるか → 顧客制限]
-```
-
-## 主な機能の違い
-
-下表の中国語名はアプリのサイドバーと一致します。点数、金額、重量、購入資格のどれを確認するかで機能を選んでください。
+表中の中国語名はアプリのサイドバーと一致します。
 
 | アプリの機能 | 確認する対象 | 設定できる内容 | 例と違い |
 | --- | --- | --- | --- |
@@ -34,42 +22,28 @@ flowchart TD
 
 VIP の購入上限を 1 注文につき 4 点にする場合は、**数量制限**で顧客タグ別の購入枠を設定します。VIP のみ購入可能にする場合は、**顧客制限**で資格を設定します。両方を組み合わせて、購入資格と購入点数を制限できます。
 
+## 利用できるサービス
 
-## 初めて使う場合
+- **中国語サポート**：使い方の質問、ストアの制限要件、発生した問題を中国語で相談できます。
+- **3 言語のドキュメント**：中国語、日本語、英語のガイドで、運営チームが設定方法を確認できます。
+- **シナリオ別の設定ガイド**：限定販売、卸売、会員限定商品などの手順、購入可能・制限の例、テスト方法を確認できます。
+- **問題の解決と公開前の確認**：機能スイッチ、対象商品、顧客の識別、ルールの組み合わせを確認できます。
 
-1. [ルールを選ぶ](/ja/getting-started/choose-rule)：商品、顧客、計算方法を決めます。
-2. [最初のルールを作る](/ja/quickstart)：テスト商品を最大 2 点にします。
-3. [公開前に確認する](/ja/getting-started/launch-checklist)：許可と制限の両方をテストします。
+資料と問い合わせ前の準備は[サービスとサポート](/ja/about/support)をご覧ください。
 
-<Columns cols={2}>
-<Card title="最初のルールを作成" href="/ja/quickstart">テスト商品をカートごとに 2 点までに制限し、チェックアウトで確認します。</Card>
-<Card title="シナリオから探す" href="/ja/scenarios/index">限定販売、卸売の最低数量、会員限定商品、再購入の制限。</Card>
-</Columns>
+## Order Limit を選ぶ理由
 
-## 何を設定しますか？
+1 つのアプリで数量、金額、重量、購入資格のルールを組み合わせられます。商品、バリエーション、商品グループごとの条件や顧客タグ別の購入枠を設定し、顧客向けの多言語メッセージも編集できます。
 
-| 目的 | ガイド |
-| --- | --- |
-| 新商品を 1 注文につき 2 点までにする | [限定商品の数量制限](/ja/scenarios/limited-release) |
-| コレクション内の商品を合計 3 点までにする | [組み合わせ購入](/ja/scenarios/mix-and-match) |
-| 商品ごとに最低 6 点を購入条件にする | [卸売の最低数量](/ja/scenarios/wholesale-minimum) |
-| VIP と一般顧客で購入上限を変える | [顧客グループ別の数量](/ja/scenarios/vip-quantity) |
-| 商品金額が 100 以上のときだけ購入を許可する | [最低購入金額](/ja/scenarios/minimum-order-value) |
-| 卸売と小売で最低金額を変える | [グループ別の金額](/ja/scenarios/customer-pricing) |
-| 商品の合計重量を 20 kg 以内にする | [重量の上限](/ja/scenarios/shipping-weight) |
-| VIP だけが買える商品を用意する | [会員限定商品](/ja/scenarios/members-only) |
-| 特定タグの顧客にセール商品の購入を許可しない | [特定顧客の制限](/ja/scenarios/block-customers) |
-| 同じサンプルの再購入を制限する | [再購入制限](/ja/scenarios/repeat-purchase) |
-| 青は最大 1 点、商品合計は最大 3 点 | [商品とバリエーション](/ja/getting-started/product-variant-limits) |
-| 指定商品の購入にログインを要求 | [ログイン必須](/ja/scenarios/login-required) |
+他のアプリと比較する際は、これらの機能が自分の運営要件を満たすか確認してください。[Order Limit を選ぶ理由](/ja/about/advantages)では比較項目を紹介します。
 
-## 機能を理解する
+## 詳しく知る・使い始める
 
 <Columns cols={2}>
-<Card title="数量制限" href="/ja/features/quantity">商品・バリエーション単位の数量と合計数量。</Card>
-<Card title="価格制限" href="/ja/features/price">対象商品の現在の金額、適用範囲、通貨換算。</Card>
-<Card title="重量制限" href="/ja/features/weight">バリエーションの重量、購入数量、単位換算。</Card>
-<Card title="顧客制限" href="/ja/features/customer">顧客タグによる購入資格とログイン要件。</Card>
+  <Card title="サービスとサポート" href="/ja/about/support">中国語サポート、3 言語の資料、設定と問題解決のガイド。</Card>
+  <Card title="Order Limit を選ぶ理由" href="/ja/about/advantages">機能の組み合わせとアプリ選びの比較項目。</Card>
+  <Card title="最初のルールを作成" href="/ja/quickstart">テスト商品を 1 注文につき最大 2 点にし、有効化して確認します。</Card>
+  <Card title="シナリオを見る" href="/ja/scenarios/index">ストアの目的に近い設定例を確認します。</Card>
 </Columns>
 
-<Note>商品名、タグ、数値は設定例です。ストアに合わせて変更してください。ドキュメントの対応言語とアプリ画面の対応言語は同じとは限りません。[中国語の画面項目との対応](/ja/getting-started/how-it-works#アプリ画面の項目を確認する)も参照してください。</Note>
+<Note>商品名、タグ、数値は設定例です。実際の設定に置き換え、購入可能と制限の両方をテストしてください。資料の翻訳はアプリ画面の翻訳を意味しません。[中国語の画面項目との対応](/ja/getting-started/how-it-works#アプリ画面の項目を確認する)で設定場所を確認できます。</Note>

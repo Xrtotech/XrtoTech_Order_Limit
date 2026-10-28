@@ -13,7 +13,7 @@
 
 ## Terminology
 
-- Site names: 订单限制帮助中心 / Order Limits Help Center / 注文制限ヘルプセンター. Do not show the vendor brand.
+- Site names: 订单限购 / Order Limit / Order Limit. Use the app introduction framing; do not label the site as a help center. Do not show the vendor brand.
 - Chinese app display name: 订单限购. Preserve actual UI labels when explaining app settings.
 - Write for Shopify merchants and store operators.
 - Keep product-level, variant-level, individual, combined, and cumulative limits distinct.
