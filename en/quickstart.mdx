@@ -17,7 +17,6 @@ Open the app from your Shopify admin. Prepare a product that customers can buy o
 <Step title="Open quantity rules">
 Open **Apps** → **Order Limit**. On the app home page, choose **All quantity rules** and click **创建规则** to open the editor.
 
-
 ![Click 创建规则 to create a quantity rule](/images/guides/M03-01-创建数量规则入口.png)
 </Step>
 <Step title="Configure the rule">
@@ -25,16 +24,14 @@ Name it “Test product: maximum 2”. Select **Cart quantity limit**, leave the
 
 Under **Applies to**, select **Specific products** and click **选择产品** to choose the test product. Confirm its name appears in the editor.
 
-
 ![Leave the minimum empty, set the maximum to 2 and limit each applicable item individually](/images/guides/M03-02-数量规则参数.png)
 </Step>
 <Step title="Save and activate">
 Set the timing to **Cart interactions and checkout**. Select **Active** and click **Create and activate** (**创建并启用**; **保存并启用** when editing).
 
-Return to **Quantity limits**, turn on **Enable quantity rules**, and confirm **the **数量规则** switch** is enabled. Otherwise, click **open the **数量规则** switch**.
-
-
 ![Select the product, timing and active status, then click 创建并启用](/images/guides/M03-03-商品范围与创建启用.png)
+
+Return to **Quantity limits** (**数量限制**). Turn on the **数量规则** switch and confirm it shows **已开启**.
 
 ![The 数量规则 switch shows 已开启](/images/guides/M03-04-数量规则开关已开启.png)
 </Step>
@@ -42,7 +39,6 @@ Return to **Quantity limits**, turn on **Enable quantity rules**, and confirm **
 Add 2 units and enter checkout. This rule should allow the cart. Change the quantity to 3 and verify the restriction message.
 
 For a product with variants, also test 1 unit of variant A plus 2 of variant B. The combined product quantity of 3 should be blocked.
-
 
 ![With 3 units selected, the storefront displays the maximum of 2](/images/guides/M03-06-产品3件拦截-zh.png)
 </Step>
