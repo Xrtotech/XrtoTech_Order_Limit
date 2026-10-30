@@ -33,14 +33,19 @@
             "pages": [
               "quickstart",
               "getting-started/how-it-works",
-              "getting-started/product-variant-limits",
               "getting-started/launch-checklist"
             ]
           },
           {
             "group": "功能说明",
             "pages": [
-              "features/quantity",
+              {
+                "group": "数量限制",
+                "pages": [
+                  "features/product-variant-limits",
+                  "features/quantity"
+                ]
+              },
               "features/price",
               "features/weight",
               "features/customer",
@@ -133,14 +138,19 @@
             "pages": [
               "ja/quickstart",
               "ja/getting-started/how-it-works",
-              "ja/getting-started/product-variant-limits",
               "ja/getting-started/launch-checklist"
             ]
           },
           {
             "group": "機能ガイド",
             "pages": [
-              "ja/features/quantity",
+              {
+                "group": "数量制限",
+                "pages": [
+                  "ja/features/product-variant-limits",
+                  "ja/features/quantity"
+                ]
+              },
               "ja/features/price",
               "ja/features/weight",
               "ja/features/customer",
@@ -233,14 +243,19 @@
             "pages": [
               "en/quickstart",
               "en/getting-started/how-it-works",
-              "en/getting-started/product-variant-limits",
               "en/getting-started/launch-checklist"
             ]
           },
           {
             "group": "Features",
             "pages": [
-              "en/features/quantity",
+              {
+                "group": "Quantity limits",
+                "pages": [
+                  "en/features/product-variant-limits",
+                  "en/features/quantity"
+                ]
+              },
               "en/features/price",
               "en/features/weight",
               "en/features/customer",
@@ -347,6 +362,18 @@
     ]
   },
   "redirects": [
+    {
+      "source": "/getting-started/product-variant-limits",
+      "destination": "/features/product-variant-limits"
+    },
+    {
+      "source": "/ja/getting-started/product-variant-limits",
+      "destination": "/ja/features/product-variant-limits"
+    },
+    {
+      "source": "/en/getting-started/product-variant-limits",
+      "destination": "/en/features/product-variant-limits"
+    },
     {
       "source": "/getting-started/choose-rule",
       "destination": "/index"

@@ -128,7 +128,7 @@
     },
     {
       "code": "M05",
-      "path": "getting-started/product-variant-limits",
+      "path": "features/product-variant-limits",
       "title": "产品与变体设置",
       "purpose": "学会区分整款与蓝色变体限制，不能用场景的单条规则编辑器代替。",
       "prep": "同一产品的红蓝变体；产品级最大3，蓝色最大1；不要同时启用会放宽上限的单品规则。",
@@ -1300,7 +1300,7 @@
       "priority": "核心",
       "frontend": false,
       "article_id": "M05",
-      "article": "getting-started/product-variant-limits",
+      "article": "features/product-variant-limits",
       "folder": "01-基础操作",
       "status": "待截图",
       "localized_filenames": {}
@@ -1313,7 +1313,7 @@
       "priority": "核心",
       "frontend": true,
       "article_id": "M05",
-      "article": "getting-started/product-variant-limits",
+      "article": "features/product-variant-limits",
       "folder": "01-基础操作",
       "status": "待截图",
       "localized_filenames": {
@@ -1330,7 +1330,7 @@
       "priority": "核心",
       "frontend": true,
       "article_id": "M05",
-      "article": "getting-started/product-variant-limits",
+      "article": "features/product-variant-limits",
       "folder": "01-基础操作",
       "status": "待截图",
       "localized_filenames": {
@@ -1347,7 +1347,7 @@
       "priority": "补充",
       "frontend": true,
       "article_id": "M05",
-      "article": "getting-started/product-variant-limits",
+      "article": "features/product-variant-limits",
       "folder": "01-基础操作",
       "status": "待截图",
       "localized_filenames": {
@@ -1364,7 +1364,7 @@
       "priority": "核心",
       "frontend": false,
       "article_id": "M05",
-      "article": "getting-started/product-variant-limits",
+      "article": "features/product-variant-limits",
       "folder": "01-基础操作",
       "status": "待截图",
       "localized_filenames": {}

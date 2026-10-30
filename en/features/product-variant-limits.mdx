@@ -1,0 +1,68 @@
+---
+title: "Set product and variant quantity limits in Shopify"
+description: "Set a product cap of 3 and a variant A cap of 1 from the product table. Save, enable validation and run four test cases to check both quantity levels."
+sidebarTitle: "Product and variants"
+keywords: ["Shopify", "variant quantity limits", "product limits", "color size limits"]
+---
+
+{/* Screenshot plan M05: 寻找到需要设置的产品.png; M05-01-产品限制数量上限配置.png; M05-02-配置产品数量上限.png; M05-03-设置A变体上限条件.png; M05-05-校验组合变体购买两件通过.png */}
+
+Use the product table in Order Limit for independent product or variant thresholds. This example caps all variants of a product at 3 units, while variant A has a separate cap of 1.
+
+## Before you begin
+
+Prepare variants A and B of the same purchasable product. Review [rule priority](/en/settings/rule-priority): an overlapping individual quantity rule can relax the product cap.
+
+## Set both levels
+
+<Steps>
+<Step title="Find the product">
+Open **Apps** → **订单限购** in Shopify. Choose **按产品设置数量限制** on the app home page. Search for the product under **搜索产品**.
+
+![Search and filter for the target product on the product quantity limits page](/images/guides/寻找到需要设置的产品.png)
+</Step>
+<Step title="Set the whole-product cap">
+On the product row, set **限制状态** to **已开启**, leave **最小值** blank and enter `3` under **最大值**. This counts all variants of the product together.
+
+![The product row is on with a maximum of 3](/images/guides/M05-01-产品限制数量上限配置.png)
+</Step>
+<Step title="Set the variant A cap">
+Expand the product variants. On the variant A row, select **已开启**, leave the minimum blank and set the maximum to `1`. Click **保存** at the top and wait for saving to finish.
+
+![Filter to the target product and expand its variant rows, where each variant can have its own limits](/images/guides/M05-02-配置产品数量上限.png)
+</Step>
+<Step title="Enable the feature and validation">
+Return to **数量限制**, turn on **开启产品数量限制**, and choose **购物车互动时和结账时**. Confirm **数量规则开关** is enabled, open the **数量规则** switch until it shows **已开启**.
+</Step>
+</Steps>
+
+## Four test cases
+
+| Cart | Expected result | Reason |
+| --- | --- | --- |
+| variant B × 3 | Allowed | Product total is 3 |
+| variant A × 1 + variant B × 2 | Allowed | Total 3, variant A within 1 |
+| variant A × 2 | Blocked | variant A exceeds 1 |
+| variant A × 1 + variant B × 3 | Blocked | Product total exceeds 3 |
+
+Other active rules can still block a cart that passes these settings.
+
+Variant A × 2 exceeds the variant A cap of 1, and the storefront shows the block message:
+
+![Variant A at 2 units, the storefront says the purchase quantity cannot exceed 1](/images/guides/M05-03-设置A变体上限条件.png)
+
+Variant A × 1 plus variant B × 2 stays within the product cap of 3, so the cart can proceed to checkout:
+
+![Variant A 1 unit and variant B 2 units in the cart, 3 total, can proceed to checkout](/images/guides/M05-05-校验组合变体购买两件通过.png)
+
+## Edit or pause
+
+Change the row values and click **保存**. To pause one row, set **限制状态** to **未开启** and save. Disabling a product row does not disable its active variant rows; check each separately.
+
+Turning off **开启产品数量限制** pauses these product and variant settings. It is separate from **数量规则**.
+
+## If results differ
+
+If variant A × 2 passes, check that you edited the variant A row and saved. If the whole product exceeds 3, check product status, the feature switch and overlapping individual rules. Product and individual rule limits combine using relaxed thresholds.
+
+For a shared allowance across products, use [combined quantity](/en/scenarios/mix-and-match). Complete the [launch checklist](/en/getting-started/launch-checklist). The bold Chinese labels above match the current app.

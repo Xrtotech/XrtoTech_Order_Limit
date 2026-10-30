@@ -349,7 +349,7 @@
 | 选题 | 画面与讲解重点 | 落地页 |
 | --- | --- | --- |
 | 第一次打开，先选什么规则？ | 四类限制流程图与首页入口；谁、哪些商品、什么门槛、什么时机 | `/getting-started/choose-rule` |
-| 产品和变体有什么区别？ | 产品3、蓝色1的表格；蓝色2被拦，红色3通过 | `/getting-started/product-variant-limits` |
+| 产品和变体有什么区别？ | 产品3、蓝色1的表格；蓝色2被拦，红色3通过 | `/features/product-variant-limits` |
 | 保存了为什么没生效？ | 草稿/已启用、功能开关、实际校验三个层级；不把购物车加购成功当失效 | `/getting-started/how-it-works` |
 | 起订6件为什么7件也能买？ | 6和7均通过、5结账拦截；明确不支持倍数 | `/scenarios/wholesale-minimum` |
 | 客户被拦住后怎么改？ | 提示编辑器与真实替换结果；显示门槛和下一步 | `/settings/messages` |

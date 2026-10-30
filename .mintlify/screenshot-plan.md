@@ -53,7 +53,7 @@
 | [M02](#m02) | 先选对规则 · `getting-started/choose-rule` | 0 / 0 |
 | [M03](#m03) | 快速上手 · `quickstart` | 6 / 0 |
 | [M04](#m04) | 规则基础 · `getting-started/how-it-works` | 3 / 0 |
-| [M05](#m05) | 产品与变体设置 · `getting-started/product-variant-limits` | 4 / 1 |
+| [M05](#m05) | 产品与变体设置 · `features/product-variant-limits` | 4 / 1 |
 | [M06](#m06) | 上线前测试与暂停 · `getting-started/launch-checklist` | 2 / 0 |
 | [M07](#m07) | 数量限制操作手册 · `features/quantity` | 1 / 0 |
 | [M08](#m08) | 价格限制操作手册 · `features/price` | 3 / 0 |
@@ -142,7 +142,7 @@
 
 ### M05 · 产品与变体设置
 
-**文章：** `getting-started/product-variant-limits`（对应源文件 `getting-started/product-variant-limits.mdx`）。
+**文章：** `features/product-variant-limits`（对应源文件 `features/product-variant-limits.mdx`）。
 
 学会区分整款与蓝色变体限制，不能用场景的单条规则编辑器代替。
 

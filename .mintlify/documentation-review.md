@@ -27,7 +27,7 @@ The app editor contains lifetime helper text claiming only orders after activati
 ## New beginner paths
 
 - `getting-started/choose-rule`: choose from actual business goals and understand four rule families.
-- `getting-started/product-variant-limits`: product maximum 3, blue variant maximum 1, with four test carts.
+- `features/product-variant-limits`: product maximum 3, blue variant maximum 1, with four test carts.
 - `getting-started/launch-checklist`: allowed/boundary/blocked/scope/identity tests, pause/restore and reproducible evidence.
 - `scenarios/login-required`: leave tags empty, require sign-in, select one product and test identities.
 
