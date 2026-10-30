@@ -42,7 +42,7 @@
 
 **教程落地页：** `/scenarios/limited-release`；英语 `/en/scenarios/limited-release`；日语 `/ja/scenarios/limited-release`。
 
-**素材：** S01 核心图：`S01-01-水杯每款最大2件.png`、`S01-02-商品范围与生效设置.png`、`S01-03-红1蓝1合计2件通过-zh.png`、`S01-04-红1蓝2合计3件拦截-zh.png`。入口与开关复用基础操作手册；补充图、语言版本及录屏名见 `screenshot-plan.md` 对应文章。
+**素材：** S01 核心图：`S01-01-水杯每款最大2件.png`、`S01-02-商品范围与生效设置.png`、`S01-03-红1蓝1合计2件通过-zh.png`、`S01-04-红1蓝2合计3件拦截-zh.png`。入口与开关复用基础操作手册；补充图、截图复用规则及录屏名见 `screenshot-plan.md` 对应文章。
 
 ## 产品系列共享额度
 
@@ -72,7 +72,7 @@
 
 **教程落地页：** `/scenarios/mix-and-match`；英语 `/en/scenarios/mix-and-match`；日语 `/ja/scenarios/mix-and-match`。
 
-**素材：** S02 核心图：`S02-01-产品系列合计最大3件.png`、`S02-02-商品范围与生效设置.png`、`S02-03-A1加B2合计3件通过-zh.png`、`S02-04-A2加B2合计4件拦截-zh.png`。入口与开关复用基础操作手册；补充图、语言版本及录屏名见 `screenshot-plan.md` 对应文章。
+**素材：** S02 核心图：`S02-01-产品系列合计最大3件.png`、`S02-02-商品范围与生效设置.png`、`S02-03-A1加B2合计3件通过-zh.png`、`S02-04-A2加B2合计4件拦截-zh.png`。入口与开关复用基础操作手册；补充图、截图复用规则及录屏名见 `screenshot-plan.md` 对应文章。
 
 ## 批发起订量
 
@@ -102,7 +102,7 @@
 
 **教程落地页：** `/scenarios/wholesale-minimum`；英语 `/en/scenarios/wholesale-minimum`；日语 `/ja/scenarios/wholesale-minimum`。
 
-**素材：** S03 核心图：`S03-01-每款最低6件.png`、`S03-02-商品范围与生效设置.png`、`S03-03-马克杯6件通过-zh.png`、`S03-04-马克杯5件拦截-zh.png`、`S03-05-马克杯3加托盘3拦截-zh.png`。入口与开关复用基础操作手册；补充图、语言版本及录屏名见 `screenshot-plan.md` 对应文章。
+**素材：** S03 核心图：`S03-01-每款最低6件.png`、`S03-02-商品范围与生效设置.png`、`S03-03-马克杯6件通过-zh.png`、`S03-04-马克杯5件拦截-zh.png`、`S03-05-马克杯3加托盘3拦截-zh.png`。入口与开关复用基础操作手册；补充图、截图复用规则及录屏名见 `screenshot-plan.md` 对应文章。
 
 ## VIP数量
 
@@ -132,7 +132,7 @@
 
 **教程落地页：** `/scenarios/vip-quantity`；英语 `/en/scenarios/vip-quantity`；日语 `/ja/scenarios/vip-quantity`。
 
-**素材：** S04 核心图：`S04-01-VIP标签最大4件.png`、`S04-02-非VIP标签最大2件.png`、`S04-03-商品范围与生效设置.png`、`S04-04-VIP4件通过-zh.png`、`S04-05-VIP5件拦截-zh.png`、`S04-06-非VIP3件拦截-zh.png`。入口与开关复用基础操作手册；补充图、语言版本及录屏名见 `screenshot-plan.md` 对应文章。
+**素材：** S04 核心图：`S04-01-VIP标签最大4件.png`、`S04-02-非VIP标签最大2件.png`、`S04-03-商品范围与生效设置.png`、`S04-04-VIP4件通过-zh.png`、`S04-05-VIP5件拦截-zh.png`、`S04-06-非VIP3件拦截-zh.png`。入口与开关复用基础操作手册；补充图、截图复用规则及录屏名见 `screenshot-plan.md` 对应文章。
 
 ## 最低消费
 
@@ -162,7 +162,7 @@
 
 **教程落地页：** `/scenarios/minimum-order-value`；英语 `/en/scenarios/minimum-order-value`；日语 `/ja/scenarios/minimum-order-value`。
 
-**素材：** S05 核心图：`S05-01-最低商品金额100.png`、`S05-02-商品范围与生效设置.png`、`S05-03-商品金额100通过-zh.png`、`S05-04-商品金额99拦截-zh.png`。入口与开关复用基础操作手册；补充图、语言版本及录屏名见 `screenshot-plan.md` 对应文章。
+**素材：** S05 核心图：`S05-01-最低商品金额100.png`、`S05-02-商品范围与生效设置.png`、`S05-03-商品金额100通过-zh.png`、`S05-04-商品金额99拦截-zh.png`。入口与开关复用基础操作手册；补充图、截图复用规则及录屏名见 `screenshot-plan.md` 对应文章。
 
 ## 客户组金额
 
@@ -192,7 +192,7 @@
 
 **教程落地页：** `/scenarios/customer-pricing`；英语 `/en/scenarios/customer-pricing`；日语 `/ja/scenarios/customer-pricing`。
 
-**素材：** S06 核心图：`S06-01-wholesale最低500.png`、`S06-02-非wholesale最低100.png`、`S06-03-商品范围与生效设置.png`、`S06-04-批发500通过-zh.png`、`S06-05-批发499拦截-zh.png`、`S06-06-普通100通过-zh.png`、`S06-07-普通99拦截-zh.png`。入口与开关复用基础操作手册；补充图、语言版本及录屏名见 `screenshot-plan.md` 对应文章。
+**素材：** S06 核心图：`S06-01-wholesale最低500.png`、`S06-02-非wholesale最低100.png`、`S06-03-商品范围与生效设置.png`、`S06-04-批发500通过-zh.png`、`S06-05-批发499拦截-zh.png`、`S06-06-普通100通过-zh.png`、`S06-07-普通99拦截-zh.png`。入口与开关复用基础操作手册；补充图、截图复用规则及录屏名见 `screenshot-plan.md` 对应文章。
 
 ## 商品重量
 
@@ -222,7 +222,7 @@
 
 **教程落地页：** `/scenarios/shipping-weight`；英语 `/en/scenarios/shipping-weight`；日语 `/ja/scenarios/shipping-weight`。
 
-**素材：** S07 核心图：`S07-01-最高重量20kg.png`、`S07-02-商品范围与生效设置.png`、`S07-03-2kg乘10等于20kg通过-zh.png`、`S07-04-2kg乘11等于22kg拦截-zh.png`。入口与开关复用基础操作手册；补充图、语言版本及录屏名见 `screenshot-plan.md` 对应文章。
+**素材：** S07 核心图：`S07-01-最高重量20kg.png`、`S07-02-商品范围与生效设置.png`、`S07-03-2kg乘10等于20kg通过-zh.png`、`S07-04-2kg乘11等于22kg拦截-zh.png`。入口与开关复用基础操作手册；补充图、截图复用规则及录屏名见 `screenshot-plan.md` 对应文章。
 
 ## VIP购买资格
 
@@ -252,7 +252,7 @@
 
 **教程落地页：** `/scenarios/members-only`；英语 `/en/scenarios/members-only`；日语 `/ja/scenarios/members-only`。
 
-**素材：** S08 核心图：`S08-01-仅VIP可购买.png`、`S08-02-商品范围与生效设置.png`、`S08-03-VIP购买专属商品通过-zh.png`、`S08-04-非VIP购买专属商品拦截-zh.png`、`S08-05-游客购买要求登录-zh.png`。入口与开关复用基础操作手册；补充图、语言版本及录屏名见 `screenshot-plan.md` 对应文章。
+**素材：** S08 核心图：`S08-01-仅VIP可购买.png`、`S08-02-商品范围与生效设置.png`、`S08-03-VIP购买专属商品通过-zh.png`、`S08-04-非VIP购买专属商品拦截-zh.png`、`S08-05-游客购买要求登录-zh.png`。入口与开关复用基础操作手册；补充图、截图复用规则及录屏名见 `screenshot-plan.md` 对应文章。
 
 ## 指定客户限制
 
@@ -282,7 +282,7 @@
 
 **教程落地页：** `/scenarios/block-customers`；英语 `/en/scenarios/block-customers`；日语 `/ja/scenarios/block-customers`。
 
-**素材：** S09 核心图：`S09-01-禁止reseller购买.png`、`S09-02-商品范围与生效设置.png`、`S09-03-无reseller客户通过-zh.png`、`S09-04-reseller客户被拦截-zh.png`、`S09-05-游客购买要求登录-zh.png`。入口与开关复用基础操作手册；补充图、语言版本及录屏名见 `screenshot-plan.md` 对应文章。
+**素材：** S09 核心图：`S09-01-禁止reseller购买.png`、`S09-02-商品范围与生效设置.png`、`S09-03-无reseller客户通过-zh.png`、`S09-04-reseller客户被拦截-zh.png`、`S09-05-游客购买要求登录-zh.png`。入口与开关复用基础操作手册；补充图、截图复用规则及录屏名见 `screenshot-plan.md` 对应文章。
 
 ## 样品复购
 
@@ -312,7 +312,7 @@
 
 **教程落地页：** `/scenarios/repeat-purchase`；英语 `/en/scenarios/repeat-purchase`；日语 `/ja/scenarios/repeat-purchase`。
 
-**素材：** S10 核心图：`S10-01-每单最多1件规则.png`、`S10-02-累计达到1件规则.png`、`S10-03-商品范围与生效设置.png`、`S10-04-首次1件允许结账-zh.png`、`S10-05-首次2件被单次规则拦截-zh.png`、`S10-06-已有记录再买1件拦截-zh.png`、`S10-08-首次样品测试订单.png`。入口与开关复用基础操作手册；补充图、语言版本及录屏名见 `screenshot-plan.md` 对应文章。
+**素材：** S10 核心图：`S10-01-每单最多1件规则.png`、`S10-02-累计达到1件规则.png`、`S10-03-商品范围与生效设置.png`、`S10-04-首次1件允许结账-zh.png`、`S10-05-首次2件被单次规则拦截-zh.png`、`S10-06-已有记录再买1件拦截-zh.png`、`S10-08-首次样品测试订单.png`。入口与开关复用基础操作手册；补充图、截图复用规则及录屏名见 `screenshot-plan.md` 对应文章。
 
 ## 仅要求登录
 
@@ -342,7 +342,7 @@
 
 **教程落地页：** `/scenarios/login-required`；英语 `/en/scenarios/login-required`；日语 `/ja/scenarios/login-required`。
 
-**素材：** S11 核心图：`S11-01-标签留空仅要求登录.png`、`S11-02-商品范围与生效设置.png`、`S11-03-游客购买要求登录-zh.png`、`S11-04-无VIP登录客户通过-zh.png`。入口与开关复用基础操作手册；补充图、语言版本及录屏名见 `screenshot-plan.md` 对应文章。
+**素材：** S11 核心图：`S11-01-标签留空仅要求登录.png`、`S11-02-商品范围与生效设置.png`、`S11-03-游客购买要求登录-zh.png`、`S11-04-无VIP登录客户通过-zh.png`。入口与开关复用基础操作手册；补充图、截图复用规则及录屏名见 `screenshot-plan.md` 对应文章。
 
 ## 补充介绍与答疑选题
 

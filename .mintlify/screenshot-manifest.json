@@ -1,7 +1,7 @@
 {
   "updated": "2026-10-26",
   "authoritative_document": ".mintlify/screenshot-plan.md",
-  "language_policy": "实际中文后台截图跨语言复用；前台真实提示按zh/en/ja实测，绝不翻译拼图冒充应用UI。",
+  "language_policy": "仅使用用户提供的一套截图。前台文件统一保留 -zh.png，中文、英文、日文文章复用同一文件；不要求补拍多语言截图。",
   "articles": [
     {
       "code": "M01",
@@ -66,17 +66,17 @@
           "frontend": false
         },
         {
-          "id": "M03-04-数量功能开关与校验",
-          "filename": "M03-04-数量功能开关与校验.png",
-          "content": "返回数量限制首页。显示「开启数量规则」已开启、「开启产品数量限制」当前状态，以及「购物车与结账校验」已启用；开关标签全部保留。",
+          "id": "M03-04-数量规则开关已开启",
+          "filename": "M03-04-数量规则开关已开启.png",
+          "content": "数量限制首页：右侧「数量规则」显示「已开启」；左侧「产品 / 变体数量限制」显示「已关闭」；保留实际显示时机。此界面没有「购物车与结账校验」。",
           "placement": "开启功能与校验步骤",
           "priority": "核心",
           "frontend": false
         },
         {
-          "id": "M03-05-水杯2件通过-zh",
-          "filename": "M03-05-水杯2件通过-zh.png",
-          "content": "前台同一测试水杯2件，继续进入结账，无本规则错误；保留产品、数量2及结账上下文。无需付款。",
+          "id": "M03-05-产品2件通过-zh",
+          "filename": "M03-05-产品2件通过-zh.png",
+          "content": "当前提供的文件画面实际是产品数量3并触发“最多2件”提示，不能作为通过图。请重新截产品数量2、无此限制提示并可继续购买的画面，仍保存为此文件名。",
           "placement": "测试成功用例",
           "priority": "核心",
           "frontend": true
@@ -97,7 +97,7 @@
       "title": "规则基础",
       "purpose": "讲清商品范围、规则状态、功能开关和校验的区别。",
       "prep": "",
-      "reuse": "M03-04-数量功能开关与校验.png；文章已有生效流程图。",
+      "reuse": "M03-04-数量规则开关已开启.png；文章已有生效流程图。",
       "note": "",
       "images": [
         {
@@ -170,7 +170,7 @@
         {
           "id": "M05-05-产品数量功能已开启",
           "filename": "M05-05-产品数量功能已开启.png",
-          "content": "数量限制首页：开启产品数量限制已开启，显示时机为购物车互动时和结账时，购物车与结账校验已启用；保留开启数量规则的独立标签，避免混淆。",
+          "content": "数量限制首页：开启产品数量限制已开启，显示时机为购物车互动时和结账时，数量规则开关已启用；保留数量规则的独立标签，避免混淆。",
           "placement": "开启产品数量限制步骤",
           "priority": "核心",
           "frontend": false
@@ -1207,9 +1207,9 @@
       "localized_filenames": {}
     },
     {
-      "id": "M03-04-数量功能开关与校验",
-      "filename": "M03-04-数量功能开关与校验.png",
-      "content": "返回数量限制首页。显示「开启数量规则」已开启、「开启产品数量限制」当前状态，以及「购物车与结账校验」已启用；开关标签全部保留。",
+      "id": "M03-04-数量规则开关已开启",
+      "filename": "M03-04-数量规则开关已开启.png",
+      "content": "数量限制首页：右侧「数量规则」显示「已开启」；左侧「产品 / 变体数量限制」显示「已关闭」；保留实际显示时机。此界面没有「购物车与结账校验」。",
       "placement": "开启功能与校验步骤",
       "priority": "核心",
       "frontend": false,
@@ -1220,9 +1220,9 @@
       "localized_filenames": {}
     },
     {
-      "id": "M03-05-水杯2件通过-zh",
-      "filename": "M03-05-水杯2件通过-zh.png",
-      "content": "前台同一测试水杯2件，继续进入结账，无本规则错误；保留产品、数量2及结账上下文。无需付款。",
+      "id": "M03-05-产品2件通过-zh",
+      "filename": "M03-05-产品2件通过-zh.png",
+      "content": "当前提供的文件画面实际是产品数量3并触发“最多2件”提示，不能作为通过图。请重新截产品数量2、无此限制提示并可继续购买的画面，仍保存为此文件名。",
       "placement": "测试成功用例",
       "priority": "核心",
       "frontend": true,
@@ -1231,9 +1231,9 @@
       "folder": "01-基础操作",
       "status": "待截图",
       "localized_filenames": {
-        "zh": "M03-05-水杯2件通过-zh.png",
-        "en": "M03-05-水杯2件通过-en.png",
-        "ja": "M03-05-水杯2件通过-ja.png"
+        "zh": "M03-05-产品2件通过-zh.png",
+        "en": "M03-05-产品2件通过-zh.png",
+        "ja": "M03-05-产品2件通过-zh.png"
       }
     },
     {
@@ -1249,8 +1249,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "M03-06-水杯3件拦截-zh.png",
-        "en": "M03-06-水杯3件拦截-en.png",
-        "ja": "M03-06-水杯3件拦截-ja.png"
+        "en": "M03-06-水杯3件拦截-zh.png",
+        "ja": "M03-06-水杯3件拦截-zh.png"
       }
     },
     {
@@ -1318,8 +1318,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "M05-02-蓝色2件触发变体上限-zh.png",
-        "en": "M05-02-蓝色2件触发变体上限-en.png",
-        "ja": "M05-02-蓝色2件触发变体上限-ja.png"
+        "en": "M05-02-蓝色2件触发变体上限-zh.png",
+        "ja": "M05-02-蓝色2件触发变体上限-zh.png"
       }
     },
     {
@@ -1335,8 +1335,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "M05-03-水杯合计4件触发产品上限-zh.png",
-        "en": "M05-03-水杯合计4件触发产品上限-en.png",
-        "ja": "M05-03-水杯合计4件触发产品上限-ja.png"
+        "en": "M05-03-水杯合计4件触发产品上限-zh.png",
+        "ja": "M05-03-水杯合计4件触发产品上限-zh.png"
       }
     },
     {
@@ -1352,14 +1352,14 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "M05-04-蓝1红2合计3件通过-zh.png",
-        "en": "M05-04-蓝1红2合计3件通过-en.png",
-        "ja": "M05-04-蓝1红2合计3件通过-ja.png"
+        "en": "M05-04-蓝1红2合计3件通过-zh.png",
+        "ja": "M05-04-蓝1红2合计3件通过-zh.png"
       }
     },
     {
       "id": "M05-05-产品数量功能已开启",
       "filename": "M05-05-产品数量功能已开启.png",
-      "content": "数量限制首页：开启产品数量限制已开启，显示时机为购物车互动时和结账时，购物车与结账校验已启用；保留开启数量规则的独立标签，避免混淆。",
+      "content": "数量限制首页：开启产品数量限制已开启，显示时机为购物车互动时和结账时，数量规则开关已启用；保留数量规则的独立标签，避免混淆。",
       "placement": "开启产品数量限制步骤",
       "priority": "核心",
       "frontend": false,
@@ -1642,8 +1642,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "M12-06-变量替换后的数量提示-zh.png",
-        "en": "M12-06-变量替换后的数量提示-en.png",
-        "ja": "M12-06-变量替换后的数量提示-ja.png"
+        "en": "M12-06-变量替换后的数量提示-zh.png",
+        "ja": "M12-06-变量替换后的数量提示-zh.png"
       }
     },
     {
@@ -1698,8 +1698,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "S01-03-红1蓝1合计2件通过-zh.png",
-        "en": "S01-03-红1蓝1合计2件通过-en.png",
-        "ja": "S01-03-红1蓝1合计2件通过-ja.png"
+        "en": "S01-03-红1蓝1合计2件通过-zh.png",
+        "ja": "S01-03-红1蓝1合计2件通过-zh.png"
       }
     },
     {
@@ -1715,8 +1715,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "S01-04-红1蓝2合计3件拦截-zh.png",
-        "en": "S01-04-红1蓝2合计3件拦截-en.png",
-        "ja": "S01-04-红1蓝2合计3件拦截-ja.png"
+        "en": "S01-04-红1蓝2合计3件拦截-zh.png",
+        "ja": "S01-04-红1蓝2合计3件拦截-zh.png"
       }
     },
     {
@@ -1732,8 +1732,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "S01-05-范围外杯垫通过-zh.png",
-        "en": "S01-05-范围外杯垫通过-en.png",
-        "ja": "S01-05-范围外杯垫通过-ja.png"
+        "en": "S01-05-范围外杯垫通过-zh.png",
+        "ja": "S01-05-范围外杯垫通过-zh.png"
       }
     },
     {
@@ -1775,8 +1775,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "S02-03-A1加B2合计3件通过-zh.png",
-        "en": "S02-03-A1加B2合计3件通过-en.png",
-        "ja": "S02-03-A1加B2合计3件通过-ja.png"
+        "en": "S02-03-A1加B2合计3件通过-zh.png",
+        "ja": "S02-03-A1加B2合计3件通过-zh.png"
       }
     },
     {
@@ -1792,8 +1792,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "S02-04-A2加B2合计4件拦截-zh.png",
-        "en": "S02-04-A2加B2合计4件拦截-en.png",
-        "ja": "S02-04-A2加B2合计4件拦截-ja.png"
+        "en": "S02-04-A2加B2合计4件拦截-zh.png",
+        "ja": "S02-04-A2加B2合计4件拦截-zh.png"
       }
     },
     {
@@ -1809,8 +1809,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "S02-05-A3加范围外5件通过-zh.png",
-        "en": "S02-05-A3加范围外5件通过-en.png",
-        "ja": "S02-05-A3加范围外5件通过-ja.png"
+        "en": "S02-05-A3加范围外5件通过-zh.png",
+        "ja": "S02-05-A3加范围外5件通过-zh.png"
       }
     },
     {
@@ -1865,8 +1865,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "S03-03-马克杯6件通过-zh.png",
-        "en": "S03-03-马克杯6件通过-en.png",
-        "ja": "S03-03-马克杯6件通过-ja.png"
+        "en": "S03-03-马克杯6件通过-zh.png",
+        "ja": "S03-03-马克杯6件通过-zh.png"
       }
     },
     {
@@ -1882,8 +1882,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "S03-04-马克杯5件拦截-zh.png",
-        "en": "S03-04-马克杯5件拦截-en.png",
-        "ja": "S03-04-马克杯5件拦截-ja.png"
+        "en": "S03-04-马克杯5件拦截-zh.png",
+        "ja": "S03-04-马克杯5件拦截-zh.png"
       }
     },
     {
@@ -1899,8 +1899,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "S03-05-马克杯3加托盘3拦截-zh.png",
-        "en": "S03-05-马克杯3加托盘3拦截-en.png",
-        "ja": "S03-05-马克杯3加托盘3拦截-ja.png"
+        "en": "S03-05-马克杯3加托盘3拦截-zh.png",
+        "ja": "S03-05-马克杯3加托盘3拦截-zh.png"
       }
     },
     {
@@ -1916,8 +1916,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "S03-06-马克杯7件通过-zh.png",
-        "en": "S03-06-马克杯7件通过-en.png",
-        "ja": "S03-06-马克杯7件通过-ja.png"
+        "en": "S03-06-马克杯7件通过-zh.png",
+        "ja": "S03-06-马克杯7件通过-zh.png"
       }
     },
     {
@@ -1972,8 +1972,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "S04-04-VIP4件通过-zh.png",
-        "en": "S04-04-VIP4件通过-en.png",
-        "ja": "S04-04-VIP4件通过-ja.png"
+        "en": "S04-04-VIP4件通过-zh.png",
+        "ja": "S04-04-VIP4件通过-zh.png"
       }
     },
     {
@@ -1989,8 +1989,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "S04-05-VIP5件拦截-zh.png",
-        "en": "S04-05-VIP5件拦截-en.png",
-        "ja": "S04-05-VIP5件拦截-ja.png"
+        "en": "S04-05-VIP5件拦截-zh.png",
+        "ja": "S04-05-VIP5件拦截-zh.png"
       }
     },
     {
@@ -2006,8 +2006,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "S04-06-非VIP3件拦截-zh.png",
-        "en": "S04-06-非VIP3件拦截-en.png",
-        "ja": "S04-06-非VIP3件拦截-ja.png"
+        "en": "S04-06-非VIP3件拦截-zh.png",
+        "ja": "S04-06-非VIP3件拦截-zh.png"
       }
     },
     {
@@ -2023,8 +2023,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "S04-07-游客3件拦截-zh.png",
-        "en": "S04-07-游客3件拦截-en.png",
-        "ja": "S04-07-游客3件拦截-ja.png"
+        "en": "S04-07-游客3件拦截-zh.png",
+        "ja": "S04-07-游客3件拦截-zh.png"
       }
     },
     {
@@ -2079,8 +2079,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "S05-03-商品金额100通过-zh.png",
-        "en": "S05-03-商品金额100通过-en.png",
-        "ja": "S05-03-商品金额100通过-ja.png"
+        "en": "S05-03-商品金额100通过-zh.png",
+        "ja": "S05-03-商品金额100通过-zh.png"
       }
     },
     {
@@ -2096,8 +2096,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "S05-04-商品金额99拦截-zh.png",
-        "en": "S05-04-商品金额99拦截-en.png",
-        "ja": "S05-04-商品金额99拦截-ja.png"
+        "en": "S05-04-商品金额99拦截-zh.png",
+        "ja": "S05-04-商品金额99拦截-zh.png"
       }
     },
     {
@@ -2113,8 +2113,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "S05-05-商品金额120通过-zh.png",
-        "en": "S05-05-商品金额120通过-en.png",
-        "ja": "S05-05-商品金额120通过-ja.png"
+        "en": "S05-05-商品金额120通过-zh.png",
+        "ja": "S05-05-商品金额120通过-zh.png"
       }
     },
     {
@@ -2169,8 +2169,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "S06-04-批发500通过-zh.png",
-        "en": "S06-04-批发500通过-en.png",
-        "ja": "S06-04-批发500通过-ja.png"
+        "en": "S06-04-批发500通过-zh.png",
+        "ja": "S06-04-批发500通过-zh.png"
       }
     },
     {
@@ -2186,8 +2186,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "S06-05-批发499拦截-zh.png",
-        "en": "S06-05-批发499拦截-en.png",
-        "ja": "S06-05-批发499拦截-ja.png"
+        "en": "S06-05-批发499拦截-zh.png",
+        "ja": "S06-05-批发499拦截-zh.png"
       }
     },
     {
@@ -2203,8 +2203,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "S06-06-普通100通过-zh.png",
-        "en": "S06-06-普通100通过-en.png",
-        "ja": "S06-06-普通100通过-ja.png"
+        "en": "S06-06-普通100通过-zh.png",
+        "ja": "S06-06-普通100通过-zh.png"
       }
     },
     {
@@ -2220,8 +2220,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "S06-07-普通99拦截-zh.png",
-        "en": "S06-07-普通99拦截-en.png",
-        "ja": "S06-07-普通99拦截-ja.png"
+        "en": "S06-07-普通99拦截-zh.png",
+        "ja": "S06-07-普通99拦截-zh.png"
       }
     },
     {
@@ -2276,8 +2276,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "S07-03-2kg乘10等于20kg通过-zh.png",
-        "en": "S07-03-2kg乘10等于20kg通过-en.png",
-        "ja": "S07-03-2kg乘10等于20kg通过-ja.png"
+        "en": "S07-03-2kg乘10等于20kg通过-zh.png",
+        "ja": "S07-03-2kg乘10等于20kg通过-zh.png"
       }
     },
     {
@@ -2293,8 +2293,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "S07-04-2kg乘11等于22kg拦截-zh.png",
-        "en": "S07-04-2kg乘11等于22kg拦截-en.png",
-        "ja": "S07-04-2kg乘11等于22kg拦截-ja.png"
+        "en": "S07-04-2kg乘11等于22kg拦截-zh.png",
+        "ja": "S07-04-2kg乘11等于22kg拦截-zh.png"
       }
     },
     {
@@ -2310,8 +2310,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "S07-05-混合单位合计19kg通过-zh.png",
-        "en": "S07-05-混合单位合计19kg通过-en.png",
-        "ja": "S07-05-混合单位合计19kg通过-ja.png"
+        "en": "S07-05-混合单位合计19kg通过-zh.png",
+        "ja": "S07-05-混合单位合计19kg通过-zh.png"
       }
     },
     {
@@ -2353,8 +2353,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "S08-03-VIP购买专属商品通过-zh.png",
-        "en": "S08-03-VIP购买专属商品通过-en.png",
-        "ja": "S08-03-VIP购买专属商品通过-ja.png"
+        "en": "S08-03-VIP购买专属商品通过-zh.png",
+        "ja": "S08-03-VIP购买专属商品通过-zh.png"
       }
     },
     {
@@ -2370,8 +2370,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "S08-04-非VIP购买专属商品拦截-zh.png",
-        "en": "S08-04-非VIP购买专属商品拦截-en.png",
-        "ja": "S08-04-非VIP购买专属商品拦截-ja.png"
+        "en": "S08-04-非VIP购买专属商品拦截-zh.png",
+        "ja": "S08-04-非VIP购买专属商品拦截-zh.png"
       }
     },
     {
@@ -2387,8 +2387,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "S08-05-游客购买要求登录-zh.png",
-        "en": "S08-05-游客购买要求登录-en.png",
-        "ja": "S08-05-游客购买要求登录-ja.png"
+        "en": "S08-05-游客购买要求登录-zh.png",
+        "ja": "S08-05-游客购买要求登录-zh.png"
       }
     },
     {
@@ -2404,8 +2404,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "S08-06-范围外商品通过-zh.png",
-        "en": "S08-06-范围外商品通过-en.png",
-        "ja": "S08-06-范围外商品通过-ja.png"
+        "en": "S08-06-范围外商品通过-zh.png",
+        "ja": "S08-06-范围外商品通过-zh.png"
       }
     },
     {
@@ -2447,8 +2447,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "S09-03-无reseller客户通过-zh.png",
-        "en": "S09-03-无reseller客户通过-en.png",
-        "ja": "S09-03-无reseller客户通过-ja.png"
+        "en": "S09-03-无reseller客户通过-zh.png",
+        "ja": "S09-03-无reseller客户通过-zh.png"
       }
     },
     {
@@ -2464,8 +2464,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "S09-04-reseller客户被拦截-zh.png",
-        "en": "S09-04-reseller客户被拦截-en.png",
-        "ja": "S09-04-reseller客户被拦截-ja.png"
+        "en": "S09-04-reseller客户被拦截-zh.png",
+        "ja": "S09-04-reseller客户被拦截-zh.png"
       }
     },
     {
@@ -2481,8 +2481,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "S09-05-游客购买要求登录-zh.png",
-        "en": "S09-05-游客购买要求登录-en.png",
-        "ja": "S09-05-游客购买要求登录-ja.png"
+        "en": "S09-05-游客购买要求登录-zh.png",
+        "ja": "S09-05-游客购买要求登录-zh.png"
       }
     },
     {
@@ -2498,8 +2498,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "S09-06-reseller买范围外通过-zh.png",
-        "en": "S09-06-reseller买范围外通过-en.png",
-        "ja": "S09-06-reseller买范围外通过-ja.png"
+        "en": "S09-06-reseller买范围外通过-zh.png",
+        "ja": "S09-06-reseller买范围外通过-zh.png"
       }
     },
     {
@@ -2567,8 +2567,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "S10-04-首次1件允许结账-zh.png",
-        "en": "S10-04-首次1件允许结账-en.png",
-        "ja": "S10-04-首次1件允许结账-ja.png"
+        "en": "S10-04-首次1件允许结账-zh.png",
+        "ja": "S10-04-首次1件允许结账-zh.png"
       }
     },
     {
@@ -2584,8 +2584,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "S10-05-首次2件被单次规则拦截-zh.png",
-        "en": "S10-05-首次2件被单次规则拦截-en.png",
-        "ja": "S10-05-首次2件被单次规则拦截-ja.png"
+        "en": "S10-05-首次2件被单次规则拦截-zh.png",
+        "ja": "S10-05-首次2件被单次规则拦截-zh.png"
       }
     },
     {
@@ -2601,8 +2601,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "S10-06-已有记录再买1件拦截-zh.png",
-        "en": "S10-06-已有记录再买1件拦截-en.png",
-        "ja": "S10-06-已有记录再买1件拦截-ja.png"
+        "en": "S10-06-已有记录再买1件拦截-zh.png",
+        "ja": "S10-06-已有记录再买1件拦截-zh.png"
       }
     },
     {
@@ -2618,8 +2618,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "S10-07-游客购买要求登录-zh.png",
-        "en": "S10-07-游客购买要求登录-en.png",
-        "ja": "S10-07-游客购买要求登录-ja.png"
+        "en": "S10-07-游客购买要求登录-zh.png",
+        "ja": "S10-07-游客购买要求登录-zh.png"
       }
     },
     {
@@ -2674,8 +2674,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "S11-03-游客购买要求登录-zh.png",
-        "en": "S11-03-游客购买要求登录-en.png",
-        "ja": "S11-03-游客购买要求登录-ja.png"
+        "en": "S11-03-游客购买要求登录-zh.png",
+        "ja": "S11-03-游客购买要求登录-zh.png"
       }
     },
     {
@@ -2691,8 +2691,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "S11-04-无VIP登录客户通过-zh.png",
-        "en": "S11-04-无VIP登录客户通过-en.png",
-        "ja": "S11-04-无VIP登录客户通过-ja.png"
+        "en": "S11-04-无VIP登录客户通过-zh.png",
+        "ja": "S11-04-无VIP登录客户通过-zh.png"
       }
     },
     {
@@ -2708,8 +2708,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "S11-05-VIP登录客户通过-zh.png",
-        "en": "S11-05-VIP登录客户通过-en.png",
-        "ja": "S11-05-VIP登录客户通过-ja.png"
+        "en": "S11-05-VIP登录客户通过-zh.png",
+        "ja": "S11-05-VIP登录客户通过-zh.png"
       }
     },
     {
@@ -2725,8 +2725,8 @@
       "status": "待截图",
       "localized_filenames": {
         "zh": "S11-06-游客购买范围外商品通过-zh.png",
-        "en": "S11-06-游客购买范围外商品通过-en.png",
-        "ja": "S11-06-游客购买范围外商品通过-ja.png"
+        "en": "S11-06-游客购买范围外商品通过-zh.png",
+        "ja": "S11-06-游客购买范围外商品通过-zh.png"
       }
     }
   ]
