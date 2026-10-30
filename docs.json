@@ -1,8 +1,8 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "订单限购",
-  "description": "了解订单限购 App 的功能、中文支持与选型优势，学习 Shopify 商品数量、金额、重量和客户购买限制的设置方法。",
+  "name": "订单限制",
+  "description": "了解订单限制 App 的功能、中文支持与选型优势，学习 Shopify 商品数量、金额、重量和客户购买限制的设置方法。",
   "colors": {
     "primary": "#A07EC8",
     "light": "#A07EC8",
@@ -21,7 +21,7 @@
         "default": true,
         "groups": [
           {
-            "group": "了解订单限购",
+            "group": "了解订单限制",
             "pages": [
               "index",
               "about/support",
@@ -98,7 +98,7 @@
         "navbar": {
           "links": [
             {
-              "label": "了解订单限购",
+              "label": "了解订单限制",
               "href": "/index"
             },
             {
@@ -325,7 +325,7 @@
   "seo": {
     "indexing": "navigable",
     "metatags": {
-      "og:site_name": "订单限购",
+      "og:site_name": "订单限制",
       "og:locale": "zh_CN",
       "twitter:card": "summary_large_image"
     },

@@ -18,6 +18,9 @@ for p in files:
  for dest in re.findall(r'\]\((/[^)\s]+)\)|href="(/[^"\s]+)"',s):
   target=(dest[0] or dest[1]).split('#')[0].strip('/')
   if not target:target='index'
+  if target.startswith('images/'):
+   if not (root/target).is_file(): errors.append(f'{rel}: missing image {target}')
+   continue
   if not (root/(target+'.mdx')).exists():errors.append(f'{rel}: missing local page {target}')
   if rel.parts[0] in ['en','ja'] and not target.startswith(rel.parts[0]+'/'):errors.append(f'{rel}: link leaves locale {target}')
  if 'scenarios' in rel.parts and p.stem!='index':
